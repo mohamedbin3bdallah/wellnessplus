@@ -1,0 +1,548 @@
+extend index
+
+block pageindex
+ 
+ div.menubab
+  div.container
+   nav(class="setting-menu")
+    a(href="mssages.html") Messages
+    a(href="my-lessons.html") My lessons
+    a(href="my-teachers.html") My Teachers
+    a(href="learning-plan.html") Learning Plan
+    a(href="my-profile.html" class="active") My profile
+    a(href="settings.html") Settings
+ section.step-sign 
+  div.container
+    ul(class="nav nav-tabs tabs-tutor" id="myTab" role="tablist")
+     li.nav-item
+      a(class="nav-link active" id="item-1-tab" data-toggle="tab" href="#item-1"  role="tab" aria-controls="item-1" aria-selected="true") About
+     li.nav-item
+      a(class="nav-link"  id="item-2-tab" data-toggle="tab" href="#item-2" role="tab" aria-controls="item-2"  aria-selected="false") Profile description
+     li.nav-item
+      a(class="nav-link"  id="item-3-tab" data-toggle="tab" href="#item-3" role="tab" aria-controls="item-3"  aria-selected="false") Video
+     li.nav-item
+      a(class="nav-link"  id="item-4-tab" data-toggle="tab" href="#item-4" role="tab" aria-controls="item-4"  aria-selected="false") Profile verification
+     li.nav-item
+      a(class="nav-link"  id="item-5-tab" data-toggle="tab" href="#item-5" role="tab" aria-controls="item-5"  aria-selected="false") Resume
+     li.nav-item
+      a(class="nav-link"  id="item-6-tab" data-toggle="tab" href="#item-6" role="tab" aria-controls="item-6"  aria-selected="false") Password
+     li.nav-item
+      a(class="nav-link"  id="item-7-tab" data-toggle="tab" href="#item-7" role="tab" aria-controls="item-7"  aria-selected="false") Notification
+    div(class="tab-content" id="myTabContent")
+     div(class="alert alert-danger" role="alert")   This is a danger alert—check it out!
+     div(class="alert alert-success" role="alert") This is a success alert—check it out!
+     div(class="tab-pane fade show active" id="item-1"  role="tabpanel" aria-labelledby="item-1-tab")
+      div.row
+       div.col-sm-8.itemform
+        form(action="")
+         div.row
+          div.col-sm-6.fild
+           input(type="text" class="form-control" placeholder="Enter your First name" name="FirstName"  autocomplete="off" autofocus required)
+           label.floating-label First Name
+          div.col-sm-6.fild
+           input(type="text" class="form-control" placeholder="Enter your Last name" name="LasttName" autocomplete="off" autofocus required)
+           label.floating-label Last Name
+          div.col-sm-12.fild
+           i(class="fas fa-chevron-down iconsel")
+           select(class="form-control required" name="Country" autocomplete="off" autofocus required)
+            option 
+            option info@yahoo.com
+            option info@yahoo.com
+            option info@yahoo.com
+           label.floating-label Email
+          div.col-sm-12.fild
+           i(class="fas fa-chevron-down iconsel")
+           select(class="form-control required" name="Country" autocomplete="off" autofocus required)
+            option 
+            option Greece
+            option Greece
+            option Greece
+           label.floating-label Country of origin     
+          div.col-sm-12.add-fild
+           div.row
+            div.col-sm-6.fild
+             i(class="fas fa-chevron-down iconsel")
+             select(class="form-control required" name="Language" autocomplete="off" autofocus required)
+              option 
+              option Arabic
+              option Arabic 
+              option Arabic
+             label.floating-label Language
+            div.col-sm-6.fild
+             i(class="fas fa-chevron-down iconsel")
+             select(class="form-control required" name="Level" autocomplete="off" autofocus required)
+              option 
+              option level one
+              option level one 
+              option level one
+             label.floating-label Level   
+           span(class="bottom style-add add") #[i(class="fas fa-plus")]
+          div.optionBox.w-100
+           div.col-sm-12.add-fild
+          div.col-sm-12.fild
+           span.ealamuh $
+           input(type="text" class="form-control" placeholder="$" name="HourRate"  autocomplete="off" autofocus required )
+           label.floating-label Hour Rate      
+          div.col-sm-12.fild
+           input(type="text" class="form-control mobile-number" placeholder="Phone number (optional)" name="Phonenumber"  autocomplete="off" autofocus required )
+          div.col-sm-12.fild
+           i(class="fas fa-chevron-down iconsel")
+           select(class="form-control required" name="Country" autocomplete="off" autofocus required)
+            option 
+            option Greece
+            option Greece
+            option Greece
+           label.floating-label Time zone  
+          div.col-sm-6.fild
+           i(class="fas fa-chevron-down iconsel")
+           select(class="form-control required" name="Country" autocomplete="off" autofocus required)
+            option 
+            option Greece
+            option Greece
+            option Greece
+           label.floating-label Preferred student age 
+          div.col-sm-6.fild
+           i(class="fas fa-chevron-down iconsel")
+           select(class="form-control required" name="Country" autocomplete="off" autofocus required)
+            option 
+            option Greece
+            option Greece
+            option Greece
+           label.floating-label Preferred level of student  
+         div.bot-all
+          button(class="bottom" type="submit") Save Settings
+     div(class="tab-pane fade" id="item-2"  role="tabpanel" aria-labelledby="item-2-tab") 
+       form(action="#")
+        div.row
+         div.col-sm-10.prin-item
+          h2.title Profile Image
+          div.row
+           div.col-sm-3.item-tab
+             div.imgcent
+              img(src='assets/images/profile-4.jpg'  class="img_prev" alt="" title="")
+              label(class="file-bro") Upload Photo
+               input(type="file"   onchange="readURL(this);" style="display: none;")
+             p.textsacand #[i(class="fas fa-info-circle")]  JPG or PNG format  Maximum 2 MB 
+             h3.title.siza.mt-4 for an amazing photo
+             ul.list-item.mt-3
+              - for (var x = 0; x < 7; x++)
+                 li 
+                  svg(xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 21.013 20.726")
+                   g(id="Icon_feather-check-circle" data-name="Icon feather-check-circle" transform="translate(-2.248 -2.229)")
+                    path(id="Path_31914" data-name="Path 31914" d="M22.2,11.714V12.6a9.6,9.6,0,1,1-5.693-8.775" transform="translate(0 0)" fill="none" stroke="#ba9a74" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5")
+                    path(id="Path_31915" data-name="Path 31915" d="M25.98,6l-9.6,9.61L13.5,12.73" transform="translate(-3.78 -1.083)" fill="none" stroke="#ba9a74" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5")
+                  | Your Face And Eyes 
+           div.col-sm-8.offset-sm-1.item-tab2
+            div.row
+              div.col-sm-12.fild
+               input(type="text" class="form-control" placeholder="Write your headline in English" name="Name" autocomplete="off" autofocus required)
+               label.floating-label Ahmed Mohamed
+               p.textsacand #[i(class="fas fa-info-circle")]  Good example: “Certified tutor with 5 years of experience”
+              div.col-sm-12.fild
+               textarea(class="form-control" name="description" value="" placeholder="Write your description in English" autocomplete="off" autofocus required) mennamagdy@gmail.com
+               label.floating-label About the tutor
+               p.textsacand #[i(class="fas fa-info-circle")]  #[span(id="remain") 250 ]    characters minimum . 0 characters currently.
+
+         div.col-sm-12.bot-all.st-flex
+           button(class="bottom" type="submit") Save Settings
+     div(class="tab-pane fade" id="item-3"  role="tabpanel" aria-labelledby="item-3-tab") 
+       h4.title Your video
+       div.row
+        div.col-sm-7.itemform
+         div.item-us
+          div.iframe
+            iframe(src="https://youtu.be/VctaUNJpT6U")
+          h4.title.siza.mt-5 Upload New video
+          span.great Paste a link to your video
+          p.textsacand #[i(class="fas fa-info-circle")]  Learn how to upload videos to #[a(href="#") Youtube ] or #[a(href="#") Vimeo ]  
+          div.fild
+            input(type="text" class="form-control" placeholder="www.youtube.com/watch?v=l5aZJBLAu1E" name="url" autocomplete="off" autofocus required)
+            label.floating-label Paste Link
+         div.item-us
+          span.great  record your video
+          p.textsacand #[i(class="fas fa-info-circle")]   Show students your teaching style and personality
+         
+          nav.bot-action
+            a(href='#' class="bottom") Start Recording
+            a(href='#' class="bottom") Test Camera
+        div.col-sm-4.itemform.offset-sm-1
+          h5.title.siza Tips for an amazing video
+          ul.list-item
+            li.great #[i(class="fas fa-circle")] Or record your video
+            - for (var x = 0; x < 7; x++)
+              li 
+                svg(xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 21.013 20.726")
+                g(id="Icon_feather-check-circle" data-name="Icon feather-check-circle" transform="translate(-2.248 -2.229)")
+                  path(id="Path_31914" data-name="Path 31914" d="M22.2,11.714V12.6a9.6,9.6,0,1,1-5.693-8.775" transform="translate(0 0)" fill="none" stroke="#ba9a74" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5")
+                  path(id="Path_31915" data-name="Path 31915" d="M25.98,6l-9.6,9.61L13.5,12.73" transform="translate(-3.78 -1.083)" fill="none" stroke="#ba9a74" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5")
+                | Your face and eyes are fully visible  
+          ul.list-item
+            li.great #[i(class="fas fa-circle")] Content
+            - for (var x = 0; x < 4; x++)
+              li 
+                svg(xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 21.013 20.726")
+                g(id="Icon_feather-check-circle" data-name="Icon feather-check-circle" transform="translate(-2.248 -2.229)")
+                  path(id="Path_31914" data-name="Path 31914" d="M22.2,11.714V12.6a9.6,9.6,0,1,1-5.693-8.775" transform="translate(0 0)" fill="none" stroke="#ba9a74" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5")
+                  path(id="Path_31915" data-name="Path 31915" d="M25.98,6l-9.6,9.61L13.5,12.73" transform="translate(-3.78 -1.083)" fill="none" stroke="#ba9a74" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5")
+                | Your face and eyes are fully visible  
+        div.col-sm-12.bot-all.st-flex
+           button(class="bottom" type="submit") Save Settings
+     div(class="tab-pane fade" id="item-4"  role="tabpanel" aria-labelledby="item-4-tab") 
+       h4.title Profile verification
+       div.col-sm-8.itemform 
+        div.row
+         div.textmap.fletext
+          i(class="fas fa-check") 
+          span profile ID is verified
+         h4.title.siza.mt-5 Upload New Document
+         div.custom-file
+          input(type="file" class="custom-file-input" id="customFile" name="file"  required)
+          label(class="custom-file-label" for="customFile") no file 
+         div.textmap
+          i(class="fas fa-unlock-alt") 
+          p Safe 
+          span We do not store your documents on our servers after verification is complete
+ 
+     div(class="tab-pane fade" id="item-5"  role="tabpanel" aria-labelledby="item-5-tab") 
+      h4.title Resume Info
+      //form(action="")
+       div.row
+        div.col-sm-8.itemform        
+         div.education
+          div.head-title
+           h5.title Education 
+           span(class="bottom style-add add7") #[i(class="fas fa-plus")]
+          div.row
+           div.col-sm-12.add-fild7
+            div.row
+             div.col-sm-12.fild
+               input(type="text" class="form-control" placeholder="Enter" name="Enter"  autocomplete="off" autofocus required)
+               label.floating-label University/ college
+             div.col-sm-12.fild
+               input(type="text" class="form-control" placeholder="Enter" name="Degree"  autocomplete="off" autofocus required)
+               label.floating-label Degree
+             div.col-sm-12.fild
+               input(type="text" class="form-control" placeholder="Enter" name="Speciality"  autocomplete="off" autofocus required)
+               label.floating-label Enter
+             div.col-sm-6.fild
+              i(class="fas fa-chevron-down iconsel")
+              select(class="form-control required" name="From" autocomplete="off" autofocus required)
+               option 
+               option choose
+               option choose 
+               option choose
+              label.floating-label From
+             div.col-sm-6.fild
+              i(class="fas fa-chevron-down iconsel")
+              select(class="form-control required" name="To" autocomplete="off" autofocus required)
+               option 
+               option choose
+               option choose
+               option choose
+              label.floating-label To   
+           div.optionBox7.w-100
+            div.col-sm-12.add-fild7
+          div.custom-file
+            input(type="file" class="custom-file-input" id="customFile" name="file"  required)
+            label(class="custom-file-label" for="customFile") no file 
+          p.textmap.linbox #[i(class="fas fa-info-circle")]   JPG or PNG format  Maximum 5 MB
+         
+         div.education
+          div.head-title
+           h5.title Work experience  
+           span(class="bottom style-add add8") #[i(class="fas fa-plus")]
+          div.row
+           div.col-sm-12.add-fild8
+            div.row
+             div.col-sm-12.fild
+               input(type="text" class="form-control" placeholder="Enter" name="Company"  autocomplete="off" autofocus required)
+               label.floating-label Company
+             div.col-sm-12.fild
+               input(type="text" class="form-control" placeholder="Enter" name="Title"  autocomplete="off" autofocus required)
+               label.floating-label Title
+             div.col-sm-6.fild
+              i(class="fas fa-chevron-down iconsel")
+              select(class="form-control required" name="From" autocomplete="off" autofocus required)
+               option 
+               option choose
+               option choose 
+               option choose
+              label.floating-label From
+             div.col-sm-6.fild
+              i(class="fas fa-chevron-down iconsel")
+              select(class="form-control required" name="To" autocomplete="off" autofocus required)
+               option 
+               option choose
+               option choose
+               option choose
+              label.floating-label To   
+           div.optionBox8.w-100
+            div.col-sm-12.add-fild8
+          div.custom-file
+            input(type="file" class="custom-file-input" id="customFile" name="file"  required)
+            label(class="custom-file-label" for="customFile") no file 
+          p.textmap.linbox #[i(class="fas fa-info-circle")]   JPG or PNG format  Maximum 5 MB
+        
+         div.education
+          div.head-title
+           h5.title Certificate 
+           span(class="bottom style-add add9") #[i(class="fas fa-plus")]
+          div.row
+           div.col-sm-12.add-fild9
+            div.row
+             div.col-sm-12.fild
+               input(type="text" class="form-control" placeholder="Enter" name="Certificate"  autocomplete="off" autofocus required)
+               label.floating-label Certificate
+             div.col-sm-12.fild
+               input(type="text" class="form-control" placeholder="Enter" name="Description"  autocomplete="off" autofocus required)
+               label.floating-label Description
+             div.col-sm-12.fild
+               input(type="text" class="form-control" placeholder="Enter" name="Issued By"  autocomplete="off" autofocus required)
+               label.floating-label Issued By
+             div.col-sm-6.fild
+              i(class="fas fa-chevron-down iconsel")
+              select(class="form-control required" name="From" autocomplete="off" autofocus required)
+               option 
+               option choose
+               option choose 
+               option choose
+              label.floating-label From
+             div.col-sm-6.fild
+              i(class="fas fa-chevron-down iconsel")
+              select(class="form-control required" name="To" autocomplete="off" autofocus required)
+               option 
+               option choose
+               option choose
+               option choose
+              label.floating-label To   
+           div.optionBox9.w-100
+            div.col-sm-12.add-fild9
+          div.custom-file
+            input(type="file" class="custom-file-input" id="customFile" name="file"  required)
+            label(class="custom-file-label" for="customFile") no file 
+          p.textmap.linbox #[i(class="fas fa-info-circle")]   JPG or PNG format  Maximum 5 MB
+        div.col-sm-12.bot-all.st-flex
+          button(class="bottom" type="submit") Save Settings
+      div.edit-all
+       div.item-edit
+        div.head-title
+          h5.title Education 
+          a(class="bottom style-add" href="#add-item" data-toggle="modal") #[i(class="fas fa-plus")]
+        div.row-tow
+         div.date 1993-2006
+         div.primary 
+          div.head-title
+           h5.title Bachelor of Primary Education 
+           a(class="bottom style-add" href="#edit-item" data-toggle="modal") #[i(class="fas fa-pen")]
+          small Speciality , Degree
+          div.textmap.fletext
+           i(class="fas fa-check") 
+           span Verified
+         div.textmap.revie
+          i(class="fas fa-unlock-alt") 
+          p We’re reviewing your documents 
+          span This may take up to 5 working days
+      
+       div.item-edit
+        div.head-title
+          h5.title Work experience  
+          a(class="bottom style-add" href="#add-item" data-toggle="modal") #[i(class="fas fa-plus")]
+        div.row-tow
+         div.date 1993-2006
+         div.primary 
+          div.head-title
+           h5.title Vocational College Lecturer
+           a(class="bottom style-add" href="#edit-item" data-toggle="modal") #[i(class="fas fa-pen")]
+          small Title
+        div.row-tow
+         div.date 1993-2006
+         div.primary 
+          div.head-title
+           h5.title Vocational College Lecturer
+           a(class="bottom style-add" href="#edit-item" data-toggle="modal") #[i(class="fas fa-pen")]
+          small Title  
+        div.row-tow
+         div.date 1993-2006
+         div.primary 
+          div.head-title
+           h5.title Vocational College Lecturer
+           a(class="bottom style-add" href="#edit-item" data-toggle="modal") #[i(class="fas fa-pen")]
+          small Title  
+     
+       div.item-edit
+        div.head-title
+          h5.title Certificate
+          a(class="bottom style-add" href="#add-item" data-toggle="modal") #[i(class="fas fa-plus")]
+        div.row-tow
+         div.date 1993-2006
+         div.primary 
+          div.head-title
+           h5.title TEFL
+           a(class="bottom style-add" href="#edit-item" data-toggle="modal") #[i(class="fas fa-pen")]
+          small Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s...
+          div.textmap.fletext
+           i(class="fas fa-check") 
+           span Verified
+        div.row-tow
+         div.date 1993-2006
+         div.primary 
+          div.head-title
+           h5.title TEFL
+           a(class="bottom style-add" href="#edit-item" data-toggle="modal") #[i(class="fas fa-pen")]
+          small Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s...
+          div.textmap.fletext
+           i(class="fas fa-check") 
+           span Verified
+        div.row-tow
+         div.date 1993-2006
+         div.primary 
+          div.head-title
+           h5.title TEFL
+           a(class="bottom style-add" href="#edit-item" data-toggle="modal") #[i(class="fas fa-pen")]
+          small Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s...
+     
+      
+      
+      
+   
+   
+   
+   
+     div(class="tab-pane fade" id="item-6"  role="tabpanel" aria-labelledby="item-6-tab") 
+       form(action="#")
+          h2.title Change Password
+          div.row
+           div.col-sm-8.item-tab2
+            div.row
+             div.col-sm-12.fild
+              input(type="password" class="form-control" placeholder="Enter your password" name="FirstName"  autocomplete="off" autofocus required )
+              label.floating-label Current password
+              a(href="forget.html" class="forget") Forget Password ?
+             div.col-sm-12.fild
+              input(type="password" class="form-control" placeholder="Enter your password" name="FirstName"  autocomplete="off" autofocus required )
+              label.floating-label New  password
+             div.col-sm-12.fild
+              input(type="password" class="form-control" placeholder="Enter your password" name="FirstName"  autocomplete="off" autofocus required )
+              label.floating-label Verify  password
+          div.bot-all
+            button(class="bottom" type="submit") Save Settings
+     div(class="tab-pane fade" id="item-7"  role="tabpanel" aria-labelledby="item-7-tab")
+      form(action="#")
+        div.row
+         div.col-sm-12.prin-item
+          h2.title Notification center
+          div.check-notif
+             h3(class="title siza") Email notifications
+             label.che-box
+              input(type="checkbox" name="checkbox")
+              span.label-text Lesson scheduling
+              small Alerts about new lessons and schedule changes.
+             label.che-box
+              input(type="checkbox" name="checkbox")
+              span.label-text Lesson scheduling
+              small Alerts about new lessons and schedule changes.
+             label.che-box
+              input(type="checkbox" name="checkbox")
+              span.label-text Lesson scheduling
+              small Alerts about new lessons and schedule changes.
+
+             label.che-box
+              input(type="checkbox" name="checkbox")
+              span.label-text Lesson scheduling
+              small Alerts about new lessons and schedule changes.
+
+             label.che-box
+              input(type="checkbox" name="checkbox")
+              span.label-text Lesson scheduling
+              small Alerts about new lessons and schedule changes.
+          div.check-notif
+             h3(class="title siza") SMS notifications
+             label.che-box
+              input(type="checkbox" name="checkbox")
+              span.label-text Lesson scheduling
+              small Alerts about new lessons and schedule changes.
+          div.check-notif
+             h3(class="title siza") Arabi insights
+             label.che-box
+              input(type="checkbox" name="checkbox")
+              span.label-text Lesson scheduling
+              small Alerts about new lessons and schedule changes.
+          div.bot-all
+            button(class="bottom" type="submit") Save Settings
+            a(class="bottom last-bot" href="#") Unsubscribe them all   
+ 
+ 
+ div(id="edit-item" class="modal fade" role="dialog")
+  div(class="modal-dialog")
+   div(class="modal-content deleting")
+    div.pop-det
+     button(type="button" class="close" data-dismiss="modal") 
+      svg(width="16" height="16" viewBox="0 0 12 12" f  xmlns="http://www.w3.org/2000/svg")
+       path(d="M6.66271 6.00002L11.8625 0.800231C12.0455 0.617161 12.0455 0.320349 11.8625 0.137303C11.6794 -0.0457441 11.3826 -0.0457675 11.1995 0.137303L5.99975 5.33709L0.799987 0.137303C0.616917 -0.0457675 0.320105 -0.0457675 0.137058 0.137303C-0.0459882 0.320373 -0.0460117 0.617185 0.137058 0.800231L5.33682 6L0.137058 11.1998C-0.0460117 11.3829 -0.0460117 11.6797 0.137058 11.8627C0.228582 11.9542 0.348558 12 0.468535 12C0.588511 12 0.708464 11.9542 0.800011 11.8627L5.99975 6.66295L11.1995 11.8627C11.291 11.9542 11.411 12 11.531 12C11.651 12 11.7709 11.9542 11.8625 11.8627C12.0455 11.6796 12.0455 11.3828 11.8625 11.1998L6.66271 6.00002Z" fill="#000")
+     h3.title Edit Education
+     form(action="#")
+      div.row
+       div.col-sm-12.fild
+        input(type="text" class="form-control" placeholder="Enter" name="college"  autocomplete="off" autofocus required )
+        label.floating-label University/ college
+       div.col-sm-12.fild
+        input(type="text" class="form-control" placeholder="Enter" name="Degree"  autocomplete="off" autofocus required )
+        label.floating-label Degree
+       div.col-sm-6.fild
+        i(class="fas fa-chevron-down iconsel")
+        select(class="form-control required" name="From" autocomplete="off" autofocus required)
+          option 
+          option choose
+          option choose 
+          option choose
+        label.floating-label From
+       div.col-sm-6.fild
+        i(class="fas fa-chevron-down iconsel")
+        select(class="form-control required" name="To" autocomplete="off" autofocus required)
+          option 
+          option choose
+          option choose
+          option choose
+        label.floating-label To  
+      div.fild.bot-de.bot-card
+        button(class="bottom" type="submit") Save
+        a(href="#" class="bottom" data-dismiss="modal") Cancel
+ 
+  
+ div(id="add-item" class="modal fade" role="dialog")
+  div(class="modal-dialog")
+   div(class="modal-content deleting")
+    div.pop-det
+     button(type="button" class="close" data-dismiss="modal") 
+      svg(width="16" height="16" viewBox="0 0 12 12" f  xmlns="http://www.w3.org/2000/svg")
+       path(d="M6.66271 6.00002L11.8625 0.800231C12.0455 0.617161 12.0455 0.320349 11.8625 0.137303C11.6794 -0.0457441 11.3826 -0.0457675 11.1995 0.137303L5.99975 5.33709L0.799987 0.137303C0.616917 -0.0457675 0.320105 -0.0457675 0.137058 0.137303C-0.0459882 0.320373 -0.0460117 0.617185 0.137058 0.800231L5.33682 6L0.137058 11.1998C-0.0460117 11.3829 -0.0460117 11.6797 0.137058 11.8627C0.228582 11.9542 0.348558 12 0.468535 12C0.588511 12 0.708464 11.9542 0.800011 11.8627L5.99975 6.66295L11.1995 11.8627C11.291 11.9542 11.411 12 11.531 12C11.651 12 11.7709 11.9542 11.8625 11.8627C12.0455 11.6796 12.0455 11.3828 11.8625 11.1998L6.66271 6.00002Z" fill="#000")
+     h3.title Add  Education
+     form(action="#")
+      div.row
+       div.col-sm-12.fild
+        input(type="text" class="form-control" placeholder="Enter" name="college"  autocomplete="off" autofocus required )
+        label.floating-label University/ college
+       div.col-sm-12.fild
+        input(type="text" class="form-control" placeholder="Enter" name="Degree"  autocomplete="off" autofocus required )
+        label.floating-label Degree
+       div.col-sm-6.fild
+        i(class="fas fa-chevron-down iconsel")
+        select(class="form-control required" name="From" autocomplete="off" autofocus required)
+          option 
+          option choose
+          option choose 
+          option choose
+        label.floating-label From
+       div.col-sm-6.fild
+        i(class="fas fa-chevron-down iconsel")
+        select(class="form-control required" name="To" autocomplete="off" autofocus required)
+          option 
+          option choose
+          option choose
+          option choose
+        label.floating-label To  
+      div.fild.bot-de.bot-card
+        button(class="bottom" type="submit") Save
+        a(href="#" class="bottom" data-dismiss="modal") Cancel
+ 
+  

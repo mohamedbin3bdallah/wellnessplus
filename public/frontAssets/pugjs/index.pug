@@ -1,0 +1,19 @@
+doctype
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='description' content='Arabic Language Marketplace')
+    meta(name='viewport' content='width=device-width, initial-scale=1,shrink-to-fit=no')
+    meta(name="keywords" content="")
+    title Arabia 
+    
+    include ../includes/styles.pug 
+    include ../includes/scripts.pug 
+  body
+    block pageinvoice
+      include ../pugjs/header.pug
+      <!--End Header-->
+      block pageindex
+       include ../pugjs/home.pug
+      include ../pugjs/footer.pug
+      <!--End Footer-->

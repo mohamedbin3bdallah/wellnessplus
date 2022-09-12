@@ -1,0 +1,32 @@
+/* for desktop */
+.whatsapp_float {
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:25px;
+	left:95px;
+	background-color:#25D366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #075E54;
+    z-index:10000;
+}
+.whatsapp-icon {
+	margin-top:16px;
+}
+
+/* for mobile */
+@media screen and (max-width: 767px){
+     .whatsapp-icon {
+		margin-top:10px;
+     }
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        left: 95px;
+        font-size: 22px;
+    }
+}

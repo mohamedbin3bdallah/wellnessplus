@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="912" viewBox="0 0 1920 912">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_950" data-name="Rectangle 950" width="1920" height="912" transform="translate(-189 12.405)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="pathcover" transform="translate(189 -12.405)" clip-path="url(#clip-path)">
+    <g id="Group_833" data-name="Group 833" transform="translate(0 -4.595)" opacity="0.34">
+      <path id="Path_1100" data-name="Path 1100" d="M4185,510.724s148.77,21.526,268.3,103.325,215.157,94.715,308.391,27.984S4871.661,342.82,5091.6,450.45s239.062,290.6,497.25,191.583S6031.114,284.7,6031.114,284.7" transform="translate(-4368.8 9.091)" fill="none" stroke="#ba9a74" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="2" stroke-dasharray="10"/>
+      <path id="Path_1101" data-name="Path 1101" d="M4185,704.926s156.711,49.041,254.3-34.115,248.859-396.593,422.086-258,239.1,149.255,312.295,0,204.944-204.693,397.689,46.909,487.7,232.33,487.7,232.33" transform="translate(-4405.6 112.621)" fill="none" stroke="#ba9a74" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="2" stroke-dasharray="10"/>
+      <path id="Path_1102" data-name="Path 1102" d="M4185,1023.015s308.732-16.35,261.813-390.059,153.9-497.5,262.75-203.2,260.874,49.049,320.931-119.12,236.475,51.385,193.309,530.2,292.779-789.462,456.06-539.543S6058.974,119.1,6058.974,119.1" transform="translate(-4405.6 -119.105)" fill="none" stroke="#ba9a74" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="2" stroke-dasharray="10"/>
+    </g>
+  </g>
+</svg>

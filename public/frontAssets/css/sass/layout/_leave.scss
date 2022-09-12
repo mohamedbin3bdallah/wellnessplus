@@ -1,0 +1,601 @@
+.lessons-leave {
+    width: $fullwidth;
+    position: relative;
+    display: flex;
+    @media (max-width: 910px) {
+        display: block;
+    }
+}
+
+.iframe-online {
+    width: 65%;
+    height: 567px;
+    background: #3f3e3c;
+    position: relative;
+    @media (max-width: 910px) {
+        width: $fullwidth;
+    }
+    .user-item {
+        position: absolute;
+        left: $zero;
+        top: 35%;
+        width: $fullwidth;
+        text-align: center;
+        .image {
+            margin: $zero $auto;
+            width: 120px;
+            height: 120px;
+            @include border-radius(50%);
+            background: $white;
+            overflow: hidden;
+            img {
+                width: $fullwidth;
+                min-height: $fullwidth;
+            }
+        }
+        .title {
+            color: $white;
+            font-size: 18px;
+            font-weight: normal;
+            margin-top: $maxmargin;
+        }
+    }
+}
+
+.friends {
+    position: relative;
+    width: 35%;
+    height: 567px;
+    background: $white;
+    @media (max-width: 910px) {
+        width: $fullwidth;
+    }
+    .head {
+        display: flex;
+        align-items: center;
+        width: $fullwidth;
+        padding: $minmargin;
+        height: 70px;
+        background: #f2f2f2;
+        .goback {
+            border-right: 1px solid #ccc;
+            padding-right: $minmargin;
+            i {
+                @include flex;
+                width: 25px;
+                height: 25px;
+                background-image: -webkit-gradient(linear, left top, right top, from($brouwn), to(#2780dc));
+                background-image: -webkit-linear-gradient(top, $brouwn, #2780dc);
+                background-image: -o-linear-gradient(top, $brouwn 0, #2780dc 100%);
+                background-image: linear-gradient(top, $brouwn 0, #2780dc);
+                @include border-radius(50%);
+                color: $white;
+            }
+        }
+        .nav-tabs {
+            li {
+                width: auto;
+                margin-left: 90px;
+                @media (max-width: 1100px) {
+                    margin-left: 65px;
+                }
+                &:last-child {
+                    a {
+                        i {
+                            left: -20px;
+                        }
+                    }
+                }
+                a {
+                    background: $none;
+                    position: relative;
+                    color: $blak !important;
+                    font-weight: normal;
+                    padding: 10px $zero;
+                    font-size: 15px;
+                    overflow: inherit;
+                    text-align: $left;
+                    i {
+                        position: absolute;
+                        top: $minmargin;
+                        left: -30px;
+                        font-size: 18px;
+                        color: $brouwn;
+                    }
+                    &:after {
+                        content: "";
+                        @include position(absolute, $bottom: 11px, $left: 0px);
+                        width: 0;
+                        background: $brouwn;
+                        height: 2px;
+                        @include transition(all 0.5s ease-in-out 0s);
+                    }
+                    &.active {
+                        &:after {
+                            width: $fullwidth;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .tab-pane {
+        margin-top: $minmargin;
+        min-height: inherit;
+        .nav-tabs {
+            background: #f6f8fa;
+            @include border-radius(40px);
+            overflow: hidden;
+            height: 38px;
+            width: 200px;
+            margin: $zero $auto;
+            li {
+                width: calc(100% / 2);
+                a {
+                    @include flex;
+                    background: $none;
+                    padding: $zero;
+                    height: 38px;
+                    font-weight: normal;
+                    @include border-radius(0px);
+                    &:hover {
+                        color: inherit !important;
+                    }
+                    &.active {
+                        background-image: -webkit-gradient(linear, left top, right top, from($brouwn), to(#2780dc));
+                        background-image: -webkit-linear-gradient(top, $brouwn, #2780dc);
+                        background-image: -o-linear-gradient(top, $brouwn 0, #2780dc 100%);
+                        background-image: linear-gradient(top, $brouwn 0, #2780dc);
+                        color: $white !important;
+                    }
+                }
+            }
+        }
+        .formsearch {
+            position: relative;
+            width: $fullwidth;
+            padding: $minmargin;
+            padding-top: $zero;
+            z-index: 1;
+            .form-control {
+                width: $fullwidth;
+                box-shadow: $none;
+                outline: $none;
+                background: $white url(../../frontAssets/images/ios-search.png) no-repeat 10px center !important;
+                height: 48px;
+                border: $zero;
+                border: 1px solid #f2f2f2;
+                @include border-radius(5px);
+                text-transform: $none;
+                padding: $zero;
+                color: $blak;
+                font-size: 13px;
+                padding: 5px 5px 5px $maxmargin;
+            }
+        }
+        .mylistall,
+        .mylistunread {
+            width: $fullwidth;
+            height: 367px;
+            overflow-x: scroll;
+            ::-webkit-scrollbar {
+                width: 2px;
+            }
+            li {
+                a {
+                    display: block;
+                    width: $fullwidth;
+                    position: relative;
+                    padding: $minmargin;
+                    border-bottom: 1px solid #f2f2f2;
+                    .imgage {
+                        position: absolute;
+                        left: $minmargin;
+                        width: 55px;
+                        height: 55px;
+                        @include border-radius(50%);
+                        img {
+                            width: $fullwidth;
+                            min-height: $fullwidth;
+                            @include border-radius(50%);
+                        }
+                    }
+                    .content {
+                        padding-left: 75px;
+                        .title {
+                            display: flex;
+                            align-items: center;
+                            margin: $zero;
+                            color: $blak;
+                            font-size: 15px;
+                            .tooltiptext {
+                                width: 18px;
+                                height: 18px;
+                                @include border-radius(50%);
+                                @include flex;
+                                font-size: 9px;
+                                background: #adadad;
+                                color: $white;
+                                margin-left: $minmargin;
+                                position: relative;
+                                small {
+                                    visibility: hidden;
+                                    width: 170px;
+                                    background-color: #000000b8;
+                                    color: $white;
+                                    text-align: center;
+                                    @include border-radius(6px);
+                                    padding: 8px !important;
+                                    position: absolute;
+                                    z-index: 1;
+                                    bottom: -47px;
+                                    font-family: "Poppins", sans-serif;
+                                    left: 50%;
+                                    margin-left: -88px;
+                                    opacity: 0;
+                                    font-size: 11px;
+                                    transition: opacity 0.3s;
+                                    &::after {
+                                        content: "";
+                                        position: absolute;
+                                        top: -5px;
+                                        left: 50%;
+                                        margin-top: -5px;
+                                        border-width: 5px;
+                                        border-style: solid;
+                                        border-color: transparent transparent #000000b8 transparent;
+                                    }
+                                }
+                                &:hover {
+                                    small {
+                                        visibility: visible;
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
+                        .text {
+                            color: #747f92;
+                            font-size: 13px;
+                            height: 28px;
+                            overflow: hidden;
+                        }
+                    }
+                    .time {
+                        position: absolute;
+                        right: $minmargin;
+                        top: $minmargin;
+                        color: #747f92;
+                        font-size: 11px;
+                    }
+                }
+                &.active {
+                    a {
+                        background: #f2f2f2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.files {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $minmargin;
+    padding-top: $zero;
+    width: $fullwidth;
+    border-bottom: 1px solid #f2f2f2;
+    .imgage {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 19px;
+        a {
+            display: block;
+            color: $brouwn;
+            margin-right: $minmargin;
+        }
+        img {
+            width: 45px;
+            height: 45px;
+            @include border-radius(50%);
+        }
+        .text-da {
+            margin-left: 8px;
+            .title {
+                font-size: 14px;
+            }
+            .time {
+                font-size: 12px;
+                color: #a9a9a9;
+            }
+        }
+    }
+    .ex-files {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .close {
+            margin-left: $maxmargin;
+        }
+        .files-bot {
+            color: $blak;
+            i {
+                color: $brouwn;
+                margin-right: 4px;
+            }
+        }
+    }
+}
+
+.chat-text {
+    padding: $minmargin;
+    height: 347px;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-bottom: $zero;
+    ::-webkit-scrollbar {
+        width: 2px;
+    }
+    .text-dat {
+        text-align: center;
+        font-size: 12px;
+        line-height: 18px;
+        color: #a9a9a9;
+        margin-bottom: $minmargin;
+    }
+    .userchat {
+        display: flex;
+        width: $fullwidth;
+        margin-bottom: $minmargin;
+        position: relative;
+        .photo {
+            position: absolute;
+            left: $zero;
+            top: $zero;
+            width: 25px;
+            height: 25px;
+            overflow: hidden;
+            @include border-radius(50%);
+            @include flex;
+            background: $ofwhite;
+            img {
+                width: 25px;
+                height: 25px;
+                @include border-radius(50%);
+            }
+        }
+        .padcht {
+            padding-left: $maxmargin + 5px;
+            .text {
+                background: $white;
+                padding: 5px $minmargin;
+                @include prefixer(box-shadow, 0px 0px 4px rgba(0, 0, 0, 0.1), webkit moz o ms);
+                @include border-radius(0px 15px 15px 15px);
+                padding-right: 90px;
+                position: relative;
+                p {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+                .actions {
+                    position: absolute;
+                    top: $zero;
+                    right: $minmargin;
+                    display: flex;
+                    align-items: center;
+                    .time {
+                        font-size: 10px;
+                        margin-right: 10px;
+                    }
+                    .dropdown {
+                        .dropdown-toggle {
+                            line-height: 1;
+                            display: flex;
+                            cursor: pointer;
+                            color: $blak;
+                            &:after {
+                                display: $none;
+                            }
+                        }
+                        .dropdown-menu.show {
+                            right: $zero !important;
+                            left: $auto !important;
+                            padding: $zero;
+                            transform: $none !important;
+                            top: $fullwidth !important;
+                            @include transition(all 0.5s ease-in-out 0s);
+                            border: $zero;
+                            padding: $minmargin $zero;
+                            @include prefixer(box-shadow, 0px 0px 10px rgba(0, 0, 0, 0.1), webkit moz o ms);
+                            z-index: 2;
+                            a {
+                                margin: $zero !important;
+                            }
+                            .dropdown-item {
+                                @include transition(all 0.5s ease-in-out 0s);
+                                background: $none !important;
+                                font-size: 13px;
+                                font-weight: 400;
+                                color: $blak;
+                                padding: 0.25rem 1rem;
+                                i {
+                                    color: $brouwn;
+                                    margin-right: 2px;
+                                }
+                                &.active,
+                                &:hover {
+                                    color: $brouwn;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .attach {
+                display: flex;
+                justify-content: flex-start;
+                margin-top: $minmargin;
+                p {
+                    background: #f2f2f2;
+                    display: inline-block;
+                    font-size: 12px;
+                    padding: 5px $minmargin;
+                    @include border-radius(0px 15px 15px 15px);
+                    svg {
+                        margin-right: 8px;
+                        fill: $colortext;
+                    }
+                }
+            }
+        }
+        &.tow {
+            .photo {
+                left: $auto;
+                right: $zero;
+            }
+            .padcht {
+                padding-left: $zero;
+                padding-right: $maxmargin + 5px;
+                .text {
+                    background: #af8b624d;
+                    @include border-radius(15px 0px 15px 15px);
+                    .actions {
+                        .it-che {
+                            color: #afafaf;
+                            font-size: 10px;
+                            &.active {
+                                color: $green;
+                            }
+                        }
+                    }
+                }
+                .attach {
+                    justify-content: flex-end;
+                    p {
+                        @include border-radius(15px 0px 15px 15px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.formchat {
+    width: $fullwidth;
+    position: relative;
+    background: $white;
+    overflow: hidden;
+    background: #f2f2f2;
+    padding: $minmargin $maxmargin + 20px;
+    .goback,
+    .send {
+        position: absolute;
+        left: $minmargin;
+        top: $minmargin;
+        @include flex;
+        width: 25px;
+        height: 25px;
+        font-size: 11px;
+        background-image: -webkit-gradient(linear, left top, right top, from(#b1936f), to(#8a7658));
+        background-image: -webkit-linear-gradient(top, #b1936f, #8a7658);
+        background-image: -o-linear-gradient(top, #b1936f 0, #8a7658 100%);
+        background-image: linear-gradient(top, #b1936f 0, #8a7658);
+        @include border-radius(50%);
+        color: $white;
+        outline: $none;
+    }
+    .send {
+        left: $auto;
+        right: $minmargin;
+        border: $zero;
+    }
+    .input-text {
+        width: $fullwidth;
+        position: relative;
+        textarea {
+            display: block;
+            width: $fullwidth;
+            min-height: initial;
+            max-height: 50px;
+            @include border-radius(15px);
+            resize: $none;
+            border: $zero !important;
+            outline-style: $none;
+            padding: 10px;
+            font-size: 13px;
+            line-height: 12px;
+            padding-right: 45px;
+        }
+        i {
+            position: absolute;
+            right: $minmargin;
+            font-size: 18px;
+            color: #ccc;
+            top: 10px;
+        }
+    }
+}
+
+.formnotes {
+    padding: $minmargin;
+    .fild {
+        margin-bottom: $minmargin;
+        &:last-child {
+            margin: $zero;
+        }
+    }
+}
+
+.item-fridy {
+    .formnotes {
+        padding: $zero $minmargin;
+        .fild {
+            max-width: 50% !important;
+            flex: 50% !important;
+        }
+    }
+    .items-box {
+        padding: 5px $minmargin $zero $minmargin;
+        overflow-x: scroll;
+        height: 346px;
+        ::-webkit-scrollbar {
+            width: 2px;
+        }
+        a {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+            padding: $minmargin;
+            @include border-radius(15px);
+            background: $white;
+            margin-bottom: $minmargin;
+            @include prefixer(box-shadow, 0px 0px 4px rgba(0, 0, 0, 0.1), webkit moz o ms);
+            img {
+                width: 45px;
+                height: 45px;
+                @include border-radius(50%);
+            }
+            .text-da {
+                margin-left: 8px;
+                line-height: 20px;
+                .title {
+                    font-size: 14px;
+                    color: $blak;
+                }
+                .time {
+                    font-size: 12px;
+                    color: #a9a9a9;
+                }
+            }
+            .fas.fa-angle-right {
+                position: absolute;
+                right: $minmargin;
+                color: $brouwn;
+            }
+        }
+    }
+}

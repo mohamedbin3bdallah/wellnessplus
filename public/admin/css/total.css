@@ -1,0 +1,76 @@
+.widget-user .widget-user-image
+{
+	top: 75px;
+}
+#bg-color-student
+{
+	background-color: rgb(1, 60, 94);
+	color: #ffffff;
+}
+#bg-color-tutor
+{
+	background-color: rgb(0, 88, 48);
+	color: #ffffff;
+}
+.total-links-black
+{
+	color: #00000;
+}
+.total-links-white
+{
+	color: #ffffff;
+}
+.dataTables_length
+{
+	padding-top: 7px;
+	float: left;
+}
+.label-pad
+{
+	padding: 1px 5px 1px 5px;
+}
+.status
+{
+	text-align: center;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+.scheduled
+{
+	background-color: #8800af;
+	color: #ffffff;
+}
+.waitingConfirm
+{
+	background-color: #3c8dbc;
+	color: #ffffff;
+}
+.confirmed
+{
+	background-color: #15cbc7;
+	color: #000000;
+}
+.cancelled
+{
+	background-color: #00a65a;
+	color: #ffffff;
+}
+.reserved
+{
+	background-color: #e5ed34;
+	color: #000000;
+}
+.waitingResolution
+{
+	background-color: #f39c12;
+	color: #000000;
+}
+.pendingPayment
+{
+	background-color: #f56954;
+	color: #ffffff;
+}
+.scheduled, .waitingConfirm, .confirmed, .cancelled, .reserved, .waitingResolution, .pendingPayment, .label-default
+{
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 7px 21px 0 rgba(0, 0, 0, 0.19);
+}

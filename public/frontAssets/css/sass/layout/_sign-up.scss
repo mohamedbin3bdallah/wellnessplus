@@ -1,0 +1,355 @@
+.sign-up {
+    @include section;
+    min-height: 500px;
+    .container-fluid {
+        @media (min-width: 1200px) {
+            width: 90%;
+        }
+    }
+    .title {
+        @include title;
+    }
+    .item {
+        margin-top: 0;
+        @media (max-width: 991px) {
+            max-width: $fullwidth;
+            flex: $fullwidth;
+        }
+        img {
+            width: $fullwidth;
+        }
+        .fild {
+            margin-bottom: $maxmargin;
+            position: relative;
+            @media (max-width: 991px) {
+                max-width: $fullwidth;
+                flex: $fullwidth;
+            }
+            &:last-child {
+                margin: $zero;
+            }
+            .icon-pass {
+                @include position(absolute, $top: 18px, $right: 30px);
+                z-index: 10;
+                cursor: pointer;
+                color: $blak;
+                @include transition(all 0.5s ease-in-out 0s);
+                &.fas.fa-eye-slash.icon-pass {
+                    display: $none;
+                    color: $brouwn;
+                }
+            }
+            .text {
+                color: $blak;
+                font-weight: 600;
+                margin-bottom: $zero;
+                @media (max-width: 991px) {
+                    font-size: 13px;
+                }
+                a {
+                    text-decoration: underline;
+                    color: $brouwn;
+                    &:hover {
+                        text-decoration: $none;
+                    }
+                }
+            }
+            .bottom {
+                @include bottom;
+                display: inline-block;
+                min-width: 100%;
+                @include prefixer(box-shadow, 0px 0px 10px rgba(0, 0, 0, 0.1), webkit moz o ms);
+                font-weight: bold;
+                background: $maincolor;
+                font-size: 13px;
+
+                @media (max-width: 991px) {
+                    min-width: 115px;
+                }
+            }
+            &.text-center {
+                .text {
+                    font-size: 13px;
+                    color: #3e3d4e;
+                    margin-top: $minmargin;
+                    position: relative;
+
+                    span {
+                        padding: 0 20px;
+                        background: #fff;
+                    }
+                    &:before {
+                        position: absolute;
+                        content: "";
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 100%;
+                        height: 1px;
+                        background: #dddddd;
+                        z-index: -1;
+                    }
+                }
+                .ithave {
+                    margin: $maxmargin $zero;
+                    a {
+                        text-decoration: $none;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .social {
+                width: $fullwidth;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: $minmargin;
+                a {
+                    @include flex;
+                    margin: $zero 5px 10px;
+                    width: 100%;
+                    height: 55px;
+                    border: 1px solid #ced4da;
+                    @include border-radius(30px);
+                    @include transition(all 0.5s ease-in-out 0s);
+                    position: relative;
+                    color: #979797;
+                    &:hover {
+                        border: 1px solid $brouwn;
+                    }
+                    img {
+                        width: $auto;
+                        max-width: 20px;
+                        position: absolute;
+                        left: 20px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+            &.line-pass {
+                @include flex;
+                justify-content: space-between;
+                .forget {
+                    color: #4d25b9;
+                    @include transition(all 0.5s ease-in-out 0s);
+
+                    &:hover {
+                        color: $brouwn;
+                    }
+                }
+            }
+        }
+        .sacand {
+            margin-top: $maxmargin;
+            font-size: 20px;
+        }
+    }
+}
+.coverform {
+    @media (max-width: 991px) {
+        max-width: 550px;
+        flex: 550px;
+        margin: 0 auto 20px;
+    }
+    @media (max-width: 575px) {
+        max-width: 100%;
+        flex: 100%;
+    }
+}
+.cover-form-part {
+    position: relative;
+    img {
+        max-width: 100%;
+    }
+    .layout-cover {
+        top: 0;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        font-weight: bold;
+
+        h1 {
+            position: absolute;
+            top: 30%;
+            left: 20px;
+            line-height: 50px;
+            font-weight: bold;
+            margin-top: 40%;
+            @media (max-width: 991px) {
+                margin-top: 10%;
+            }
+        }
+        .bkhome {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            color: #fff;
+            font-size: 0.8em;
+        }
+
+        .reg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px 20px;
+            color: #fff;
+            border-radius: 0px 0px 23px 23px;
+            background: rgba(22, 22, 21, 0.6);
+            @media (max-width: 575px) {
+                flex-wrap: wrap;
+                justify-content: center !important;
+            }
+        }
+        .bottoms {
+            .btn {
+                font-weight: bold;
+                color: #fff;
+                border-radius: 30px;
+                text-transform: uppercase;
+                font-size: 0.9em;
+            }
+            .btn-green {
+                background: #31e8a2;
+            }
+            .btn-blue {
+                background: $maincolor;
+            }
+        }
+    }
+    svg {
+        path {
+            fill: #fff;
+        }
+    }
+}
+
+.wrapper-inputs {
+    width: 80%;
+    margin: 0 auto;
+    .title__form {
+        text-align: center;
+        .logo {
+            width: 150px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        h2,
+        h3 {
+            font-weight: bold;
+            color: #000;
+        }
+        h2 {
+            @media (max-width: 767px) {
+                font-size: 1.5rem;
+            }
+        }
+        h3 {
+            line-height: 35px;
+        }
+        h6 {
+            color: #979797;
+            font-size: 1em;
+        }
+    }
+}
+.form-control {
+    @include input;
+    border-color: #d1d1d1;
+}
+
+textarea {
+    min-height: 300px;
+    resize: $none;
+}
+
+.floating-label {
+    position: absolute;
+    left: 20px;
+    top: 12px;
+    padding: $zero 10px;
+    background: $white;
+    width: calc(100% - 40px);
+    color: #979797;
+    margin: $zero;
+    pointer-events: none;
+    @include transition(all 0.5s ease-in-out 0s);
+    @media (max-width: 991px) {
+        font-size: 13px;
+    }
+}
+
+.intl-tel-input input,
+.intl-tel-input input[type="text"],
+.intl-tel-input input[type="tel"] {
+    @media (max-width: 991px) {
+        font-size: 13px;
+    }
+}
+input:-internal-autofill-selected {
+    background: #fff !important;
+}
+.che-box {
+    @include check-box;
+}
+
+select.form-control {
+    -webkit-appearance: none;
+}
+
+.iconsel {
+    @include position(absolute, $top: 20px, $right: 30px);
+    z-index: 10;
+    color: #c4c1c1;
+    font-size: 10px;
+}
+
+.form-control:focus ~ .floating-label,
+.form-control:not(:focus):valid ~ .floating-label {
+    top: -15px;
+    width: auto;
+}
+
+.intl-tel-input input:focus ~ .floating-label,
+.intl-tel-input input:not(:focus):valid ~ .floating-label {
+    top: -15px;
+    width: auto;
+}
+
+.textsacand {
+    display: $block;
+    font-size: 13px;
+    line-height: 19px;
+    margin: $zero;
+    margin-top: 10px;
+    position: relative;
+    padding-left: $minmargin + 5px;
+    @media (max-width: 991px) {
+        font-size: 12px;
+    }
+    i {
+        position: absolute;
+        left: $zero;
+        top: 3px;
+        color: $brouwn;
+    }
+    a {
+        font-size: 13px;
+        color: $brouwn;
+        text-decoration: underline;
+        &:hover {
+            text-decoration: $none;
+        }
+    }
+    &.mt {
+        margin: $maxmargin $zero;
+        @media (max-width: 991px) {
+            margin: $minmargin $zero;
+        }
+    }
+}

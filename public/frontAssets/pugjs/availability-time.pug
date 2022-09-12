@@ -1,0 +1,329 @@
+extend index
+
+block pageindex
+ 
+ div.menubab
+  div.container
+   nav(class="setting-menu")
+    a(href="mssages.html") Messages
+    a(href="my-lessons.html") My lessons
+    a(href="calendar.html" class="active") Calendar
+    a(href="my-teachers.html") My Teachers
+    a(href="learning-plan.html") Learning Plan
+    a(href="my-profile.html") My profile
+    a(href="settings.html") Settings
+ section.calendar-teach
+  div.row
+   div.col-sm-3.leftbox
+    h2.title Settings
+    ul(class="nav nav-tabs" id="myTab" role="tablist")
+     li.nav-item
+      a(class="nav-link active" id="item-1-tab" data-toggle="tab" href="#item-1"  role="tab" aria-controls="item-1" aria-selected="true") Availability Time
+     li.nav-item
+      a(class="nav-link"  id="item-2-tab" data-toggle="tab" href="#item-2" role="tab" aria-controls="item-2"  aria-selected="false") Lesson Booking
+     li.nav-item
+      a(class="nav-link"  id="item-3-tab" data-toggle="tab" href="#item-3" role="tab" aria-controls="item-3"  aria-selected="false") Calendar Settings
+     li.nav-item
+      a(class="nav-link"  id="item-4-tab" data-toggle="tab" href="#item-4" role="tab" aria-controls="item-4"  aria-selected="false") Google Calendar
+   div.col-sm-9.rightbox
+    form(action="#")
+     div(class="tab-content" id="myTabContent")
+      div(class="tab-pane fade show w-item active" id="item-1"  role="tabpanel" aria-labelledby="item-1-tab") 
+       h2.title Availability Time
+       p.textsacand #[i(class="fas fa-info-circle")]  Select time slots when you’re available for booking
+       div.select-day
+        div.check-tag
+         label.che-box
+          input(type="checkbox" name="checkbox")
+          span.label-text Sunday
+         div.fild
+          i(class="fas fa-chevron-down iconsel")
+          select(data-placeholder="Choose Timing" multiple class="chosen-select"  tabindex="18" id="multiple-label-example")
+           option(value="")
+           option(selected) Morning
+           option Afternoon
+           option evening 
+        div.times-day
+         h3.title Morning
+         div.all-checktime
+          - for (var x = 0; x < 7; x++)
+             div.ch-item
+              label.chebox-time
+               input(type="checkbox" name="checkbox")
+               div.label-text 
+                p 6:00
+         div.all-checktime
+          - for (var x = 0; x < 7; x++)
+             div.ch-item
+              label.chebox-time
+               input(type="checkbox" name="checkbox")
+               div.label-text 
+                p 6:00         
+       div.select-day
+        div.check-tag
+         label.che-box
+          input(type="checkbox" name="checkbox")
+          span.label-text Monday
+         div.fild
+          i(class="fas fa-chevron-down iconsel")
+          select(data-placeholder="Choose Timing" multiple class="chosen-select"  tabindex="18" id="multiple-label-example")
+           option(value="")
+           option(selected) Morning
+           option Afternoon
+           option evening 
+        div.times-day
+         h3.title Morning
+         div.all-checktime
+          - for (var x = 0; x < 7; x++)
+             div.ch-item
+              label.chebox-time
+               input(type="checkbox" name="checkbox")
+               div.label-text 
+                p 6:00
+         div.all-checktime
+          - for (var x = 0; x < 7; x++)
+             div.ch-item
+              label.chebox-time
+               input(type="checkbox" name="checkbox")
+               div.label-text 
+                p 6:00         
+       div.select-day
+        div.check-tag
+         label.che-box
+          input(type="checkbox" name="checkbox")
+          span.label-text Tuesday
+         div.fild
+          i(class="fas fa-chevron-down iconsel")
+          select(data-placeholder="Choose Timing" multiple class="chosen-select"  tabindex="18" id="multiple-label-example")
+           option(value="")
+           option(selected) Morning
+           option Afternoon
+           option evening 
+        div.times-day
+         h3.title Morning
+         div.all-checktime
+          - for (var x = 0; x < 7; x++)
+             div.ch-item
+              label.chebox-time
+               input(type="checkbox" name="checkbox")
+               div.label-text 
+                p 6:00
+         div.all-checktime
+          - for (var x = 0; x < 7; x++)
+             div.ch-item
+              label.chebox-time
+               input(type="checkbox" name="checkbox")
+               div.label-text 
+                p 6:00         
+       div.select-day
+        div.check-tag
+         label.che-box
+          input(type="checkbox" name="checkbox")
+          span.label-text Wednesday
+         div.fild
+          i(class="fas fa-chevron-down iconsel")
+          select(data-placeholder="Choose Timing" multiple class="chosen-select"  tabindex="18" id="multiple-label-example")
+           option(value="")
+           option(selected) Morning
+           option Afternoon
+           option evening 
+        div.times-day
+         h3.title Morning
+         div.all-checktime
+          - for (var x = 0; x < 7; x++)
+             div.ch-item
+              label.chebox-time
+               input(type="checkbox" name="checkbox")
+               div.label-text 
+                p 6:00
+         div.all-checktime
+          - for (var x = 0; x < 7; x++)
+             div.ch-item
+              label.chebox-time
+               input(type="checkbox" name="checkbox")
+               div.label-text 
+                p 6:00         
+       div.select-day
+        div.check-tag
+         label.che-box
+          input(type="checkbox" name="checkbox")
+          span.label-text Thursday
+         div.fild
+          i(class="fas fa-chevron-down iconsel")
+          select(data-placeholder="Choose Timing" multiple class="chosen-select"  tabindex="18" id="multiple-label-example")
+           option(value="")
+           option(selected) Morning
+           option Afternoon
+           option evening 
+        div.times-day
+         h3.title Morning
+         div.all-checktime
+          - for (var x = 0; x < 7; x++)
+             div.ch-item
+              label.chebox-time
+               input(type="checkbox" name="checkbox")
+               div.label-text 
+                p 6:00
+         div.all-checktime
+          - for (var x = 0; x < 7; x++)
+             div.ch-item
+              label.chebox-time
+               input(type="checkbox" name="checkbox")
+               div.label-text 
+                p 6:00         
+       div.select-day
+        div.check-tag
+         label.che-box
+          input(type="checkbox" name="checkbox")
+          span.label-text Friday
+         div.fild
+          i(class="fas fa-chevron-down iconsel")
+          select(data-placeholder="Choose Timing" multiple class="chosen-select"  tabindex="18" id="multiple-label-example")
+           option(value="")
+           option(selected) Morning
+           option(selected) Afternoon
+           option evening 
+        div.times-day
+         h3.title Morning
+         div.all-checktime
+          - for (var x = 0; x < 7; x++)
+             div.ch-item
+              label.chebox-time
+               input(type="checkbox" name="checkbox")
+               div.label-text 
+                p 6:00
+         div.all-checktime
+          - for (var x = 0; x < 7; x++)
+             div.ch-item
+              label.chebox-time
+               input(type="checkbox" name="checkbox")
+               div.label-text 
+                p 6:00         
+        div.times-day
+         h3.title Afternoon
+         div.all-checktime
+          - for (var x = 0; x < 7; x++)
+             div.ch-item
+              label.chebox-time
+               input(type="checkbox" name="checkbox")
+               div.label-text 
+                p 6:00
+         div.all-checktime
+          - for (var x = 0; x < 7; x++)
+             div.ch-item
+              label.chebox-time
+               input(type="checkbox" name="checkbox")
+               div.label-text 
+                p 6:00         
+       div.select-day
+        div.check-tag
+         label.che-box
+          input(type="checkbox" name="checkbox")
+          span.label-text Saturday
+         div.fild
+          i(class="fas fa-chevron-down iconsel")
+          select(data-placeholder="Choose Timing" multiple class="chosen-select"  tabindex="18" id="multiple-label-example")
+           option(value="")
+           option(selected) Morning
+           option Afternoon
+           option evening 
+        div.times-day
+         h3.title Morning
+         div.all-checktime
+          - for (var x = 0; x < 7; x++)
+             div.ch-item
+              label.chebox-time
+               input(type="checkbox" name="checkbox")
+               div.label-text 
+                p 6:00
+         div.all-checktime
+          - for (var x = 0; x < 7; x++)
+             div.ch-item
+              label.chebox-time
+               input(type="checkbox" name="checkbox")
+               div.label-text 
+                p 6:00         
+      div(class="tab-pane fade" id="item-2"  role="tabpanel" aria-labelledby="item-2-tab")
+       div.flex-text
+        h2.title Lesson Booking Settings
+        a(href="#" class="instant") #[img(src='assets/images/electricity-sign.png' alt="Arabia" title="Arabia")] Instant Booking is on
+       div.row.linselec
+        div.col-sm-6.fild
+          p.textsacand #[i(class="fas fa-info-circle")]  #[span The minimum amount of time you wish to have between when a student books their first lesson and the lesson start time.] <br/><br/> Tip: Most students like to schedule their first lesson within 2 days of the date they send the request on. If you wish to receive more students, please choose the minimum amount of time between these two dates. (This only applies to new students. Existing students may book a lesson with only 2 hours prior notice if your availability allows it).
+        div.col-sm-6.fild
+         i(class="fas fa-chevron-down iconsel")
+         select(class="form-control" name="" autocomplete="off" required)
+          option 
+          option at least 12 hours notice
+          option at least 12 hours notice
+          option at least 12 hours notice
+         label.floating-label Advance notice 
+       div.row.linselec
+        div.col-sm-6.fild
+          p.textsacand #[span How far in advance can students book?] <br/><br/>  Tip: Tutors can keep their calendars available <br/>up to 2 months ahead.
+        div.col-sm-6.fild
+         i(class="fas fa-chevron-down iconsel")
+         select(class="form-control" name="" autocomplete="off" required)
+          option 
+          option 2 weeks in advance
+          option 2 weeks in advance
+          option 2 weeks in advance
+         label.floating-label Booking notice
+       div.bot-save
+        button(class="bottom" type="submit") Save
+      div(class="tab-pane fade" id="item-3"  role="tabpanel" aria-labelledby="item-3-tab") 
+       h2.title Calendar Settings
+       div.row.linselec
+        div.col-sm-6.fild
+          p.textsacand.p-0 #[span Time zone and calendar view] <br/><br/>  Choose your current time zone to avoid time zone confusion with your students. Customize calendar view the way it suits you.
+        div.col-sm-6.groupfild
+         div.row
+          div.col-sm-12.fild
+           i(class="fas fa-chevron-down iconsel")
+           select(class="form-control" name="" autocomplete="off" required)
+            option 
+            option Africa/cairo 2:00 Gmt
+            option Africa/cairo 2:00 Gmt
+            option Africa/cairo 2:00 Gmt
+           label.floating-label Current time zone
+          div.col-sm-12.fild
+           i(class="fas fa-chevron-down iconsel")
+           select(class="form-control" name="" autocomplete="off" required)
+            option 
+            option Monday
+            option Monday
+            option Monday
+           label.floating-label Week starts on
+          div.col-sm-12.fild
+           i(class="fas fa-chevron-down iconsel")
+           select(class="form-control" name="" autocomplete="off" required)
+            option 
+            option Day/month/year
+            option Month/day/year
+            option Year/day/month
+           label.floating-label Date format
+       div.bot-save
+        button(class="bottom" type="submit") Save
+      div(class="tab-pane fade" id="item-4"  role="tabpanel" aria-labelledby="item-4-tab") 
+       h2.title Google Calendar
+       ul.social-item
+         li 
+           span #[img(src='assets/images/google.png' alt="" title="")] 
+           |  Connect your Google Calendar and synchronize all your Preply lessons with your personal <br/>schedule
+       div.bot-all.clickbot
+        span(class="bottom conn-bot")   Connect Google Calendar
+        span(class="bottom calen")    Disconnect Google Calendar
+       div.show-connect
+        h2.title Choose which Google Calendars you’d like to see on Arabie
+        label.che-box
+          input(type="checkbox" name="checkbox")
+          span.label-text ayman.eldeeb.tutor@gmail.com
+        label.che-box
+          input(type="checkbox" name="checkbox" checked)
+          span.label-text Arabie Schedule
+        div.bot-save
+         button(class="bottom" type="submit") Save
+  
+  
+ 
+  

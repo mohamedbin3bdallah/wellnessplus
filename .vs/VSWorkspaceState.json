@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\resources",
+    "\\resources\\assets",
+    "\\resources\\views",
+    "\\resources\\views\\frontend",
+    "\\resources\\views\\frontend\\find-tutor"
+  ],
+  "SelectedNode": "\\resources\\views\\frontend\\find-tutor\\tutorPage.blade.php",
+  "PreviewInSolutionExplorer": false
+}

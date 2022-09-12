@@ -1,0 +1,396 @@
+@mixin reset {
+    margin: $zero;
+    padding: $zero;
+    border: $zero;
+    text-decoration: $none;
+    list-style: $none;
+    font-size: $fontsize;
+    line-height: $lineheight;
+    color: $colortext;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+}
+
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin overlay {
+    content: "";
+    @include position(absolute, $top: 0, $left: 0, $right: auto, $bottom: auto);
+    width: $fullwidth;
+    height: $fullwidth;
+}
+
+@mixin section {
+    width: $fullwidth;
+    padding: $maxmargin + 20px $zero;
+    @include position(relative);
+    @media (max-width: 991px) {
+        padding: $maxmargin $zero;
+    }
+}
+
+@mixin flex {
+    display: flex;
+    align-items: $senter;
+    justify-content: $senter;
+}
+
+@mixin transition($transition...) {
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    -webkit-transition: $transition;
+    transition: $transition;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+    background-clip: padding-box;
+}
+
+@mixin rotate($degrees) {
+    -webkit-transform: rotate($degrees);
+    -moz-transform: rotate($degrees);
+    -ms-transform: rotate($degrees);
+    -o-transform: rotate($degrees);
+    transform: rotate($degrees);
+}
+
+@mixin scale($degscale) {
+    -webkit-transform: scale($degscale);
+    -moz-transform: scale($degscale);
+    -ms-transform: scale($degscale);
+    -o-transform: scale($degscale);
+    transform: scale($degscale);
+}
+
+@mixin bottom {
+    @include flex;
+    @include position(relative);
+    padding: 8px 25px;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    overflow: hidden;
+    color: $white;
+    outline: $none;
+    outline-style: $none;
+    border: $zero;
+    font-size: 16px;
+    background-image: -webkit-gradient(linear, left top, right top, from($brouwn), to(#2780dc));
+    background-image: -webkit-linear-gradient(top, $brouwn, #2780dc);
+    background-image: -o-linear-gradient(top, $brouwn 0, #2780dc 100%);
+    background-image: linear-gradient(top, $brouwn 0, #2780dc);
+    text-align: $senter;
+    @include border-radius(12px);
+    @include transition(all 0.5s ease-in-out 0s);
+    cursor: pointer;
+    @media (max-width: 991px) {
+        padding: 4px $minmargin;
+        font-size: 13px;
+    }
+    img {
+        margin-right: 3px;
+        @media (max-width: 991px) {
+            width: 14px;
+        }
+    }
+    &:before {
+        content: "";
+        @include position(absolute, $top: 0, $left: 0, $right: 0, $bottom: 0);
+        z-index: -1;
+        background-image: -webkit-gradient(linear, left top, right top, from($brouwn), to(#2780dc));
+        background-image: -webkit-linear-gradient(top, $brouwn, #2780dc);
+        background-image: -o-linear-gradient(top, $brouwn 0, #2780dc 100%);
+        background-image: linear-gradient(top, $brouwn 0, #2780dc);
+        @include scale(0);
+        @include border-radius(60px);
+        @include transition(all 0.5s ease-in-out 0s);
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    &:hover:before {
+        @include scale(2);
+    }
+}
+
+@mixin prefixer($property, $value, $prefixes: ()) {
+    @each $prefix in $prefixes {
+        #{'-' + $prefix + '-' + $property}: $value;
+    }
+    #{$property}: $value;
+}
+
+@mixin keyFrame($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin social {
+    width: $fullwidth;
+    display: flex;
+    a {
+        @include flex;
+        @include transition(all 0.5s ease-in-out 0s);
+        font-size: 22px;
+        @each $type in $social {
+            &.icon-#{nth($type, 1)} {
+                color: #666;
+                &:hover {
+                    color: nth($type, 2);
+                }
+            }
+        }
+    }
+}
+
+@mixin input {
+    height: 50px;
+    text-transform: $none;
+    background: $white !important;
+    border: 1px solid #2780dc;
+    color: #6c757d;
+    @include border-radius(5px);
+    &:focus {
+        box-shadow: $none;
+        border: 1px solid $brouwn;
+    }
+}
+
+@mixin title {
+    font-size: 25px;
+    margin: $zero;
+    width: $fullwidth;
+    font-weight: 600;
+    color: $blak;
+    @media (max-width: 991px) {
+        font-size: 20px;
+    }
+}
+
+@mixin map-back {
+    @include section;
+    height: 250px;
+    padding: $zero;
+    background: $white url(../images/slides/img1.jpg) no-repeat fixed center center/cover;
+    @include flex;
+    @media (max-width: 991px) {
+        height: 150px;
+    }
+    &::before {
+        @include overlay;
+        background: rgba(52, 23, 87, 0.48);
+    }
+    .title {
+        @include title;
+        color: $white;
+        padding: $zero;
+        margin-top: $zero;
+        &:before {
+            display: $none;
+        }
+        @media (max-width: 991px) {
+            font-size: 22px;
+        }
+    }
+    .maplink {
+        margin-top: $minmargin;
+        text-align: center;
+        li {
+            display: $inline;
+            color: $yellow;
+            a {
+                color: $white;
+                position: relative;
+                padding-left: $minmargin;
+                @include transition(all 0.5s ease-in-out 0s);
+                &:hover {
+                    color: $yellow;
+                }
+                &:before {
+                    @include position(absolute, $top: 1px, $left: 2px);
+                    content: "/";
+                    display: $inline;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+@mixin hyprlink {
+    display: $inline;
+    width: $fullwidth;
+    @include position(relative);
+    margin-bottom: 5px;
+    color: #424242;
+    @include transition(all 0.5s ease-in-out 0s);
+    &:hover {
+        color: $maincolor;
+    }
+}
+
+@mixin style-slider {
+    @include position(relative);
+    .slick-list {
+        @include position(relative);
+        display: $block;
+        overflow: hidden;
+        outline: $none;
+        // margin: $zero -15px;
+        .slick-track {
+            @include position(relative, $top: 0, $left: auto, $right: auto, $bottom: auto);
+            display: $block;
+            overflow: hidden;
+            &:after,
+            &:before {
+                display: table;
+                content: "";
+            }
+        }
+        /// End .slick-track
+    }
+    /// End .Slick-list
+    .slick-prev,
+    .slick-next {
+        @include position(absolute, $top: 85%, $right: 0px);
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        color: $white;
+        @include border-radius(50%);
+        background: #2780dc;
+        border: $zero;
+        padding: $zero;
+        outline: $none;
+        @include transition(all 0.5s ease-in-out 0s);
+        &:hover {
+            background-image: -webkit-gradient(linear, left top, right top, from($brouwn), to(#2780dc));
+            background-image: -webkit-linear-gradient(top, $brouwn, #2780dc);
+            background-image: -o-linear-gradient(top, $brouwn 0, #2780dc 100%);
+            background-image: linear-gradient(top, $brouwn 0, #2780dc);
+            color: $white;
+        }
+        @media (max-width: 767px) {
+            top: 107%;
+        }
+    }
+    .slick-prev {
+        right: 50px;
+        @media (max-width: 767px) {
+        }
+    }
+    .slick-dots {
+        width: $fullwidth;
+        padding: $zero;
+        list-style: $none;
+        text-align: $senter;
+        // display: $none !important;
+        li {
+            @include position(relative);
+            display: $inline;
+            margin: $zero 3px;
+            padding: $zero;
+            cursor: pointer;
+            background: $ofwhite;
+            @include border-radius(4px);
+            button {
+                font-size: $zero;
+                line-height: $zero;
+                display: $block;
+                width: 10.19px;
+                height: 10.19px;
+                border-radius: 9px;
+                background: #e1e0e0;
+
+                cursor: pointer;
+                color: $ofwhite;
+                border: $zero;
+                outline: $none;
+                // background: transparent;
+            }
+        }
+        li.slick-active button {
+            background: $maincolor;
+        }
+    }
+}
+
+@mixin check-box {
+    position: relative;
+    cursor: pointer;
+    font-weight: normal;
+    left: $zero;
+    top: $zero;
+    padding-left: 25px;
+    line-height: 1px;
+    display: block;
+    input[type="checkbox"],
+    input[type="radio"] {
+        @include position(absolute, $right: 9000px);
+    }
+    input[type="checkbox"] + .label-text:before,
+    input[type="radio"] + .label-text:before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: -9px;
+        background: $white;
+        border: 1px solid #e5d8ca;
+        box-sizing: border-box;
+        width: 16px;
+        height: 16px;
+        border-radius: 2px;
+        font-style: initial;
+    }
+    input[type="radio"] + .label-text:before {
+        top: 0px;
+        border-radius: 50%;
+    }
+    input[type="checkbox"]:checked + .label-text:before,
+    input[type="radio"]:checked + .label-text:before {
+        content: "\f00c";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: $white;
+        border: 1px solid $brouwn;
+        background: $brouwn;
+        line-height: 1.4em;
+        font-size: 10px;
+        text-align: center;
+        font-style: initial;
+        animation: effect 250ms ease-in;
+    }
+    span.label-text {
+        color: $blak !important;
+        font-weight: 600;
+    }
+    // @keyframes effect {
+    //     0% {
+    //         transform: scale(0);
+    //     }
+    //     25% {
+    //         transform: scale(1.3);
+    //     }
+    //     75% {
+    //         transform: scale(1.4);
+    //     }
+    //     100% {
+    //         transform: scale(1);
+    //     }
+    // }
+}

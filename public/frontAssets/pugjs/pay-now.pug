@@ -1,0 +1,102 @@
+extend index
+
+block pageindex
+ 
+ section.findtutor 
+  div.container
+   div.content-all
+     div.row
+      div.col-sm-8.contenuser.findinner
+         div.itemtutor.paybox
+           div.tu-photo
+            div.img
+             img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia") 
+           div.tu-content
+            div.in-pay
+             div.minhead
+              h3.title Gary E.
+              div.flag
+               img(src='assets/images/fleg.png' alt="Arabia" title="Arabia")
+              div.safy
+               svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16.436" height="19.301" viewBox="0 0 16.436 19.301")
+                defs 
+                 linearGradient(id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox")
+                  stop(offset="0" stop-color="#ba9a74")
+                  stop(offset="1" stop-color="#877456")
+                g(id="surface1" transform="translate(0 0.001)")
+                  path(id="Path_28769" data-name="Path 28769" d="M124.119,158.457a3.677,3.677,0,1,0,3.677,3.677A3.682,3.682,0,0,0,124.119,158.457Zm2.183,2.985-2.635,2.635a.566.566,0,0,1-.8,0l-1.007-1.007a.566.566,0,1,1,.8-.8l.606.606,2.234-2.234a.566.566,0,0,1,.8.8Zm0,0" transform="translate(-115.901 -152.485)" fill="url(#linear-gradient)")
+                  path(id="Path_28770" data-name="Path 28770" d="M16.417,5.236V5.221c-.008-.185-.014-.382-.017-.6a2.046,2.046,0,0,0-1.926-2A7.938,7.938,0,0,1,9.07.34L9.058.328a1.235,1.235,0,0,0-1.679,0L7.366.34a7.939,7.939,0,0,1-5.4,2.277,2.045,2.045,0,0,0-1.926,2c0,.217-.009.413-.017.6v.035a20.918,20.918,0,0,0,.845,7.635A9.72,9.72,0,0,0,3.2,16.523a12.2,12.2,0,0,0,4.563,2.7,1.413,1.413,0,0,0,.187.051,1.381,1.381,0,0,0,.543,0,1.418,1.418,0,0,0,.188-.051,12.206,12.206,0,0,0,4.558-2.7,9.733,9.733,0,0,0,2.332-3.633A20.949,20.949,0,0,0,16.417,5.236Zm-8.2,9.224a4.81,4.81,0,1,1,4.81-4.81A4.815,4.815,0,0,1,8.218,14.46Zm0,0" transform="translate(0)" fill="url(#linear-gradient)")
+              ul.rating
+               li(class="fas fa-star active")
+               li(class="fas fa-star active")
+               li(class="fas fa-star active")
+               li(class="fas fa-star active")
+             h3.title.siz-titl English Language
+           div.childbox
+            h3.title Date and time
+            div.headtext
+             p.textline Thursday, 17 September, 14:30
+             small GMT +02:00
+           div.childbox.serv-det
+            h3.title Service Details #[small Price per hour]
+            ul.listserv
+             li 
+              p 1 hour lesson
+              span $18.00
+             li 
+              p Transaction fee
+               span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+              span $18.00
+             li 
+              p Lesson cancellation 
+                span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+              span.green Free
+             li 
+              p Discount
+                span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+              span $5.00
+             li 
+              p Subtotal
+              span $5.00
+           div.childbox.total-det
+            h3.price-tp Total #[span $18.00]
+      div.col-sm-4.contenuser.mt-0
+       div.itemtutor.promoCode 
+         h3.title  PromoCode
+         form(action="#" method="")
+          div.row
+           div.col-sm-12.fild
+            input(type="text" class="form-control" placeholder="Enter promocode" autocomplete="off"  required)
+            label.floating-label Promocode
+           div.col-sm-12.fild.line-pass
+            label.che-box
+             input(type="checkbox" name="checkbox")
+             span.label-text I want a free lesson or a refund if the tutor doesn’t meet my needs
+         div.childbox 
+          i(class="fas fa-check") 
+          div.primary 
+            h5.title Learn with 100% satisfaction guarantee
+            p.text If your lesson does not take place, or you are not satisfied with the tutor, we will provide you with a free replacement to another tutor of your choice or offer you a full refund.
+         div.text-center
+          a(href="#booking-pay" data-toggle="modal" class="bottom") Pay Now
+      
+  
+ 
+ 
+ 
+ div(id="booking-pay" class="modal fade" role="dialog" )
+  div(class="modal-dialog popreview" style="margin-top: 100px;")
+   div(class="modal-content")
+     button(type="button" class="close" data-dismiss="modal") 
+      svg(width="16" height="16" viewBox="0 0 12 12" f  xmlns="http://www.w3.org/2000/svg")
+       path(d="M6.66271 6.00002L11.8625 0.800231C12.0455 0.617161 12.0455 0.320349 11.8625 0.137303C11.6794 -0.0457441 11.3826 -0.0457675 11.1995 0.137303L5.99975 5.33709L0.799987 0.137303C0.616917 -0.0457675 0.320105 -0.0457675 0.137058 0.137303C-0.0459882 0.320373 -0.0460117 0.617185 0.137058 0.800231L5.33682 6L0.137058 11.1998C-0.0460117 11.3829 -0.0460117 11.6797 0.137058 11.8627C0.228582 11.9542 0.348558 12 0.468535 12C0.588511 12 0.708464 11.9542 0.800011 11.8627L5.99975 6.66295L11.1995 11.8627C11.291 11.9542 11.411 12 11.531 12C11.651 12 11.7709 11.9542 11.8625 11.8627C12.0455 11.6796 12.0455 11.3828 11.8625 11.1998L6.66271 6.00002Z" fill="#000")
+     div.photopay 
+      img(src="assets/images/photopay.png" alt="" title="")
+     div.text-center.mt-4
+      h3.title Thank You
+      p.mt-2  Booking your lesson done successfuly
+   
+      div.bot-ok
+        button(class="bottom" type="submit") Ok
+       
+ 

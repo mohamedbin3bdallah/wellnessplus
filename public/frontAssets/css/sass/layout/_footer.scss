@@ -1,0 +1,205 @@
+.footer {
+    @include section;
+    background: #fff;
+    padding: $zero !important;
+    padding-top: $minmargin !important;
+    .container {
+        z-index: 1;
+    }
+    .boxfot {
+        margin-top: $maxmargin;
+        @media (max-width: 991px) {
+            max-width: 50%;
+            flex: 50%;
+            margin-top: $maxmargin;
+        }
+        @media (max-width: 767px) {
+            max-width: 50%;
+            flex: 50%;
+            font-size: 13px;
+            margin-top: 25px;
+        }
+        img {
+            width: 187px;
+            @media (max-width: 767px) {
+                width: 130px;
+            }
+        }
+        &:first-child,
+        &:last-child {
+            @media (max-width: 767px) {
+                max-width: $fullwidth;
+                flex: $fullwidth;
+            }
+        }
+        &:first-child {
+            @media (max-width: 767px) {
+                margin-top: 10px;
+            }
+        }
+        .text {
+            line-height: 22px;
+            color: #424242;
+            font-size: 13px;
+            margin-top: $minmargin;
+            opacity: 0.7;
+        }
+        .social {
+            @include social;
+            margin-top: $maxmargin;
+            a {
+                margin-right: $minmargin;
+                &:last-child {
+                    margin: $zero;
+                }
+                @media (max-width: 767px) {
+                    font-size: 18px;
+                }
+            }
+            @media (max-width: 767px) {
+                margin-top: 17px;
+            }
+        }
+        .title {
+            margin-bottom: $maxmargin;
+            font-weight: 600;
+            font-size: 22px;
+            color: $maincolor;
+            @media (max-width: 767px) {
+                margin-bottom: 10px;
+                font-size: 17px;
+            }
+        }
+        .navmenu {
+            a {
+                @include hyprlink;
+                @media (max-width: 767px) {
+                    margin-bottom: 2px;
+                    font-size: 13px;
+                }
+            }
+        }
+        .textcontact {
+            a,
+            p {
+                display: $block;
+                width: $fullwidth;
+                margin-bottom: 10px;
+                @include transition(all 0.5s ease-in-out 0s);
+                position: relative;
+                padding-left: 25px;
+                line-height: 22px;
+                font-weight: 600;
+                color: #424242;
+                &:last-child {
+                    margin: $zero;
+                }
+                i {
+                    @include position(absolute, $left: 0px, $top: 7px);
+                }
+            }
+            a:hover {
+                color: $brouwn;
+            }
+        }
+        svg path {
+            fill: #666666;
+        }
+        .sendemail {
+            position: relative;
+            margin-top: $maxmargin;
+            .form-control {
+                height: 50px;
+                padding-right: 40px;
+                border: $zero;
+            }
+            button {
+                @include position(absolute, $right: 10px, $top: 12px);
+                color: $brouwn;
+                border: $zero;
+                margin: $zero;
+                padding: $zero;
+                cursor: pointer;
+                font-size: 25px;
+                background: $none;
+                outline: $none;
+                outline-style: $none;
+                @include transition(all 0.5s ease-in-out 0s);
+                &:hover {
+                    color: $blak;
+                }
+            }
+            .text-error {
+                color: $red;
+                margin-top: 10px;
+                font-size: 13px;
+            }
+        }
+    }
+    .copyright {
+        position: relative;
+        margin-top: $maxmargin;
+        padding: $maxmargin $zero;
+        width: $fullwidth;
+        border-top: 1px solid #5b5b5b;
+        text-align: center;
+        p {
+            color: #424242;
+            opacity: 0.8;
+            line-height: 17px;
+            margin: $zero;
+            @media (max-width: 767px) {
+                width: $fullwidth;
+                text-align: $senter;
+            }
+            span {
+                margin-left: 10px;
+            }
+            svg {
+                fill: $white;
+                margin-left: 10px;
+            }
+            .imghart {
+                margin-left: 10px;
+            }
+        }
+        .social {
+            margin-top: $minmargin;
+            @media (max-width: 767px) {
+                width: $fullwidth;
+                text-align: center;
+            }
+            a {
+                color: $colortext;
+                font-size: 20px;
+                margin-right: $minmargin;
+                @include transition(all 0.5s ease-in-out 0s);
+                &:hover {
+                    color: $white;
+                }
+                &:last-child {
+                    margin: $zero;
+                }
+            }
+        }
+    }
+    .scrollToTop {
+        @include bottom;
+        width: 50px;
+        height: 50px;
+        padding: $zero;
+        @include border-radius(50%);
+        @include position(fixed, $right: 15px, $bottom: 15px);
+        display: $none;
+        border: $zero;
+        padding-top: 10px;
+        z-index: $zindex;
+        color: $white;
+        @media (max-width: 991px) {
+            display: $none !important;
+        }
+        &:hover {
+            border: $zero;
+        }
+    }
+}

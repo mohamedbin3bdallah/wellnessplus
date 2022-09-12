@@ -1,0 +1,421 @@
+extend index
+
+block pageindex
+ 
+ div.menubab
+  div.container
+   nav(class="setting-menu")
+    a(href="my-requests.html") My Requests
+    a(href="my-lessons.html") My lessons
+    a(href="settings.html" class="active") Settings
+ section.step-sign
+  div.container
+    ul(class="nav nav-tabs" id="myTab" role="tablist")
+     li.nav-item
+      a(class="nav-link active" id="item-1-tab" data-toggle="tab" href="#item-1"  role="tab" aria-controls="item-1" aria-selected="true") Account
+     li.nav-item
+      a(class="nav-link"  id="item-2-tab" data-toggle="tab" href="#item-2" role="tab" aria-controls="item-2"  aria-selected="false") Email
+     li.nav-item
+      a(class="nav-link"  id="item-3-tab" data-toggle="tab" href="#item-3" role="tab" aria-controls="item-3"  aria-selected="false") Password
+     li.nav-item
+      a(class="nav-link"  id="item-4-tab" data-toggle="tab" href="#item-4" role="tab" aria-controls="item-4"  aria-selected="false") Payment Methods
+     li.nav-item
+      a(class="nav-link"  id="item-5-tab" data-toggle="tab" href="#item-5" role="tab" aria-controls="item-5"  aria-selected="false") Payment History
+     li.nav-item
+      a(class="nav-link"  id="item-6-tab" data-toggle="tab" href="#item-6" role="tab" aria-controls="item-6"  aria-selected="false") Autoconfirmation
+     li.nav-item
+      a(class="nav-link"  id="item-7-tab" data-toggle="tab" href="#item-7" role="tab" aria-controls="item-7"  aria-selected="false") Calendar
+     li.nav-item
+      a(class="nav-link"  id="item-8-tab" data-toggle="tab" href="#item-8" role="tab" aria-controls="item-8"  aria-selected="false") Notification
+    div(class="tab-content" id="myTabContent")
+      div(class="tab-pane fade show active" id="item-1"  role="tabpanel" aria-labelledby="item-1-tab")
+       form(action="#")
+        div.row
+         div.col-sm-10.offset-sm-1.prin-item
+          h2.title Profile Image
+          div(class="alert alert-danger" role="alert")   This is a danger alert—check it out!
+          div(class="alert alert-success" role="alert") This is a success alert—check it out!
+          div.row
+           div.col-sm-3.item-tab
+             div.imgcent
+              img(src='assets/images/profile-4.jpg'  class="img_prev" alt="" title="")
+              label(class="file-bro") Upload Photo
+               input(type="file"   onchange="readURL(this);" style="display: none;")
+             p.textsacand #[i(class="fas fa-info-circle")]  JPG or PNG format  Maximum 2 MB 
+           div.col-sm-8.offset-sm-1.item-tab2
+            div.row
+             div.col-sm-6.fild
+              input(type="text" class="form-control" placeholder="Enter your First name" name="FirstName"  autocomplete="off" autofocus required )
+              label.floating-label First Name
+             div.col-sm-6.fild
+              input(type="text" class="form-control" placeholder="Enter your Last name" name="LasttName" autocomplete="off" autofocus required)
+              label.floating-label Last Name
+             div.col-sm-12.fild
+              input(type="text" class="form-control mobile-number" placeholder="Phone number (optional)" name="Phonenumber"  autocomplete="off" autofocus required )
+             div.col-sm-12.fild 
+              i(class="fas fa-chevron-down iconsel")
+              select(class="form-control required" name="zone" autocomplete="off" autofocus required)
+               option 
+               option 11:40 (GMT+3) - Africa, Asmara
+               option zone
+               option zone
+              label.floating-label Time zone
+            h3.title.siza.mt-5 Social Network
+            ul.social
+             li
+              span   #[img(src='assets/images/facebook.png' alt="" title="")] 
+              | Not connected to Facebook account 
+              a(href="#") Connect  
+             li 
+              span #[img(src='assets/images/google.png' alt="" title="")] 
+              | Connected to google account    
+              a(href="#") Disconnect  
+          div.bot-all
+            button(class="bottom" type="submit") Save Settings
+            a(class="bottom last-bot" href="#delete" data-toggle="modal") Delete My Account    
+      div(class="tab-pane fade" id="item-2"  role="tabpanel" aria-labelledby="item-2-tab") 
+       form(action="#")
+        div.row
+         div.col-sm-10.offset-sm-1.prin-item
+          h2.title Email
+          div.row
+           div.col-sm-8.item-tab2
+            div.row
+             div.col-sm-12.fild
+              input(type="email" class="form-control" placeholder="mennamagdy@gmail.com" value="mennamagdy@gmail.com" name="FirstName"  autocomplete="off" autofocus required )
+              label.floating-label Email
+          div.bot-all
+            button(class="bottom" type="submit") Save Settings
+      div(class="tab-pane fade" id="item-3"  role="tabpanel" aria-labelledby="item-3-tab") 
+       form(action="#")
+        div.row
+         div.col-sm-10.offset-sm-1.prin-item
+          h2.title Change Password
+          div.row
+           div.col-sm-8.item-tab2
+            div.row
+             div.col-sm-12.fild
+              input(type="password" class="form-control" placeholder="Enter your password" name="FirstName"  autocomplete="off" autofocus required )
+              label.floating-label Current password
+              a(href="forget.html" class="forget") Forget Password ?
+             div.col-sm-12.fild
+              input(type="password" class="form-control" placeholder="Enter your password" name="FirstName"  autocomplete="off" autofocus required )
+              label.floating-label New  password
+             div.col-sm-12.fild
+              input(type="password" class="form-control" placeholder="Enter your password" name="FirstName"  autocomplete="off" autofocus required )
+              label.floating-label Verify  password
+          div.bot-all
+            button(class="bottom" type="submit") Save Settings
+      div(class="tab-pane fade" id="item-4"  role="tabpanel" aria-labelledby="item-4-tab") 
+       form(action="#")
+        div.row
+         div.col-sm-10.offset-sm-1.prin-item
+          h2.title Payment Methods
+          h3(class="title siza mt-5") Save a card
+          p.textsacand #[i(class="fas fa-info-circle")]  Make fast and easy payments. Save a card to use refills and keep weekly lessons reserved automatically.<br/>Payment info is encrypted and stored securely by Braintree, a PayPal service.
+          ul.pay-card
+           li #[img(src='assets/images/pay-2.jpg' alt="" title="")]
+           li #[img(src='assets/images/pay-1.jpg' alt="" title="")]
+          div.bot-all
+            a(class="bottom" href="#payment" data-toggle="modal" ) Save a card
+        //div.row
+         div.col-sm-10.offset-sm-1.prin-item
+          h2.title Payment Card
+          p.textsacand.mt-4 #[i(class="fas fa-info-circle")]  Make fast and easy payments. Save a card to use refills and keep weekly lessons reserved automatically.<br/>Payment info is encrypted and stored securely by Braintree, a PayPal service.
+          div.card-img #[img(src='assets/images/card-img.png' alt="" title="")]
+          div.bot-all.mb-2
+            button(class="bottom" type="submit") Change Card
+            a(class="bottom last-bot" href="#delete2" data-toggle="modal") Delete Card  
+          h3.title.mt-5 Refils
+          h4.title.siza Keep your weekly lessons reserved
+          p.textsacand.mt-4 #[i(class="fas fa-info-circle")]  Make fast and easy payments. Save a card to use refills and keep weekly lessons reserved automatically.<br/>Payment info is encrypted and stored securely by Braintree, a PayPal service.
+          
+          div.sec-tutor
+           div.tutor
+            div.row
+             div.col-sm-7.item-tutor
+              h5.title.siza Tutor
+              div.tutor-img 
+                img(src='assets/images/profile-1.png' alt="" title="") 
+                div.comtent-tutor
+                  h5.title Marwan Ahmed
+                  span Refill Off
+             div.col-sm-5.item-tutor
+               h5.title.siza Refil
+               div.row
+                div.col-sm-12.fild 
+                 i(class="fas fa-chevron-down iconsel")
+                 select(class="form-control required" name="zone" autocomplete="off" autofocus required)
+                  option 
+                  option Refill Off
+                  option Refill Off
+                  option Refill Off
+                 label.floating-label Refill 
+           div.tutor
+            div.row
+             div.col-sm-7.item-tutor
+              div.tutor-img 
+                img(src='assets/images/profile-1.png' alt="" title="") 
+                div.comtent-tutor
+                  h5.title Marwan Ahmed
+                  span Refill Off
+             div.col-sm-5.item-tutor
+               div.row
+                div.col-sm-12.fild 
+                 i(class="fas fa-chevron-down iconsel")
+                 select(class="form-control required" name="zone" autocomplete="off" autofocus required)
+                  option 
+                  option Refill Off
+                  option Refill Off
+                  option Refill Off
+                 label.floating-label Refill 
+      div(class="tab-pane fade" id="item-5"  role="tabpanel" aria-labelledby="item-5-tab") 
+       form(action="#")
+        div.row
+         div.col-sm-10.offset-sm-1.prin-item
+          h2.title Payment History #[a(class="biling" href="#biling" data-toggle="modal") Update biling info ]
+          div.table-responsive
+           table(class="table")
+            tr 
+             th  Date & Time 
+             th  Hours
+             th  Tutor
+             th  #[a(href="#") Download All]
+            tr 
+             td  11/05/2020 9:00 AM
+             td  5
+             td  Marwan Ahmed
+             td  #[a(href="#") Get Receipt]
+            tr 
+             td  11/05/2020 9:00 AM
+             td  5
+             td  Marwan Ahmed
+             td  #[a(href="#") Get Receipt]
+            tr 
+             td  11/05/2020 9:00 AM
+             td  5
+             td  Marwan Ahmed
+             td  #[a(href="#") Get Receipt]
+            tr 
+             td  11/05/2020 9:00 AM
+             td  5
+             td  Marwan Ahmed
+             td  #[a(href="#") Get Receipt]
+      div(class="tab-pane fade" id="item-6"  role="tabpanel" aria-labelledby="item-6-tab")
+       form(action="#")
+        div.row
+         div.col-sm-10.offset-sm-1.prin-item
+          h2.title Lesson autoconfirmation
+          div.row
+           div.col-sm-8.item-tab2
+             p.textsacand.mt-4 #[i(class="fas fa-info-circle")]   Lessons will be confirmed automatically 72 hours after the scheduled end time unless you report an issue. When a lesson is confirmed, we release payment to your tutor. <br/><br/> Autoconfirmation for lessons in the Preply Space Autoconfirm tracks the time you spend connected with your tutor in the  Space. 15 minutes after a lesson is completed, it is confirmed automatically and we release your tutor's payment. If there are any issues, please contact us right after the lesson and we'll help you find a solution.
+      div(class="tab-pane fade" id="item-7"  role="tabpanel" aria-labelledby="item-7-tab") 
+        form(action="#")
+        //div.row
+         div.col-sm-10.offset-sm-1.prin-item
+          h2.title Google Calendar
+          div.row
+           div.col-sm-8.item-tab2
+            ul.social-item
+             li 
+              span #[img(src='assets/images/google.png' alt="" title="")] 
+              | Connect your Google Calendar and synchronize all your Preply lessons with your personal schedule   
+            div.bot-all
+             button(class="bottom" type="submit") Connect Google Calendar
+        div.row
+         div.col-sm-10.offset-sm-1.prin-item
+          h2.title Google Calendar
+          div.row
+           div.col-sm-12.item-tab2
+            ul.social-item
+             li 
+              span #[img(src='assets/images/google.png' alt="" title="")] 
+              |  Currently connected account<br/>menna22magdy@gmail.com  
+            div.bot-all
+             button(class="bottom calen" type="submit") Disconnect Google Calendar
+            div.tutor.calendar 
+               div.row
+                div.col-sm-6.item-tutor
+                  h5.title.siza Add lessons to calendar
+                  p.textsacand #[i(class="fas fa-info-circle")]  Use this setting to automatically add lessons to your connected calendar.
+
+                div.col-sm-4.fild.offset-sm-2 
+                     i(class="fas fa-chevron-down iconsel")
+                     select(class="form-control required" name="zone" autocomplete="off" autofocus required)
+                      option 
+                      option mennamagdy@gmail.com
+                      option mennamagdy@gmail.com
+                      option mennamagdy@gmail.com
+                     label.floating-label Email 
+            div.tutor.calendar 
+               div.row
+                div.col-sm-6.item-tutor
+                  h5.title.siza Check calendars for conflict
+                  p.textsacand #[i(class="fas fa-info-circle")]  Use this setting to automatically add lessons to your connected calendar.
+
+                div.col-sm-4.fild.offset-sm-2 
+                  label.che-box
+                    input(type="checkbox" name="checkbox")
+                    span.label-text mennamagdy@gmail.com
+                  label.che-box
+                    input(type="checkbox" name="checkbox")
+                    span.label-text Contacts
+                  label.che-box
+                    input(type="checkbox" name="checkbox")
+                    span.label-text Holidays in Egypt
+            div.tutor.calendar 
+               div.row
+                div.col-sm-6.item-tutor
+                  h5.title.siza Remind me before a lesson
+                  p.textsacand #[i(class="fas fa-info-circle")]  Use this setting to automatically add lessons to your connected calendar.
+
+                div.col-sm-4.fild.offset-sm-2 
+                  label.che-box
+                    input(type="radio" name="radio")
+                    span.label-text No notification
+                  label.che-box
+                    input(type="radio" name="radio")
+                    span.label-text 15 min before a lesson
+                  label.che-box
+                    input(type="radio" name="radio")
+                    span.label-text 60 min before a lesson
+                  label.che-box
+                    input(type="radio" name="radio")
+                    span.label-text 24 hours before a lesson
+            div.bot-all
+             button(class="bottom" type="submit") Save Settings
+      div(class="tab-pane fade" id="item-8"  role="tabpanel" aria-labelledby="item-8-tab") 
+       form(action="#")
+        div.row
+         div.col-sm-10.offset-sm-1.prin-item
+          h2.title Notification center
+          div.check-notif
+             h3(class="title siza") Email notifications
+             label.che-box
+              input(type="checkbox" name="checkbox")
+              span.label-text Lesson scheduling
+              small Alerts about new lessons and schedule changes.
+             label.che-box
+              input(type="checkbox" name="checkbox")
+              span.label-text Lesson scheduling
+              small Alerts about new lessons and schedule changes.
+             label.che-box
+              input(type="checkbox" name="checkbox")
+              span.label-text Lesson scheduling
+              small Alerts about new lessons and schedule changes.
+
+             label.che-box
+              input(type="checkbox" name="checkbox")
+              span.label-text Lesson scheduling
+              small Alerts about new lessons and schedule changes.
+
+             label.che-box
+              input(type="checkbox" name="checkbox")
+              span.label-text Lesson scheduling
+              small Alerts about new lessons and schedule changes.
+          div.check-notif
+             h3(class="title siza") SMS notifications
+             label.che-box
+              input(type="checkbox" name="checkbox")
+              span.label-text Lesson scheduling
+              small Alerts about new lessons and schedule changes.
+          div.check-notif
+             h3(class="title siza") Arabi insights
+             label.che-box
+              input(type="checkbox" name="checkbox")
+              span.label-text Lesson scheduling
+              small Alerts about new lessons and schedule changes.
+          div.bot-all
+            button(class="bottom" type="submit") Save Settings
+            a(class="bottom last-bot" href="#") Unsubscribe them all   
+       
+
+ 
+ 
+ div(id="delete" class="modal fade" role="dialog")
+  div(class="modal-dialog")
+   div(class="modal-content deleting")
+    div.pop-det
+     button(type="button" class="close" data-dismiss="modal") 
+      svg(width="16" height="16" viewBox="0 0 12 12" f  xmlns="http://www.w3.org/2000/svg")
+       path(d="M6.66271 6.00002L11.8625 0.800231C12.0455 0.617161 12.0455 0.320349 11.8625 0.137303C11.6794 -0.0457441 11.3826 -0.0457675 11.1995 0.137303L5.99975 5.33709L0.799987 0.137303C0.616917 -0.0457675 0.320105 -0.0457675 0.137058 0.137303C-0.0459882 0.320373 -0.0460117 0.617185 0.137058 0.800231L5.33682 6L0.137058 11.1998C-0.0460117 11.3829 -0.0460117 11.6797 0.137058 11.8627C0.228582 11.9542 0.348558 12 0.468535 12C0.588511 12 0.708464 11.9542 0.800011 11.8627L5.99975 6.66295L11.1995 11.8627C11.291 11.9542 11.411 12 11.531 12C11.651 12 11.7709 11.9542 11.8625 11.8627C12.0455 11.6796 12.0455 11.3828 11.8625 11.1998L6.66271 6.00002Z" fill="#000")
+     h3.title Delete Account
+     p.mar-text Warning! Deleting your account is irreversible once the process is completed. If you are certain you wish to delete your account, type your email address in the field below. 
+     form(action="#")
+      div.row
+       div.col-sm-12.fild
+        input(type="email" class="form-control" placeholder="Enter your Email Address" name="Email"  autocomplete="off" autofocus required )
+        label.floating-label Email
+      div.fild.bot-de
+        button(class="bottom" type="submit") Delete
+        a(href="#" class="bottom" data-dismiss="modal") Cancel
+ div(id="payment" class="modal fade" role="dialog")
+  div(class="modal-dialog")
+   div(class="modal-content deleting")
+    div.pop-det
+     button(type="button" class="close" data-dismiss="modal") 
+      svg(width="16" height="16" viewBox="0 0 12 12" f  xmlns="http://www.w3.org/2000/svg")
+       path(d="M6.66271 6.00002L11.8625 0.800231C12.0455 0.617161 12.0455 0.320349 11.8625 0.137303C11.6794 -0.0457441 11.3826 -0.0457675 11.1995 0.137303L5.99975 5.33709L0.799987 0.137303C0.616917 -0.0457675 0.320105 -0.0457675 0.137058 0.137303C-0.0459882 0.320373 -0.0460117 0.617185 0.137058 0.800231L5.33682 6L0.137058 11.1998C-0.0460117 11.3829 -0.0460117 11.6797 0.137058 11.8627C0.228582 11.9542 0.348558 12 0.468535 12C0.588511 12 0.708464 11.9542 0.800011 11.8627L5.99975 6.66295L11.1995 11.8627C11.291 11.9542 11.411 12 11.531 12C11.651 12 11.7709 11.9542 11.8625 11.8627C12.0455 11.6796 12.0455 11.3828 11.8625 11.1998L6.66271 6.00002Z" fill="#000")
+     h3.title Save a payment card
+     form(action="#")
+      div.row
+       div.col-sm-12.fild
+        input(type="number" class="form-control" placeholder="Enter card number" name="number"  autocomplete="off" autofocus required )
+        label.floating-label Card number
+       div.col-sm-12.fild
+        input(type="date" class="form-control" placeholder="date" name="date"  autocomplete="off" autofocus required )
+        label.floating-label Expiration Date
+       div.col-sm-12.fild
+        input(type="date" class="form-control" placeholder="date" name="date"  autocomplete="off" autofocus required )
+        label.floating-label CVV
+       div.col-sm-12.fild
+        p.textmap.linbox.m-0 #[i(class="fas fa-unlock-alt")]  Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s...
+      div.fild.bot-de.bot-card
+        button(class="bottom" type="submit") Save a card
+        a(href="#" class="bottom" data-dismiss="modal") Cancel
+ div(id="delete2" class="modal fade" role="dialog")
+  div(class="modal-dialog")
+   div(class="modal-content deleting")
+    div.pop-det
+     button(type="button" class="close" data-dismiss="modal") 
+      svg(width="16" height="16" viewBox="0 0 12 12" f  xmlns="http://www.w3.org/2000/svg")
+       path(d="M6.66271 6.00002L11.8625 0.800231C12.0455 0.617161 12.0455 0.320349 11.8625 0.137303C11.6794 -0.0457441 11.3826 -0.0457675 11.1995 0.137303L5.99975 5.33709L0.799987 0.137303C0.616917 -0.0457675 0.320105 -0.0457675 0.137058 0.137303C-0.0459882 0.320373 -0.0460117 0.617185 0.137058 0.800231L5.33682 6L0.137058 11.1998C-0.0460117 11.3829 -0.0460117 11.6797 0.137058 11.8627C0.228582 11.9542 0.348558 12 0.468535 12C0.588511 12 0.708464 11.9542 0.800011 11.8627L5.99975 6.66295L11.1995 11.8627C11.291 11.9542 11.411 12 11.531 12C11.651 12 11.7709 11.9542 11.8625 11.8627C12.0455 11.6796 12.0455 11.3828 11.8625 11.1998L6.66271 6.00002Z" fill="#000")
+     h3.title Remove Card
+     p.textsacand.mt-5.mb-5 #[i(class="fas fa-info-circle")]  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+     form(action="#")
+      div.fild.bot-de.bot-card
+        button(class="bottom" type="submit") Keep current card
+        a(href="#" class="bottom") Delete Card 
+ div(id="biling" class="modal fade" role="dialog")
+  div(class="modal-dialog")
+   div(class="modal-content deleting")
+    div.pop-det
+     button(type="button" class="close" data-dismiss="modal") 
+      svg(width="16" height="16" viewBox="0 0 12 12" f  xmlns="http://www.w3.org/2000/svg")
+       path(d="M6.66271 6.00002L11.8625 0.800231C12.0455 0.617161 12.0455 0.320349 11.8625 0.137303C11.6794 -0.0457441 11.3826 -0.0457675 11.1995 0.137303L5.99975 5.33709L0.799987 0.137303C0.616917 -0.0457675 0.320105 -0.0457675 0.137058 0.137303C-0.0459882 0.320373 -0.0460117 0.617185 0.137058 0.800231L5.33682 6L0.137058 11.1998C-0.0460117 11.3829 -0.0460117 11.6797 0.137058 11.8627C0.228582 11.9542 0.348558 12 0.468535 12C0.588511 12 0.708464 11.9542 0.800011 11.8627L5.99975 6.66295L11.1995 11.8627C11.291 11.9542 11.411 12 11.531 12C11.651 12 11.7709 11.9542 11.8625 11.8627C12.0455 11.6796 12.0455 11.3828 11.8625 11.1998L6.66271 6.00002Z" fill="#000")
+     h3.title Update Billing info
+     form(action="#")
+      div.row
+       div.col-sm-12.fild
+        input(type="text" class="form-control" placeholder="Enter Name" name="Name"  autocomplete="off" autofocus required )
+        label.floating-label Student Name
+       div.col-sm-12.fild
+        input(type="text" class="form-control" placeholder="Enter Company Name" name="CompanyName"  autocomplete="off" autofocus required )
+        label.floating-label Company Name
+       div.col-sm-12.fild
+        input(type="number" class="form-control" placeholder="Number" name="VatNumber"  autocomplete="off" autofocus required )
+        label.floating-label Vat Number
+       div.col-sm-12.fild
+        input(type="text" class="form-control" placeholder="Address" name="Address"  autocomplete="off" autofocus required )
+        label.floating-label Address line 1
+       div.col-sm-12.fild
+        input(type="text" class="form-control" placeholder="Address" name="Address"  autocomplete="off" autofocus required )
+        label.floating-label Address line 2
+       div.col-sm-12.fild
+        input(type="text" class="form-control" placeholder="Address" name="Address"  autocomplete="off" autofocus required )
+        label.floating-label Address line 3
+      
+      div.fild.bot-de.bot-card
+        button(class="bottom" type="submit") Update
+        a(href="#" class="bottom" data-dismiss="modal") Cancel 
+  

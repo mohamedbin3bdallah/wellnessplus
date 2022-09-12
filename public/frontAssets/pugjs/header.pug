@@ -1,0 +1,466 @@
+header.header
+   div.container
+    div(class='logo')
+     a(href='index.html') 
+      img(src='assets/images/logo.png' alt="Arabia" title="Arabia")    
+    //form(action="#" method="" class='formsearch')
+      input(class="form-control" type="text" placeholder="Search for courses ?")
+      button(class="btn" type="submit")
+       svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.427" height="27.094" viewBox="0 0 25.427 27.094")
+        path(d="M403.084,301.3l-6.278-6.529a10.691,10.691,0,1,0-2.051,1.875l6.328,6.581a1.386,1.386,0,0,0,1.963.039,1.39,1.39,0,0,0,.038-1.965Zm-14.433-21.251a7.873,7.873,0,1,1-7.872,7.872,7.883,7.883,0,0,1,7.872-7.872Zm0,0" transform="translate(-378 -277.112)")
+    div.detals
+     //div.icons
+      span.icon-search
+       svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.427" height="27.094" viewBox="0 0 25.427 27.094")
+        path(d="M403.084,301.3l-6.278-6.529a10.691,10.691,0,1,0-2.051,1.875l6.328,6.581a1.386,1.386,0,0,0,1.963.039,1.39,1.39,0,0,0,.038-1.965Zm-14.433-21.251a7.873,7.873,0,1,1-7.872,7.872,7.883,7.883,0,0,1,7.872-7.872Zm0,0" transform="translate(-378 -277.112)")
+      span.cancel
+     //div.icons-men
+      span.fas.fa-bars.icon-opne
+      span.icon-cancel
+     //a(href="#" class="balance disbox") 
+       svg(xmlns="http://www.w3.org/2000/svg" width="28.058" height="25.107" viewBox="0 0 28.058 25.107")
+        g(id="wallet" transform="translate(-1.812 -5.513)")
+          path(id="Path_28715" data-name="Path 28715" d="M58.59,25.946a.474.474,0,0,1-.474-.474V19.532H53.379a.474.474,0,0,1,0-.947H58.59a.474.474,0,0,1,.474.474v6.415a.474.474,0,0,1-.474.473Z" transform="translate(-30.723 -7.86)" fill="#ba9a74")
+          path(id="Path_28716" data-name="Path 28716" d="M27.867,34.55H5.839a4.031,4.031,0,0,1-4.027-4.027v-18a.474.474,0,0,1,.947,0v18a3.083,3.083,0,0,0,3.08,3.08H27.393V27.227a.474.474,0,0,1,.947,0v6.85a.474.474,0,0,1-.474.473Z" transform="translate(0 -3.93)" fill="#ba9a74")
+          path(id="Path_28717" data-name="Path 28717" d="M55.472,41.306H49.28a3.316,3.316,0,0,1,0-6.632h6.192a.948.948,0,0,1,.947.947v4.737a.948.948,0,0,1-.947.947Zm0-5.685H49.28a2.369,2.369,0,1,0,0,4.737h6.192Z" transform="translate(-26.549 -17.535)" fill="#ba9a74")
+          path(id="Path_28718" data-name="Path 28718" d="M22.656,11.671H4.891a3.079,3.079,0,0,1,0-6.158H22.18a.952.952,0,0,1,.949.952V11.2A.474.474,0,0,1,22.656,11.671ZM4.891,6.46a2.132,2.132,0,0,0,0,4.264H22.18V6.465Z" fill="#ba9a74")
+          path(id="Path_28719" data-name="Path 28719" d="M29.687,13H13.979a.474.474,0,0,1,0-.947H29.687a.474.474,0,0,1,0,.947Z" transform="translate(-7.031 -3.93)" fill="#ba9a74" stroke="#ba9a74" stroke-width="1")
+          path(id="Path_28720" data-name="Path 28720" d="M52.941,41.882A1.583,1.583,0,1,1,54.524,40.3,1.583,1.583,0,0,1,52.941,41.882Zm0-2.33a.747.747,0,1,0,.746.748A.747.747,0,0,0,52.941,39.552Z" transform="translate(-29.792 -19.965)" fill="#ba9a74")
+       p Balance : #[span 0] hours
+     //- this bottom balance hide status in responsive 
+     //a(href="#" class="bottom hours") Buy Hours
+     //- this bottom Buy hors hide status in responsive 
+     //div(class="dropdown")
+      a(class="el-lang")
+       span  English
+       span  , USD
+       svg(xmlns="http://www.w3.org/2000/svg" width="8" height="7" viewBox="0 0 8 7")
+        path(d="M4,0,8,7H0Z" transform="translate(8 7) rotate(180)")
+      div(class="language")
+       div.fild 
+        i(class="fas fa-chevron-down iconsel")
+        select(class="form-control required" name="language" autocomplete="off" autofocus required)
+          option 
+          option Arabic
+          option Spanish
+          option Italian
+        label.floating-label language
+       div.fild 
+        i(class="fas fa-chevron-down iconsel")
+        select(class="form-control required" name="currency" autocomplete="off" autofocus required)
+          option 
+          option $
+          option EGP
+          option Currency
+        label.floating-label Currency
+     //nav.user-det
+      a(href="#" class="show-chat") 
+       svg(xmlns="http://www.w3.org/2000/svg" width="26.6" height="21.903" viewBox="0 0 26.6 21.903")
+        path(id="Path_28712" data-name="Path 28712" d="M21.145.5H5.455A5.461,5.461,0,0,0,0,5.955V14.38a5.367,5.367,0,0,0,3.859,5.16l2.635,2.635a.779.779,0,0,0,1.1,0l2.417-2.417H21.145A5.461,5.461,0,0,0,26.6,14.3V5.955A5.461,5.461,0,0,0,21.145.5Zm3.9,13.8a3.9,3.9,0,0,1-3.9,3.9H9.69a.779.779,0,0,0-.551.228L7.045,20.522l-2.23-2.23a.778.778,0,0,0-.363-.205A3.811,3.811,0,0,1,1.559,14.38V5.955a3.9,3.9,0,0,1,3.9-3.9h15.69a3.9,3.9,0,0,1,3.9,3.9Zm0,0" fill="#ba9a74")
+        path(id="Path_28713" data-name="Path 28713" d="M156.434,144.328h-9.9a.779.779,0,1,0,0,1.559h9.9a.779.779,0,1,0,0-1.559Zm0,0" transform="translate(-138.185 -136.356)" fill="#ba9a74")
+        path(id="Path_28714" data-name="Path 28714" d="M156.434,197.352h-9.9a.779.779,0,1,0,0,1.559h9.9a.779.779,0,0,0,0-1.559Zm0,0" transform="translate(-138.185 -186.625)" fill="#ba9a74")
+      a(href="#") 
+       svg(id="question" xmlns="http://www.w3.org/2000/svg" width="22.133" height="22.133" viewBox="0 0 22.133 22.133")
+        path(id="Path_28710" data-name="Path 28710" d="M18.892,3.241A11.068,11.068,0,0,0,1.482,16.6L0,22.133l5.532-1.482a11.067,11.067,0,0,0,13.36-17.41Zm-7.825,17.6a9.748,9.748,0,0,1-5.1-1.435l-.238-.146L1.834,20.3l1.044-3.9-.146-.238a9.771,9.771,0,1,1,8.334,4.67Z" fill="#ba9a74")
+        rect(id="Rectangle_35" data-name="Rectangle 35" width="1.297" height="1.297" transform="translate(10.418 15.281)" fill="#ba9a74")
+        path(id="Path_28711" data-name="Path 28711" d="M184.242,128.5A3.246,3.246,0,0,0,181,131.742h1.3a1.945,1.945,0,1,1,3.395,1.3l-2.1,2.346v1.545h1.3V135.88l1.768-1.977a3.242,3.242,0,0,0-2.416-5.4Z" transform="translate(-173.176 -122.945)" fill="#ba9a74")
+      a(href="#") 
+       svg(xmlns="http://www.w3.org/2000/svg" width="21.561" height="19.183" viewBox="0 0 21.561 19.183")
+        path(id="heart_1_" data-name="heart (1)" d="M10.781,19.183a1.264,1.264,0,0,1-.834-.313c-.871-.762-1.711-1.477-2.452-2.109l0,0a45.6,45.6,0,0,1-5.353-5.024A8.025,8.025,0,0,1,0,6.48a6.739,6.739,0,0,1,1.71-4.6A5.8,5.8,0,0,1,6.023,0,5.423,5.423,0,0,1,9.411,1.169a6.931,6.931,0,0,1,1.37,1.43,6.932,6.932,0,0,1,1.37-1.43A5.423,5.423,0,0,1,15.538,0a5.8,5.8,0,0,1,4.313,1.877,6.739,6.739,0,0,1,1.71,4.6,8.024,8.024,0,0,1-2.138,5.253,45.591,45.591,0,0,1-5.353,5.024c-.742.632-1.583,1.349-2.456,2.113a1.265,1.265,0,0,1-.833.313ZM6.023,1.263a4.549,4.549,0,0,0-3.384,1.47A5.482,5.482,0,0,0,1.263,6.48a6.752,6.752,0,0,0,1.848,4.447,44.869,44.869,0,0,0,5.2,4.869l0,0c.744.634,1.587,1.352,2.464,2.12.883-.769,1.727-1.488,2.472-2.123a44.881,44.881,0,0,0,5.2-4.869A6.753,6.753,0,0,0,20.3,6.48a5.482,5.482,0,0,0-1.376-3.746,4.548,4.548,0,0,0-3.384-1.47,4.189,4.189,0,0,0-2.615.905,6.129,6.129,0,0,0-1.457,1.686.8.8,0,0,1-1.37,0A6.123,6.123,0,0,0,8.638,2.169a4.189,4.189,0,0,0-2.615-.905Zm0,0" transform="translate(0 0)" fill="#ba9a74")
+       span.alarm 23
+      div(class="dropdown not-box")
+       a(href="#" class="dropdown-toggle" data-toggle="dropdown")
+        svg(xmlns="http://www.w3.org/2000/svg" width="18.181" height="25.8" viewBox="0 0 18.181 25.8")
+         path(id="Path_28708" data-name="Path 28708" d="M93.62,21.557l-1.543-2.572a7.781,7.781,0,0,1-.832-3.508v-5.9a6.562,6.562,0,0,0-4.939-6.35,2.016,2.016,0,1,0-3.224,0,6.562,6.562,0,0,0-4.939,6.35v5.9a7.782,7.782,0,0,1-.832,3.507l-1.543,2.572a1.138,1.138,0,0,0,.976,1.724h4.969a3.023,3.023,0,0,0,5.961,0h4.969A1.138,1.138,0,0,0,93.62,21.557ZM84.694,1.008a1.008,1.008,0,1,1-1.008,1.008A1.009,1.009,0,0,1,84.694,1.008ZM79.152,15.477v-5.9a5.543,5.543,0,0,1,11.086,0v5.9a9.151,9.151,0,0,0,.835,3.772H78.316A9.151,9.151,0,0,0,79.152,15.477Zm5.543,9.315a2.024,2.024,0,0,1-1.952-1.517h3.9A2.024,2.024,0,0,1,84.694,24.792Zm7.95-2.52h-15.9a.13.13,0,0,1-.112-.2l1.091-1.818H91.665l1.091,1.819A.129.129,0,0,1,92.645,22.273Z" transform="translate(-75.604)" fill="#ba9a74")
+       div(class="dropdown-menu")
+         - for (var x = 0; x < 8; x++)
+            a(class="dropdown-item" href="#") 
+             img(src='assets/images/profile-4.jpg' alt="Arabia" title="Arabia") 
+             div.content-not
+              h3.title Ana Send you a message .
+              p.text Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        
+    
+      
+      
+      
+      
+      a(href="#" class="bottom") Buy Hours 
+      //- this bottom Buy hors show status in responsive
+      a(href="#" class="balance") 
+       svg(xmlns="http://www.w3.org/2000/svg" width="28.058" height="25.107" viewBox="0 0 28.058 25.107")
+        path(id="Path_28715" data-name="Path 28715" d="M58.59,25.946a.474.474,0,0,1-.474-.474V19.532H53.379a.474.474,0,0,1,0-.947H58.59a.474.474,0,0,1,.474.474v6.415a.474.474,0,0,1-.474.473Z" transform="translate(-30.723 -7.86)" fill="#ba9a74")
+        path(id="Path_28716" data-name="Path 28716" d="M27.867,34.55H5.839a4.031,4.031,0,0,1-4.027-4.027v-18a.474.474,0,0,1,.947,0v18a3.083,3.083,0,0,0,3.08,3.08H27.393V27.227a.474.474,0,0,1,.947,0v6.85a.474.474,0,0,1-.474.473Z" transform="translate(0 -3.93)" fill="#ba9a74")
+        path(id="Path_28717" data-name="Path 28717" d="M55.472,41.306H49.28a3.316,3.316,0,0,1,0-6.632h6.192a.948.948,0,0,1,.947.947v4.737a.948.948,0,0,1-.947.947Zm0-5.685H49.28a2.369,2.369,0,1,0,0,4.737h6.192Z" transform="translate(-26.549 -17.535)" fill="#ba9a74")
+        path(id="Path_28718" data-name="Path 28718" d="M22.656,11.671H4.891a3.079,3.079,0,0,1,0-6.158H22.18a.952.952,0,0,1,.949.952V11.2A.474.474,0,0,1,22.656,11.671ZM4.891,6.46a2.132,2.132,0,0,0,0,4.264H22.18V6.465Z" fill="#ba9a74")
+        path(id="Path_28719" data-name="Path 28719" d="M29.687,13H13.979a.474.474,0,0,1,0-.947H29.687a.474.474,0,0,1,0,.947Z" transform="translate(-7.031 -3.93)" fill="#ba9a74" stroke="#ba9a74" stroke-width="1")
+        path(id="Path_28720" data-name="Path 28720" d="M52.941,41.882A1.583,1.583,0,1,1,54.524,40.3,1.583,1.583,0,0,1,52.941,41.882Zm0-2.33a.747.747,0,1,0,.746.748A.747.747,0,0,0,52.941,39.552Z" transform="translate(-29.792 -19.965)" fill="#ba9a74")
+       p Balance : #[span 0] hours
+      //- this bottom balance show status in responsive
+     nav.log-rg
+      a(href="#") Sign Up As Student
+      a(href="#") Sign Up As Tutor
+     a(href="login.html" class="bottom") #[img(src='assets/images/user.png' alt="" title="")] Log in
+   
+     //div(class="dropdown")
+      a(href="#" class="dropdown-toggle" data-toggle="dropdown")
+       img(src='assets/images/profile-4.jpg' alt="Arabia" title="Arabia") 
+       //span   Mohamed ahmed 
+       svg(xmlns="http://www.w3.org/2000/svg" width="8" height="7" viewBox="0 0 8 7")
+        path(d="M4,0,8,7H0Z" transform="translate(8 7) rotate(180)")
+      div(class="dropdown-menu")
+        a(class="dropdown-item" href="#") My Requests
+        a(class="dropdown-item" href="#") My Lessons
+        a(class="dropdown-item" href="#") Favourites
+        a(class="dropdown-item" href="#") Invite a friend
+        a(class="dropdown-item" href="#") Settings
+        a(class="dropdown-item" href="#") Help
+        a(class="dropdown-item" href="#") Logout
+    //div.show-itemchat
+      div.friends
+       div.head
+        //a(href="#" class="goback") #[i.fas.fa-angle-right]
+        ul(class="nav nav-tabs" id="myTab" role="tablist")
+         li.nav-item
+          a(class="nav-link active" id="messages-tab" data-toggle="tab" href="#messages"  role="tab" aria-controls="messages" aria-selected="true") #[i(class="fas fa-comments")] messages
+         li.nav-item
+          a(class="nav-link"  id="notes-tab" data-toggle="tab" href="#notes" role="tab" aria-controls="notes"  aria-selected="false") #[i(class="fas fa-file-alt")]  notes
+       div(class="tab-content" id="myTabContent")
+        div(class="tab-pane fade show active" id="messages"  role="tabpanel" aria-labelledby="messages-tab")  
+         ul(class="nav nav-tabs" id="myTab" role="tablist")
+          li.nav-item
+           a(class="nav-link active" id="all-tab" data-toggle="tab" href="#all"  role="tab" aria-controls="all" aria-selected="true") all
+          li.nav-item
+           a(class="nav-link"  id="unread-tab" data-toggle="tab" href="#unread" role="tab" aria-controls="unread"  aria-selected="false") unread
+         div(class="tab-content" id="myTabContent")
+          div(class="tab-pane fade show active" id="all"  role="tabpanel" aria-labelledby="all-tab")
+           div.formsearch
+            input(class="form-control filter-all" type="text" placeholder="Search...")
+           ul(class="mylistall")
+             li.active
+              a(href="#")
+               div.imgage
+                img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+               div.content
+                h4.title mohamed ahmed
+                 span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+                p.text Not Connected To Facebook Account
+               span.time 3:15 PM
+             li
+              a(href="#")
+               div.imgage
+                img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+               div.content
+                h4.title  ahmed
+                 span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+                p.text Not Connected To Facebook Account
+               span.time 3:15 PM  
+             li.active
+              a(href="#")
+               div.imgage
+                img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+               div.content
+                h4.title laneya
+                 span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+                p.text Not Connected To Facebook Account
+               span.time 3:15 PM
+             li
+              a(href="#")
+               div.imgage
+                img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+               div.content
+                h4.title oscar
+                 span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+                p.text Not Connected To Facebook Account
+               span.time 3:15 PM
+             li
+              a(href="#")
+               div.imgage
+                img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+               div.content
+                h4.title gatlin
+                 span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+                p.text Not Connected To Facebook Account
+               span.time 3:15 PM
+             li
+              a(href="#")
+               div.imgage
+                img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+               div.content
+                h4.title fox
+                 span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+                p.text Not Connected To Facebook Account
+               span.time 3:15 PM
+          div(class="tab-pane fade" id="unread"  role="tabpanel" aria-labelledby="unread-tab")
+           div.formsearch
+            input(class="form-control filter-unread" type="text" placeholder="Search...")
+           ul(class="mylistunread")
+             li.active
+              a(href="#")
+               div.imgage
+                img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+               div.content
+                h4.title mohamed ahmed
+                 span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+                p.text Not Connected To Facebook Account
+               span.time 3:15 PM
+             li
+              a(href="#")
+               div.imgage
+                img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+               div.content
+                h4.title  ahmed
+                 span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+                p.text Not Connected To Facebook Account
+               span.time 3:15 PM  
+             li.active
+              a(href="#")
+               div.imgage
+                img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+               div.content
+                h4.title laneya
+                 span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+                p.text Not Connected To Facebook Account
+               span.time 3:15 PM
+             li
+              a(href="#")
+               div.imgage
+                img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+               div.content
+                h4.title oscar
+                 span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+                p.text Not Connected To Facebook Account
+               span.time 3:15 PM
+             li
+              a(href="#")
+               div.imgage
+                img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+               div.content
+                h4.title gatlin
+                 span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+                p.text Not Connected To Facebook Account
+               span.time 3:15 PM
+             li
+              a(href="#")
+               div.imgage
+                img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+               div.content
+                h4.title fox
+                 span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+                p.text Not Connected To Facebook Account
+               span.time 3:15 PM
+         div
+          div.files 
+           div.imgage
+            a(href="#" class="fas fa-angle-left") 
+            img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+            div.text-da
+             h4.title mohamed 
+           div.ex-files
+            a(href="#" class="files-bot") #[i.fas.fa-folder-open] files
+            a(href="#" class="close")
+             svg(width="10" height="10" viewBox="0 0 12 12" f  xmlns="http://www.w3.org/2000/svg")
+              path(d="M6.66271 6.00002L11.8625 0.800231C12.0455 0.617161 12.0455 0.320349 11.8625 0.137303C11.6794 -0.0457441 11.3826 -0.0457675 11.1995 0.137303L5.99975 5.33709L0.799987 0.137303C0.616917 -0.0457675 0.320105 -0.0457675 0.137058 0.137303C-0.0459882 0.320373 -0.0460117 0.617185 0.137058 0.800231L5.33682 6L0.137058 11.1998C-0.0460117 11.3829 -0.0460117 11.6797 0.137058 11.8627C0.228582 11.9542 0.348558 12 0.468535 12C0.588511 12 0.708464 11.9542 0.800011 11.8627L5.99975 6.66295L11.1995 11.8627C11.291 11.9542 11.411 12 11.531 12C11.651 12 11.7709 11.9542 11.8625 11.8627C12.0455 11.6796 12.0455 11.3828 11.8625 11.1998L6.66271 6.00002Z" fill="#000")
+          div.chat-text
+           p.text-dat September 30,2020
+           div.userchat
+            a(class="photo" href="#") #[img(src="assets/images/profile-1.png" alt="")]
+            div.padcht
+             div.text
+              p Lessoon Hasn't Started Yet Lessoon Hasn't Started Yet Lessoon Hasn't Started Yet
+              div.actions
+               span.time 3:16 PM
+               div(class="dropdown")
+                a(href="#" class="dropdown-toggle fas fa-ellipsis-h" data-toggle="dropdown")
+                div(class="dropdown-menu")
+                 a(class="dropdown-item" href="#") #[i.fas.fa-pen] edit
+                 a(class="dropdown-item" href="#") #[i.fas.fa-exclamation-circle] Report a Message
+                 a(class="dropdown-item" href="#delete-message"  data-toggle="modal") #[i.far.fa-times-circle] delete
+             div.attach
+              p 
+               svg(width="14" height="14" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg")
+                path(d="M0.804705 13.9427L1.39068 14.5287C2.46361 15.6017 4.20314 15.6017 5.27606 14.5288C5.27606 14.5288 5.27606 14.5288 5.2761 14.5287L12.7642 7.04061C13.5229 6.28194 13.5229 5.05188 12.7642 4.29321L12.3736 3.90255C11.6008 3.17869 10.3989 3.17869 9.62617 3.90255L4.09742 9.4313C3.96501 9.55921 3.96135 9.77022 4.08923 9.90266C4.21714 10.0351 4.42814 10.0387 4.56058 9.91084C4.56336 9.90816 4.56608 9.90544 4.56877 9.90266L10.0975 4.3739C10.6053 3.8988 11.3945 3.8988 11.9022 4.3739L12.2929 4.76456C12.7912 5.26285 12.7913 6.07078 12.293 6.56913C12.293 6.56916 12.2929 6.56922 12.2929 6.56925L4.80478 14.0574C3.98082 14.8422 2.68599 14.8422 1.86207 14.0574L1.27606 13.4714C0.463761 12.6587 0.463761 11.3414 1.27606 10.5287L9.6262 2.17855C10.7532 1.05197 12.5799 1.05197 13.7069 2.17855L14.4883 2.95922C15.6149 4.08621 15.6149 5.91296 14.4883 7.03995L8.09749 13.4307C7.96508 13.5586 7.96139 13.7696 8.0893 13.9021C8.21721 14.0345 8.42821 14.0382 8.56065 13.9103C8.56344 13.9076 8.56615 13.9049 8.56884 13.9021L14.9596 7.51196C16.3468 6.12481 16.3468 3.87577 14.9596 2.48859C14.9596 2.48856 14.9596 2.48856 14.9596 2.48856L14.1783 1.7072C12.7911 0.320019 10.5421 0.319986 9.15488 1.70714C9.15488 1.70717 9.15485 1.70717 9.15485 1.7072L0.804705 10.0573C-0.268221 11.1302 -0.268251 12.8698 0.804705 13.9427C0.804673 13.9427 0.804673 13.9427 0.804705 13.9427Z"  )
+                path(d="M11.6669 0.666493C12.6095 0.664431 13.5139 1.03909 14.1789 1.70717L14.9596 2.48787C16.3468 3.87502 16.3468 6.12406 14.9596 7.51124L14.9596 7.51127L8.56881 13.9021C8.4409 14.0345 8.2299 14.0382 8.09746 13.9103C7.96505 13.7823 7.96136 13.5713 8.08927 13.4389C8.09196 13.4361 8.09468 13.4334 8.09746 13.4307L14.4882 7.04061C15.6148 5.91362 15.6148 4.08687 14.4882 2.95988L13.7069 2.17852C12.5799 1.05194 10.7532 1.05194 9.62617 2.17852L1.27603 10.5287C0.463738 11.3414 0.463738 12.6586 1.27603 13.4714L1.86204 14.0574C2.68599 14.8421 3.98083 14.8421 4.80475 14.0574L12.2929 6.56928C12.7913 6.07099 12.7913 5.26307 12.293 4.76472C12.293 4.76469 12.2929 4.76463 12.2929 4.7646L11.9022 4.37393C11.3945 3.89883 10.6053 3.89883 10.0976 4.37393L4.56881 9.90269C4.4409 10.0351 4.22989 10.0388 4.09745 9.91087C3.96505 9.78297 3.96139 9.57196 4.08927 9.43952C4.09195 9.43674 4.09467 9.43402 4.09745 9.43133L9.62617 3.90255C10.3989 3.17869 11.6008 3.17869 12.3736 3.90255L12.7642 4.29321C13.5229 5.05188 13.5229 6.28194 12.7642 7.04061L5.2761 14.5287C4.20317 15.6017 2.46365 15.6017 1.39072 14.5288C1.39072 14.5288 1.39072 14.5288 1.39069 14.5287L0.804682 13.9427C-0.268242 12.8698 -0.268242 11.1303 0.80465 10.0573C0.80465 10.0573 0.80465 10.0573 0.804682 10.0573L9.15482 1.70717C9.81983 1.03909 10.7242 0.664431 11.6669 0.666493Z" )
+               | Original textbooks
+           div.userchat.tow
+            a(class="photo" href="#") #[img(src="assets/images/profile-1.png" alt="")]
+            div.padcht
+             div.text
+              p Lessoon Hasn't Started Yet Lessoon Hasn't Started Yet Lessoon Hasn't Started Yet
+              div.actions
+               span.time 3:16 PM
+                //i(class="fas fa-check it-che")
+                i(class="fas fa-check-double it-che active")
+             div.attach
+              p 
+               svg(width="14" height="14" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg")
+                path(d="M0.804705 13.9427L1.39068 14.5287C2.46361 15.6017 4.20314 15.6017 5.27606 14.5288C5.27606 14.5288 5.27606 14.5288 5.2761 14.5287L12.7642 7.04061C13.5229 6.28194 13.5229 5.05188 12.7642 4.29321L12.3736 3.90255C11.6008 3.17869 10.3989 3.17869 9.62617 3.90255L4.09742 9.4313C3.96501 9.55921 3.96135 9.77022 4.08923 9.90266C4.21714 10.0351 4.42814 10.0387 4.56058 9.91084C4.56336 9.90816 4.56608 9.90544 4.56877 9.90266L10.0975 4.3739C10.6053 3.8988 11.3945 3.8988 11.9022 4.3739L12.2929 4.76456C12.7912 5.26285 12.7913 6.07078 12.293 6.56913C12.293 6.56916 12.2929 6.56922 12.2929 6.56925L4.80478 14.0574C3.98082 14.8422 2.68599 14.8422 1.86207 14.0574L1.27606 13.4714C0.463761 12.6587 0.463761 11.3414 1.27606 10.5287L9.6262 2.17855C10.7532 1.05197 12.5799 1.05197 13.7069 2.17855L14.4883 2.95922C15.6149 4.08621 15.6149 5.91296 14.4883 7.03995L8.09749 13.4307C7.96508 13.5586 7.96139 13.7696 8.0893 13.9021C8.21721 14.0345 8.42821 14.0382 8.56065 13.9103C8.56344 13.9076 8.56615 13.9049 8.56884 13.9021L14.9596 7.51196C16.3468 6.12481 16.3468 3.87577 14.9596 2.48859C14.9596 2.48856 14.9596 2.48856 14.9596 2.48856L14.1783 1.7072C12.7911 0.320019 10.5421 0.319986 9.15488 1.70714C9.15488 1.70717 9.15485 1.70717 9.15485 1.7072L0.804705 10.0573C-0.268221 11.1302 -0.268251 12.8698 0.804705 13.9427C0.804673 13.9427 0.804673 13.9427 0.804705 13.9427Z"  )
+                path(d="M11.6669 0.666493C12.6095 0.664431 13.5139 1.03909 14.1789 1.70717L14.9596 2.48787C16.3468 3.87502 16.3468 6.12406 14.9596 7.51124L14.9596 7.51127L8.56881 13.9021C8.4409 14.0345 8.2299 14.0382 8.09746 13.9103C7.96505 13.7823 7.96136 13.5713 8.08927 13.4389C8.09196 13.4361 8.09468 13.4334 8.09746 13.4307L14.4882 7.04061C15.6148 5.91362 15.6148 4.08687 14.4882 2.95988L13.7069 2.17852C12.5799 1.05194 10.7532 1.05194 9.62617 2.17852L1.27603 10.5287C0.463738 11.3414 0.463738 12.6586 1.27603 13.4714L1.86204 14.0574C2.68599 14.8421 3.98083 14.8421 4.80475 14.0574L12.2929 6.56928C12.7913 6.07099 12.7913 5.26307 12.293 4.76472C12.293 4.76469 12.2929 4.76463 12.2929 4.7646L11.9022 4.37393C11.3945 3.89883 10.6053 3.89883 10.0976 4.37393L4.56881 9.90269C4.4409 10.0351 4.22989 10.0388 4.09745 9.91087C3.96505 9.78297 3.96139 9.57196 4.08927 9.43952C4.09195 9.43674 4.09467 9.43402 4.09745 9.43133L9.62617 3.90255C10.3989 3.17869 11.6008 3.17869 12.3736 3.90255L12.7642 4.29321C13.5229 5.05188 13.5229 6.28194 12.7642 7.04061L5.2761 14.5287C4.20317 15.6017 2.46365 15.6017 1.39072 14.5288C1.39072 14.5288 1.39072 14.5288 1.39069 14.5287L0.804682 13.9427C-0.268242 12.8698 -0.268242 11.1303 0.80465 10.0573C0.80465 10.0573 0.80465 10.0573 0.804682 10.0573L9.15482 1.70717C9.81983 1.03909 10.7242 0.664431 11.6669 0.666493Z" )
+               | Original textbooks
+           p.text-dat September 30,2020     
+           div.userchat
+            a(class="photo" href="#") #[img(src="assets/images/profile-1.png" alt="")]
+            div.padcht
+             div.text
+              p Lessoon Hasn't Started Yet Lessoon Hasn't Started Yet Lessoon Hasn't Started Yet
+              div.actions
+               span.time 3:16 PM
+               div(class="dropdown")
+                a(href="#" class="dropdown-toggle fas fa-ellipsis-h" data-toggle="dropdown")
+                div(class="dropdown-menu")
+                 a(class="dropdown-item" href="#") #[i.fas.fa-pen] edit
+                 a(class="dropdown-item" href="#") #[i.fas.fa-exclamation-circle] Report a Message
+                 a(class="dropdown-item" href="#delete-message"  data-toggle="modal") #[i.far.fa-times-circle] delete
+             div.attach
+              p 
+               svg(width="14" height="14" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg")
+                path(d="M0.804705 13.9427L1.39068 14.5287C2.46361 15.6017 4.20314 15.6017 5.27606 14.5288C5.27606 14.5288 5.27606 14.5288 5.2761 14.5287L12.7642 7.04061C13.5229 6.28194 13.5229 5.05188 12.7642 4.29321L12.3736 3.90255C11.6008 3.17869 10.3989 3.17869 9.62617 3.90255L4.09742 9.4313C3.96501 9.55921 3.96135 9.77022 4.08923 9.90266C4.21714 10.0351 4.42814 10.0387 4.56058 9.91084C4.56336 9.90816 4.56608 9.90544 4.56877 9.90266L10.0975 4.3739C10.6053 3.8988 11.3945 3.8988 11.9022 4.3739L12.2929 4.76456C12.7912 5.26285 12.7913 6.07078 12.293 6.56913C12.293 6.56916 12.2929 6.56922 12.2929 6.56925L4.80478 14.0574C3.98082 14.8422 2.68599 14.8422 1.86207 14.0574L1.27606 13.4714C0.463761 12.6587 0.463761 11.3414 1.27606 10.5287L9.6262 2.17855C10.7532 1.05197 12.5799 1.05197 13.7069 2.17855L14.4883 2.95922C15.6149 4.08621 15.6149 5.91296 14.4883 7.03995L8.09749 13.4307C7.96508 13.5586 7.96139 13.7696 8.0893 13.9021C8.21721 14.0345 8.42821 14.0382 8.56065 13.9103C8.56344 13.9076 8.56615 13.9049 8.56884 13.9021L14.9596 7.51196C16.3468 6.12481 16.3468 3.87577 14.9596 2.48859C14.9596 2.48856 14.9596 2.48856 14.9596 2.48856L14.1783 1.7072C12.7911 0.320019 10.5421 0.319986 9.15488 1.70714C9.15488 1.70717 9.15485 1.70717 9.15485 1.7072L0.804705 10.0573C-0.268221 11.1302 -0.268251 12.8698 0.804705 13.9427C0.804673 13.9427 0.804673 13.9427 0.804705 13.9427Z"  )
+                path(d="M11.6669 0.666493C12.6095 0.664431 13.5139 1.03909 14.1789 1.70717L14.9596 2.48787C16.3468 3.87502 16.3468 6.12406 14.9596 7.51124L14.9596 7.51127L8.56881 13.9021C8.4409 14.0345 8.2299 14.0382 8.09746 13.9103C7.96505 13.7823 7.96136 13.5713 8.08927 13.4389C8.09196 13.4361 8.09468 13.4334 8.09746 13.4307L14.4882 7.04061C15.6148 5.91362 15.6148 4.08687 14.4882 2.95988L13.7069 2.17852C12.5799 1.05194 10.7532 1.05194 9.62617 2.17852L1.27603 10.5287C0.463738 11.3414 0.463738 12.6586 1.27603 13.4714L1.86204 14.0574C2.68599 14.8421 3.98083 14.8421 4.80475 14.0574L12.2929 6.56928C12.7913 6.07099 12.7913 5.26307 12.293 4.76472C12.293 4.76469 12.2929 4.76463 12.2929 4.7646L11.9022 4.37393C11.3945 3.89883 10.6053 3.89883 10.0976 4.37393L4.56881 9.90269C4.4409 10.0351 4.22989 10.0388 4.09745 9.91087C3.96505 9.78297 3.96139 9.57196 4.08927 9.43952C4.09195 9.43674 4.09467 9.43402 4.09745 9.43133L9.62617 3.90255C10.3989 3.17869 11.6008 3.17869 12.3736 3.90255L12.7642 4.29321C13.5229 5.05188 13.5229 6.28194 12.7642 7.04061L5.2761 14.5287C4.20317 15.6017 2.46365 15.6017 1.39072 14.5288C1.39072 14.5288 1.39072 14.5288 1.39069 14.5287L0.804682 13.9427C-0.268242 12.8698 -0.268242 11.1303 0.80465 10.0573C0.80465 10.0573 0.80465 10.0573 0.804682 10.0573L9.15482 1.70717C9.81983 1.03909 10.7242 0.664431 11.6669 0.666493Z" )
+               | Original textbooks
+           div.userchat.tow
+            a(class="photo" href="#") #[img(src="assets/images/profile-1.png" alt="")]
+            div.padcht
+             div.text
+              p Lessoon Hasn't Started Yet Lessoon Hasn't Started Yet Lessoon Hasn't Started Yet
+              div.actions
+               span.time 3:16 PM
+                //i(class="fas fa-check it-che")
+                i(class="fas fa-check-double it-che active")
+             div.attach
+              p 
+               svg(width="14" height="14" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg")
+                path(d="M0.804705 13.9427L1.39068 14.5287C2.46361 15.6017 4.20314 15.6017 5.27606 14.5288C5.27606 14.5288 5.27606 14.5288 5.2761 14.5287L12.7642 7.04061C13.5229 6.28194 13.5229 5.05188 12.7642 4.29321L12.3736 3.90255C11.6008 3.17869 10.3989 3.17869 9.62617 3.90255L4.09742 9.4313C3.96501 9.55921 3.96135 9.77022 4.08923 9.90266C4.21714 10.0351 4.42814 10.0387 4.56058 9.91084C4.56336 9.90816 4.56608 9.90544 4.56877 9.90266L10.0975 4.3739C10.6053 3.8988 11.3945 3.8988 11.9022 4.3739L12.2929 4.76456C12.7912 5.26285 12.7913 6.07078 12.293 6.56913C12.293 6.56916 12.2929 6.56922 12.2929 6.56925L4.80478 14.0574C3.98082 14.8422 2.68599 14.8422 1.86207 14.0574L1.27606 13.4714C0.463761 12.6587 0.463761 11.3414 1.27606 10.5287L9.6262 2.17855C10.7532 1.05197 12.5799 1.05197 13.7069 2.17855L14.4883 2.95922C15.6149 4.08621 15.6149 5.91296 14.4883 7.03995L8.09749 13.4307C7.96508 13.5586 7.96139 13.7696 8.0893 13.9021C8.21721 14.0345 8.42821 14.0382 8.56065 13.9103C8.56344 13.9076 8.56615 13.9049 8.56884 13.9021L14.9596 7.51196C16.3468 6.12481 16.3468 3.87577 14.9596 2.48859C14.9596 2.48856 14.9596 2.48856 14.9596 2.48856L14.1783 1.7072C12.7911 0.320019 10.5421 0.319986 9.15488 1.70714C9.15488 1.70717 9.15485 1.70717 9.15485 1.7072L0.804705 10.0573C-0.268221 11.1302 -0.268251 12.8698 0.804705 13.9427C0.804673 13.9427 0.804673 13.9427 0.804705 13.9427Z"  )
+                path(d="M11.6669 0.666493C12.6095 0.664431 13.5139 1.03909 14.1789 1.70717L14.9596 2.48787C16.3468 3.87502 16.3468 6.12406 14.9596 7.51124L14.9596 7.51127L8.56881 13.9021C8.4409 14.0345 8.2299 14.0382 8.09746 13.9103C7.96505 13.7823 7.96136 13.5713 8.08927 13.4389C8.09196 13.4361 8.09468 13.4334 8.09746 13.4307L14.4882 7.04061C15.6148 5.91362 15.6148 4.08687 14.4882 2.95988L13.7069 2.17852C12.5799 1.05194 10.7532 1.05194 9.62617 2.17852L1.27603 10.5287C0.463738 11.3414 0.463738 12.6586 1.27603 13.4714L1.86204 14.0574C2.68599 14.8421 3.98083 14.8421 4.80475 14.0574L12.2929 6.56928C12.7913 6.07099 12.7913 5.26307 12.293 4.76472C12.293 4.76469 12.2929 4.76463 12.2929 4.7646L11.9022 4.37393C11.3945 3.89883 10.6053 3.89883 10.0976 4.37393L4.56881 9.90269C4.4409 10.0351 4.22989 10.0388 4.09745 9.91087C3.96505 9.78297 3.96139 9.57196 4.08927 9.43952C4.09195 9.43674 4.09467 9.43402 4.09745 9.43133L9.62617 3.90255C10.3989 3.17869 11.6008 3.17869 12.3736 3.90255L12.7642 4.29321C13.5229 5.05188 13.5229 6.28194 12.7642 7.04061L5.2761 14.5287C4.20317 15.6017 2.46365 15.6017 1.39072 14.5288C1.39072 14.5288 1.39072 14.5288 1.39069 14.5287L0.804682 13.9427C-0.268242 12.8698 -0.268242 11.1303 0.80465 10.0573C0.80465 10.0573 0.80465 10.0573 0.804682 10.0573L9.15482 1.70717C9.81983 1.03909 10.7242 0.664431 11.6669 0.666493Z" )
+               | Original textbooks
+           p.text-dat September 30,2020  
+           div.userchat
+            a(class="photo" href="#") #[img(src="assets/images/profile-1.png" alt="")]
+            div.padcht
+             div.text
+              p Lessoon Hasn't Started Yet Lessoon Hasn't Started Yet Lessoon Hasn't Started Yet
+              div.actions
+               span.time 3:16 PM
+               div(class="dropdown")
+                a(href="#" class="dropdown-toggle fas fa-ellipsis-h" data-toggle="dropdown")
+                div(class="dropdown-menu")
+                 a(class="dropdown-item" href="#") #[i.fas.fa-pen] edit
+                 a(class="dropdown-item" href="#") #[i.fas.fa-exclamation-circle] Report a Message
+                 a(class="dropdown-item" href="#delete-message"  data-toggle="modal") #[i.far.fa-times-circle] delete
+             div.attach
+              p 
+               svg(width="14" height="14" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg")
+                path(d="M0.804705 13.9427L1.39068 14.5287C2.46361 15.6017 4.20314 15.6017 5.27606 14.5288C5.27606 14.5288 5.27606 14.5288 5.2761 14.5287L12.7642 7.04061C13.5229 6.28194 13.5229 5.05188 12.7642 4.29321L12.3736 3.90255C11.6008 3.17869 10.3989 3.17869 9.62617 3.90255L4.09742 9.4313C3.96501 9.55921 3.96135 9.77022 4.08923 9.90266C4.21714 10.0351 4.42814 10.0387 4.56058 9.91084C4.56336 9.90816 4.56608 9.90544 4.56877 9.90266L10.0975 4.3739C10.6053 3.8988 11.3945 3.8988 11.9022 4.3739L12.2929 4.76456C12.7912 5.26285 12.7913 6.07078 12.293 6.56913C12.293 6.56916 12.2929 6.56922 12.2929 6.56925L4.80478 14.0574C3.98082 14.8422 2.68599 14.8422 1.86207 14.0574L1.27606 13.4714C0.463761 12.6587 0.463761 11.3414 1.27606 10.5287L9.6262 2.17855C10.7532 1.05197 12.5799 1.05197 13.7069 2.17855L14.4883 2.95922C15.6149 4.08621 15.6149 5.91296 14.4883 7.03995L8.09749 13.4307C7.96508 13.5586 7.96139 13.7696 8.0893 13.9021C8.21721 14.0345 8.42821 14.0382 8.56065 13.9103C8.56344 13.9076 8.56615 13.9049 8.56884 13.9021L14.9596 7.51196C16.3468 6.12481 16.3468 3.87577 14.9596 2.48859C14.9596 2.48856 14.9596 2.48856 14.9596 2.48856L14.1783 1.7072C12.7911 0.320019 10.5421 0.319986 9.15488 1.70714C9.15488 1.70717 9.15485 1.70717 9.15485 1.7072L0.804705 10.0573C-0.268221 11.1302 -0.268251 12.8698 0.804705 13.9427C0.804673 13.9427 0.804673 13.9427 0.804705 13.9427Z"  )
+                path(d="M11.6669 0.666493C12.6095 0.664431 13.5139 1.03909 14.1789 1.70717L14.9596 2.48787C16.3468 3.87502 16.3468 6.12406 14.9596 7.51124L14.9596 7.51127L8.56881 13.9021C8.4409 14.0345 8.2299 14.0382 8.09746 13.9103C7.96505 13.7823 7.96136 13.5713 8.08927 13.4389C8.09196 13.4361 8.09468 13.4334 8.09746 13.4307L14.4882 7.04061C15.6148 5.91362 15.6148 4.08687 14.4882 2.95988L13.7069 2.17852C12.5799 1.05194 10.7532 1.05194 9.62617 2.17852L1.27603 10.5287C0.463738 11.3414 0.463738 12.6586 1.27603 13.4714L1.86204 14.0574C2.68599 14.8421 3.98083 14.8421 4.80475 14.0574L12.2929 6.56928C12.7913 6.07099 12.7913 5.26307 12.293 4.76472C12.293 4.76469 12.2929 4.76463 12.2929 4.7646L11.9022 4.37393C11.3945 3.89883 10.6053 3.89883 10.0976 4.37393L4.56881 9.90269C4.4409 10.0351 4.22989 10.0388 4.09745 9.91087C3.96505 9.78297 3.96139 9.57196 4.08927 9.43952C4.09195 9.43674 4.09467 9.43402 4.09745 9.43133L9.62617 3.90255C10.3989 3.17869 11.6008 3.17869 12.3736 3.90255L12.7642 4.29321C13.5229 5.05188 13.5229 6.28194 12.7642 7.04061L5.2761 14.5287C4.20317 15.6017 2.46365 15.6017 1.39072 14.5288C1.39072 14.5288 1.39072 14.5288 1.39069 14.5287L0.804682 13.9427C-0.268242 12.8698 -0.268242 11.1303 0.80465 10.0573C0.80465 10.0573 0.80465 10.0573 0.804682 10.0573L9.15482 1.70717C9.81983 1.03909 10.7242 0.664431 11.6669 0.666493Z" )
+               | Original textbooks
+           div.userchat.tow
+            a(class="photo" href="#") #[img(src="assets/images/profile-1.png" alt="")]
+            div.padcht
+             div.text
+              p Lessoon Hasn't Started Yet Lessoon Hasn't Started Yet Lessoon Hasn't Started Yet
+              div.actions
+               span.time 3:16 PM
+                //i(class="fas fa-check it-che")
+                i(class="fas fa-check-double it-che active")
+             div.attach
+              p 
+               svg(width="14" height="14" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg")
+                path(d="M0.804705 13.9427L1.39068 14.5287C2.46361 15.6017 4.20314 15.6017 5.27606 14.5288C5.27606 14.5288 5.27606 14.5288 5.2761 14.5287L12.7642 7.04061C13.5229 6.28194 13.5229 5.05188 12.7642 4.29321L12.3736 3.90255C11.6008 3.17869 10.3989 3.17869 9.62617 3.90255L4.09742 9.4313C3.96501 9.55921 3.96135 9.77022 4.08923 9.90266C4.21714 10.0351 4.42814 10.0387 4.56058 9.91084C4.56336 9.90816 4.56608 9.90544 4.56877 9.90266L10.0975 4.3739C10.6053 3.8988 11.3945 3.8988 11.9022 4.3739L12.2929 4.76456C12.7912 5.26285 12.7913 6.07078 12.293 6.56913C12.293 6.56916 12.2929 6.56922 12.2929 6.56925L4.80478 14.0574C3.98082 14.8422 2.68599 14.8422 1.86207 14.0574L1.27606 13.4714C0.463761 12.6587 0.463761 11.3414 1.27606 10.5287L9.6262 2.17855C10.7532 1.05197 12.5799 1.05197 13.7069 2.17855L14.4883 2.95922C15.6149 4.08621 15.6149 5.91296 14.4883 7.03995L8.09749 13.4307C7.96508 13.5586 7.96139 13.7696 8.0893 13.9021C8.21721 14.0345 8.42821 14.0382 8.56065 13.9103C8.56344 13.9076 8.56615 13.9049 8.56884 13.9021L14.9596 7.51196C16.3468 6.12481 16.3468 3.87577 14.9596 2.48859C14.9596 2.48856 14.9596 2.48856 14.9596 2.48856L14.1783 1.7072C12.7911 0.320019 10.5421 0.319986 9.15488 1.70714C9.15488 1.70717 9.15485 1.70717 9.15485 1.7072L0.804705 10.0573C-0.268221 11.1302 -0.268251 12.8698 0.804705 13.9427C0.804673 13.9427 0.804673 13.9427 0.804705 13.9427Z"  )
+                path(d="M11.6669 0.666493C12.6095 0.664431 13.5139 1.03909 14.1789 1.70717L14.9596 2.48787C16.3468 3.87502 16.3468 6.12406 14.9596 7.51124L14.9596 7.51127L8.56881 13.9021C8.4409 14.0345 8.2299 14.0382 8.09746 13.9103C7.96505 13.7823 7.96136 13.5713 8.08927 13.4389C8.09196 13.4361 8.09468 13.4334 8.09746 13.4307L14.4882 7.04061C15.6148 5.91362 15.6148 4.08687 14.4882 2.95988L13.7069 2.17852C12.5799 1.05194 10.7532 1.05194 9.62617 2.17852L1.27603 10.5287C0.463738 11.3414 0.463738 12.6586 1.27603 13.4714L1.86204 14.0574C2.68599 14.8421 3.98083 14.8421 4.80475 14.0574L12.2929 6.56928C12.7913 6.07099 12.7913 5.26307 12.293 4.76472C12.293 4.76469 12.2929 4.76463 12.2929 4.7646L11.9022 4.37393C11.3945 3.89883 10.6053 3.89883 10.0976 4.37393L4.56881 9.90269C4.4409 10.0351 4.22989 10.0388 4.09745 9.91087C3.96505 9.78297 3.96139 9.57196 4.08927 9.43952C4.09195 9.43674 4.09467 9.43402 4.09745 9.43133L9.62617 3.90255C10.3989 3.17869 11.6008 3.17869 12.3736 3.90255L12.7642 4.29321C13.5229 5.05188 13.5229 6.28194 12.7642 7.04061L5.2761 14.5287C4.20317 15.6017 2.46365 15.6017 1.39072 14.5288C1.39072 14.5288 1.39072 14.5288 1.39069 14.5287L0.804682 13.9427C-0.268242 12.8698 -0.268242 11.1303 0.80465 10.0573C0.80465 10.0573 0.80465 10.0573 0.804682 10.0573L9.15482 1.70717C9.81983 1.03909 10.7242 0.664431 11.6669 0.666493Z" )
+               | Original textbooks
+          form(class="formchat" action="#" method="post")
+           a(href="#" class="goback") #[i.fas.fa-plus]
+           div.input-text
+            textarea(type="text" placeholder="Write your message...")
+            i.far.fa-smile  
+           button(class="send" type="submit") #[i.fas.fa-paper-plane]
+        div(class="tab-pane" id="notes"  role="tabpanel" aria-labelledby="notes-tab")
+         div.files 
+          div.imgage
+           a(href="#" class="fas fa-angle-left") 
+           img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+           div.text-da
+            h4.title mohamed
+            span.time September 30,2020
+          div.ex-files
+           a(href="#" class="files-bot") #[i.fas.fa-folder-open] files
+           a(href="#" class="close")
+            svg(width="10" height="10" viewBox="0 0 12 12" f  xmlns="http://www.w3.org/2000/svg")
+             path(d="M6.66271 6.00002L11.8625 0.800231C12.0455 0.617161 12.0455 0.320349 11.8625 0.137303C11.6794 -0.0457441 11.3826 -0.0457675 11.1995 0.137303L5.99975 5.33709L0.799987 0.137303C0.616917 -0.0457675 0.320105 -0.0457675 0.137058 0.137303C-0.0459882 0.320373 -0.0460117 0.617185 0.137058 0.800231L5.33682 6L0.137058 11.1998C-0.0460117 11.3829 -0.0460117 11.6797 0.137058 11.8627C0.228582 11.9542 0.348558 12 0.468535 12C0.588511 12 0.708464 11.9542 0.800011 11.8627L5.99975 6.66295L11.1995 11.8627C11.291 11.9542 11.411 12 11.531 12C11.651 12 11.7709 11.9542 11.8625 11.8627C12.0455 11.6796 12.0455 11.3828 11.8625 11.1998L6.66271 6.00002Z" fill="#000")
+         //form(action="#" method="post" class="formnotes")
+          div.row
+           div.col-sm-12.fild
+            input(type="text" class="form-control" placeholder="filled by tutor" name="lessons"  autocomplete="off" autofocus required )
+            label.floating-label lessons objective
+           div.col-sm-12.fild
+            input(type="text" class="form-control" placeholder="filled by tutor" name="vocabulary"  autocomplete="off" autofocus required )
+            label.floating-label new vocabulary
+           div.col-sm-12.fild
+            input(type="text" class="form-control" placeholder="filled by tutor" name="correction"  autocomplete="off" autofocus required )
+            label.floating-label error correction
+           div.col-sm-12.fild
+            input(type="text" class="form-control" placeholder="filled by tutor" name="objective"  autocomplete="off" autofocus required )
+            label.floating-label text lesson objective
+           div.col-sm-12.fild
+            input(type="text" class="form-control" placeholder="filled by tutor" name="homework"  autocomplete="off" autofocus required )
+            label.floating-label home work
+           div.col-sm-12.fild
+            input(type="text" class="form-control" placeholder="filled by tutor" name="material"  autocomplete="off" autofocus required )
+            label.floating-label material
+         div.item-fridy
+          form(action="#" method="post" class="formnotes mt-3")
+           div.row
+            div.col-sm-6.fild
+             i(class="fas fa-chevron-down iconsel")
+             select(class="form-control" name="hour" autocomplete="off" required)
+              option 
+              option date
+              option date
+              option date
+             label.floating-label date 
+            div.col-sm-6.fild
+             i(class="fas fa-chevron-down iconsel")
+             select(class="form-control" name="hour" autocomplete="off" required)
+              option 
+              option tutor
+              option tutor
+              option tutor
+             label.floating-label tutor 
+          nav.items-box
+           a(href="#")
+            img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+            div.text-da
+             h4.title mohamed
+             span.time September 30,2020
+            i(class="fas fa-angle-right") 
+           a(href="#")
+            img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+            div.text-da
+             h4.title mohamed
+             span.time September 30,2020
+            i(class="fas fa-angle-right")  
+           a(href="#")
+            img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+            div.text-da
+             h4.title mohamed
+             span.time September 30,2020
+            i(class="fas fa-angle-right") 
+           a(href="#")
+            img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+            div.text-da
+             h4.title mohamed
+             span.time September 30,2020
+            i(class="fas fa-angle-right") 
+           a(href="#")
+            img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+            div.text-da
+             h4.title mohamed
+             span.time September 30,2020
+            i(class="fas fa-angle-right") 
+           a(href="#")
+            img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+            div.text-da
+             h4.title mohamed
+             span.time September 30,2020
+            i(class="fas fa-angle-right") 
+
+ 

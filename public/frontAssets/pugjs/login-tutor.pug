@@ -1,0 +1,35 @@
+extend index
+
+block pageindex 
+ section.sign-up         
+  div.container
+   h1.title Login
+   div.row
+    div.col-sm-7.item
+     form(action="#" method="")
+      div.row
+       div.col-sm-12.fild
+        input(type="text" class="form-control" placeholder="Enter your Email" autocomplete="off" autofocus required)
+        label.floating-label Email
+       div.col-sm-12.fild
+        i(class="fas fa-eye-slash icon-pass")
+        i(class="fas fa-eye icon-pass")
+        input(type="password" class="form-control pass" placeholder="Enter password" autocomplete="off" autofocus required)
+        label.floating-label Password
+       div.col-sm-12.fild.line-pass
+        label.che-box
+         input(type="checkbox" name="checkbox")
+         span.label-text Remember me
+        a(href="forget-tutor.html" class="forget") Forget Password ? 
+       div.col-sm-12.fild.text-center
+        button(class="bottom" type="submit") Login
+        p.text Or signup  using
+        nav.social
+          a(href="#" title="Facebook") #[img(src='assets/images/facebook.png' alt="" title="")]
+          a(href="#" title="google")   #[img(src='assets/images/google.png' alt="" title="")]
+    div.col-sm-4.item.offset-sm-1
+     img(src='assets/images/tutor.png' alt="Arabia" title="Arabia")
+     div.fild.text-center
+      p.text.ithave #[a(href="#") Signup as student ] OR #[a(href="#") Signup as Tutor] 
+      a(href="login.html" class="bottom") login
+ 

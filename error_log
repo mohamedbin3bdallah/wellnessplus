@@ -1,0 +1,7 @@
+[07-Sep-2017 02:06:08 UTC] PHP Fatal error:  Class 'Route' not found in /home/mobimed/public_html/routes/web.php on line 14
+[07-Sep-2017 09:11:51 UTC] PHP Fatal error:  Class 'Route' not found in /home/mobimed/public_html/routes/web.php on line 14
+[07-Sep-2017 09:16:08 UTC] PHP Fatal error:  Class 'Route' not found in /home/mobimed/public_html/routes/web.php on line 14
+[07-Sep-2017 10:35:38 UTC] PHP Fatal error:  Class 'Route' not found in /home/mobimed/public_html/routes/web.php on line 14
+[21-Sep-2017 18:37:03 UTC] PHP Fatal error:  Class 'Route' not found in /home/mobimed/public_html/routes/api.php on line 16
+[21-Sep-2017 18:37:41 UTC] PHP Fatal error:  Class 'Route' not found in /home/mobimed/public_html/routes/web.php on line 14
+[18-Oct-2017 13:17:30 UTC] PHP Fatal error:  Class 'Artisan' not found in /home/mobimed/public_html/routes/console.php on line 16

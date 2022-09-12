@@ -1,0 +1,110 @@
+body {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            margin: 0 !important;
+            width: 100% !important;
+            -webkit-text-size-adjust: 100% !important;
+            -ms-text-size-adjust: 100% !important;
+            -webkit-font-smoothing: antialiased !important;
+            background-color: #fff;
+            direction: ltr;
+        }
+
+        #tableContent img {
+            border: 0 !important;
+            display: block !important;
+            outline: none !important;
+        }
+
+        img {
+            max-width: 100%;
+        }
+		
+        p,
+        h1,
+        h2,
+        ul,
+        ol,
+        li,
+        div {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1,
+        h2 {
+            font-weight: normal;
+            background: transparent !important;
+            border: none !important;
+            line-height: 20px;
+        }
+
+        td#middle {
+            vertical-align: middle;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            outline: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
+            max-width: 100%;
+        }
+
+        @media screen and (max-width: 600px) {
+            table#MainTable {
+                width: 100% !important;
+            }
+
+            #w-custom {
+                width: 40% !important;
+            }
+
+            #bg-cover {
+                background-size: 100% 100% !important;
+            }
+
+            #f-35 {
+                font-size: 24px !important;
+            }
+
+            #f-13 {
+                font-size: 13px !important;
+            }
+
+            button {
+                font-size: 20px !important;
+            }
+
+            #f-11 {
+                font-size: 11px !important;
+            }
+
+            #n-bg-m {
+                background-size: 40%;
+            }
+
+            #mo-c {
+                width: 23% !important;
+                margin: 0px auto 10px;
+            }
+
+            #mo-z {
+                width: 0px !important;
+            }
+
+            #w-mo {
+                width: 50% !important;
+            }
+
+            #mo-f {
+                font-size: 18px !important;
+            }
+
+
+        }

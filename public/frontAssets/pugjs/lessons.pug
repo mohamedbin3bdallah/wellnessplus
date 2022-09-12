@@ -1,0 +1,392 @@
+extend index
+
+block pageinvoice
+ 
+ include ../pugjs/header-lessons.pug
+ <!--End header-lessons-->
+ section.lessons-leave
+  div.iframe-online
+    div.user-item
+     div.image
+      img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+     h3.title lessoon hasn't started yet
+  
+  div.friends
+   div.head
+    a(href="#" class="goback") #[i.fas.fa-angle-right]
+    ul(class="nav nav-tabs" id="myTab" role="tablist")
+      li.nav-item
+       a(class="nav-link active" id="messages-tab" data-toggle="tab" href="#messages"  role="tab" aria-controls="messages" aria-selected="true") #[i(class="fas fa-comments")] messages
+      li.nav-item
+       a(class="nav-link"  id="notes-tab" data-toggle="tab" href="#notes" role="tab" aria-controls="notes"  aria-selected="false") #[i(class="fas fa-file-alt")]  notes
+    
+   div(class="tab-content" id="myTabContent")
+      div(class="tab-pane fade show active" id="messages"  role="tabpanel" aria-labelledby="messages-tab")  
+       ul(class="nav nav-tabs" id="myTab" role="tablist")
+        li.nav-item
+         a(class="nav-link active" id="all-tab" data-toggle="tab" href="#all"  role="tab" aria-controls="all" aria-selected="true") all
+        li.nav-item
+         a(class="nav-link"  id="unread-tab" data-toggle="tab" href="#unread" role="tab" aria-controls="unread"  aria-selected="false") unread
+       div(class="tab-content" id="myTabContent")
+        div(class="tab-pane fade show active" id="all"  role="tabpanel" aria-labelledby="all-tab")
+         div.formsearch
+          input(class="form-control filter-all" type="text" placeholder="Search...")
+         ul(class="mylistall")
+             li.active
+              a(href="#")
+               div.imgage
+                img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+               div.content
+                h4.title mohamed ahmed
+                 span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+                p.text Not Connected To Facebook Account
+               span.time 3:15 PM
+             li
+              a(href="#")
+               div.imgage
+                img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+               div.content
+                h4.title  ahmed
+                 span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+                p.text Not Connected To Facebook Account
+               span.time 3:15 PM  
+             li.active
+              a(href="#")
+               div.imgage
+                img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+               div.content
+                h4.title laneya
+                 span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+                p.text Not Connected To Facebook Account
+               span.time 3:15 PM
+             li
+              a(href="#")
+               div.imgage
+                img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+               div.content
+                h4.title oscar
+                 span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+                p.text Not Connected To Facebook Account
+               span.time 3:15 PM
+             li
+              a(href="#")
+               div.imgage
+                img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+               div.content
+                h4.title gatlin
+                 span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+                p.text Not Connected To Facebook Account
+               span.time 3:15 PM
+             li
+              a(href="#")
+               div.imgage
+                img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+               div.content
+                h4.title fox
+                 span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+                p.text Not Connected To Facebook Account
+               span.time 3:15 PM
+        
+        
+        div(class="tab-pane fade" id="unread"  role="tabpanel" aria-labelledby="unread-tab")
+         div.formsearch
+          input(class="form-control filter-unread" type="text" placeholder="Search...")
+         ul(class="mylistunread")
+             li.active
+              a(href="#")
+               div.imgage
+                img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+               div.content
+                h4.title mohamed ahmed
+                 span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+                p.text Not Connected To Facebook Account
+               span.time 3:15 PM
+             li
+              a(href="#")
+               div.imgage
+                img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+               div.content
+                h4.title  ahmed
+                 span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+                p.text Not Connected To Facebook Account
+               span.time 3:15 PM  
+             li.active
+              a(href="#")
+               div.imgage
+                img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+               div.content
+                h4.title laneya
+                 span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+                p.text Not Connected To Facebook Account
+               span.time 3:15 PM
+             li
+              a(href="#")
+               div.imgage
+                img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+               div.content
+                h4.title oscar
+                 span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+                p.text Not Connected To Facebook Account
+               span.time 3:15 PM
+             li
+              a(href="#")
+               div.imgage
+                img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+               div.content
+                h4.title gatlin
+                 span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+                p.text Not Connected To Facebook Account
+               span.time 3:15 PM
+             li
+              a(href="#")
+               div.imgage
+                img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+               div.content
+                h4.title fox
+                 span(class="fas fa-question tooltiptext") #[small Hover over me Hover over me  Hover over me] 
+                p.text Not Connected To Facebook Account
+               span.time 3:15 PM
+       //div
+        div.files 
+         div.imgage
+          a(href="#" class="fas fa-angle-left") 
+          img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+          div.text-da
+           h4.title mohamed 
+         div.ex-files
+          a(href="#" class="files-bot") #[i.fas.fa-folder-open] files
+          a(href="#" class="close")
+           svg(width="10" height="10" viewBox="0 0 12 12" f  xmlns="http://www.w3.org/2000/svg")
+            path(d="M6.66271 6.00002L11.8625 0.800231C12.0455 0.617161 12.0455 0.320349 11.8625 0.137303C11.6794 -0.0457441 11.3826 -0.0457675 11.1995 0.137303L5.99975 5.33709L0.799987 0.137303C0.616917 -0.0457675 0.320105 -0.0457675 0.137058 0.137303C-0.0459882 0.320373 -0.0460117 0.617185 0.137058 0.800231L5.33682 6L0.137058 11.1998C-0.0460117 11.3829 -0.0460117 11.6797 0.137058 11.8627C0.228582 11.9542 0.348558 12 0.468535 12C0.588511 12 0.708464 11.9542 0.800011 11.8627L5.99975 6.66295L11.1995 11.8627C11.291 11.9542 11.411 12 11.531 12C11.651 12 11.7709 11.9542 11.8625 11.8627C12.0455 11.6796 12.0455 11.3828 11.8625 11.1998L6.66271 6.00002Z" fill="#000")
+    
+        div.chat-text
+         p.text-dat September 30,2020
+         div.userchat
+          a(class="photo" href="#") #[img(src="assets/images/profile-1.png" alt="")]
+          div.padcht
+           div.text
+            p Lessoon Hasn't Started Yet Lessoon Hasn't Started Yet Lessoon Hasn't Started Yet
+            div.actions
+             span.time 3:16 PM
+             div(class="dropdown")
+              a(href="#" class="dropdown-toggle fas fa-ellipsis-h" data-toggle="dropdown")
+              div(class="dropdown-menu")
+               a(class="dropdown-item" href="#") #[i.fas.fa-pen] edit
+               a(class="dropdown-item" href="#") #[i.fas.fa-exclamation-circle] Report a Message
+               a(class="dropdown-item" href="#delete-message"  data-toggle="modal") #[i.far.fa-times-circle] delete
+ 
+           div.attach
+            p 
+             svg(width="14" height="14" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg")
+              path(d="M0.804705 13.9427L1.39068 14.5287C2.46361 15.6017 4.20314 15.6017 5.27606 14.5288C5.27606 14.5288 5.27606 14.5288 5.2761 14.5287L12.7642 7.04061C13.5229 6.28194 13.5229 5.05188 12.7642 4.29321L12.3736 3.90255C11.6008 3.17869 10.3989 3.17869 9.62617 3.90255L4.09742 9.4313C3.96501 9.55921 3.96135 9.77022 4.08923 9.90266C4.21714 10.0351 4.42814 10.0387 4.56058 9.91084C4.56336 9.90816 4.56608 9.90544 4.56877 9.90266L10.0975 4.3739C10.6053 3.8988 11.3945 3.8988 11.9022 4.3739L12.2929 4.76456C12.7912 5.26285 12.7913 6.07078 12.293 6.56913C12.293 6.56916 12.2929 6.56922 12.2929 6.56925L4.80478 14.0574C3.98082 14.8422 2.68599 14.8422 1.86207 14.0574L1.27606 13.4714C0.463761 12.6587 0.463761 11.3414 1.27606 10.5287L9.6262 2.17855C10.7532 1.05197 12.5799 1.05197 13.7069 2.17855L14.4883 2.95922C15.6149 4.08621 15.6149 5.91296 14.4883 7.03995L8.09749 13.4307C7.96508 13.5586 7.96139 13.7696 8.0893 13.9021C8.21721 14.0345 8.42821 14.0382 8.56065 13.9103C8.56344 13.9076 8.56615 13.9049 8.56884 13.9021L14.9596 7.51196C16.3468 6.12481 16.3468 3.87577 14.9596 2.48859C14.9596 2.48856 14.9596 2.48856 14.9596 2.48856L14.1783 1.7072C12.7911 0.320019 10.5421 0.319986 9.15488 1.70714C9.15488 1.70717 9.15485 1.70717 9.15485 1.7072L0.804705 10.0573C-0.268221 11.1302 -0.268251 12.8698 0.804705 13.9427C0.804673 13.9427 0.804673 13.9427 0.804705 13.9427Z"  )
+              path(d="M11.6669 0.666493C12.6095 0.664431 13.5139 1.03909 14.1789 1.70717L14.9596 2.48787C16.3468 3.87502 16.3468 6.12406 14.9596 7.51124L14.9596 7.51127L8.56881 13.9021C8.4409 14.0345 8.2299 14.0382 8.09746 13.9103C7.96505 13.7823 7.96136 13.5713 8.08927 13.4389C8.09196 13.4361 8.09468 13.4334 8.09746 13.4307L14.4882 7.04061C15.6148 5.91362 15.6148 4.08687 14.4882 2.95988L13.7069 2.17852C12.5799 1.05194 10.7532 1.05194 9.62617 2.17852L1.27603 10.5287C0.463738 11.3414 0.463738 12.6586 1.27603 13.4714L1.86204 14.0574C2.68599 14.8421 3.98083 14.8421 4.80475 14.0574L12.2929 6.56928C12.7913 6.07099 12.7913 5.26307 12.293 4.76472C12.293 4.76469 12.2929 4.76463 12.2929 4.7646L11.9022 4.37393C11.3945 3.89883 10.6053 3.89883 10.0976 4.37393L4.56881 9.90269C4.4409 10.0351 4.22989 10.0388 4.09745 9.91087C3.96505 9.78297 3.96139 9.57196 4.08927 9.43952C4.09195 9.43674 4.09467 9.43402 4.09745 9.43133L9.62617 3.90255C10.3989 3.17869 11.6008 3.17869 12.3736 3.90255L12.7642 4.29321C13.5229 5.05188 13.5229 6.28194 12.7642 7.04061L5.2761 14.5287C4.20317 15.6017 2.46365 15.6017 1.39072 14.5288C1.39072 14.5288 1.39072 14.5288 1.39069 14.5287L0.804682 13.9427C-0.268242 12.8698 -0.268242 11.1303 0.80465 10.0573C0.80465 10.0573 0.80465 10.0573 0.804682 10.0573L9.15482 1.70717C9.81983 1.03909 10.7242 0.664431 11.6669 0.666493Z" )
+             | Original textbooks
+         div.userchat.tow
+          a(class="photo" href="#") #[img(src="assets/images/profile-1.png" alt="")]
+          div.padcht
+           div.text
+            p Lessoon Hasn't Started Yet Lessoon Hasn't Started Yet Lessoon Hasn't Started Yet
+            div.actions
+             span.time 3:16 PM
+             //i(class="fas fa-check it-che")
+             i(class="fas fa-check-double it-che active")
+           div.attach
+            p 
+             svg(width="14" height="14" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg")
+              path(d="M0.804705 13.9427L1.39068 14.5287C2.46361 15.6017 4.20314 15.6017 5.27606 14.5288C5.27606 14.5288 5.27606 14.5288 5.2761 14.5287L12.7642 7.04061C13.5229 6.28194 13.5229 5.05188 12.7642 4.29321L12.3736 3.90255C11.6008 3.17869 10.3989 3.17869 9.62617 3.90255L4.09742 9.4313C3.96501 9.55921 3.96135 9.77022 4.08923 9.90266C4.21714 10.0351 4.42814 10.0387 4.56058 9.91084C4.56336 9.90816 4.56608 9.90544 4.56877 9.90266L10.0975 4.3739C10.6053 3.8988 11.3945 3.8988 11.9022 4.3739L12.2929 4.76456C12.7912 5.26285 12.7913 6.07078 12.293 6.56913C12.293 6.56916 12.2929 6.56922 12.2929 6.56925L4.80478 14.0574C3.98082 14.8422 2.68599 14.8422 1.86207 14.0574L1.27606 13.4714C0.463761 12.6587 0.463761 11.3414 1.27606 10.5287L9.6262 2.17855C10.7532 1.05197 12.5799 1.05197 13.7069 2.17855L14.4883 2.95922C15.6149 4.08621 15.6149 5.91296 14.4883 7.03995L8.09749 13.4307C7.96508 13.5586 7.96139 13.7696 8.0893 13.9021C8.21721 14.0345 8.42821 14.0382 8.56065 13.9103C8.56344 13.9076 8.56615 13.9049 8.56884 13.9021L14.9596 7.51196C16.3468 6.12481 16.3468 3.87577 14.9596 2.48859C14.9596 2.48856 14.9596 2.48856 14.9596 2.48856L14.1783 1.7072C12.7911 0.320019 10.5421 0.319986 9.15488 1.70714C9.15488 1.70717 9.15485 1.70717 9.15485 1.7072L0.804705 10.0573C-0.268221 11.1302 -0.268251 12.8698 0.804705 13.9427C0.804673 13.9427 0.804673 13.9427 0.804705 13.9427Z"  )
+              path(d="M11.6669 0.666493C12.6095 0.664431 13.5139 1.03909 14.1789 1.70717L14.9596 2.48787C16.3468 3.87502 16.3468 6.12406 14.9596 7.51124L14.9596 7.51127L8.56881 13.9021C8.4409 14.0345 8.2299 14.0382 8.09746 13.9103C7.96505 13.7823 7.96136 13.5713 8.08927 13.4389C8.09196 13.4361 8.09468 13.4334 8.09746 13.4307L14.4882 7.04061C15.6148 5.91362 15.6148 4.08687 14.4882 2.95988L13.7069 2.17852C12.5799 1.05194 10.7532 1.05194 9.62617 2.17852L1.27603 10.5287C0.463738 11.3414 0.463738 12.6586 1.27603 13.4714L1.86204 14.0574C2.68599 14.8421 3.98083 14.8421 4.80475 14.0574L12.2929 6.56928C12.7913 6.07099 12.7913 5.26307 12.293 4.76472C12.293 4.76469 12.2929 4.76463 12.2929 4.7646L11.9022 4.37393C11.3945 3.89883 10.6053 3.89883 10.0976 4.37393L4.56881 9.90269C4.4409 10.0351 4.22989 10.0388 4.09745 9.91087C3.96505 9.78297 3.96139 9.57196 4.08927 9.43952C4.09195 9.43674 4.09467 9.43402 4.09745 9.43133L9.62617 3.90255C10.3989 3.17869 11.6008 3.17869 12.3736 3.90255L12.7642 4.29321C13.5229 5.05188 13.5229 6.28194 12.7642 7.04061L5.2761 14.5287C4.20317 15.6017 2.46365 15.6017 1.39072 14.5288C1.39072 14.5288 1.39072 14.5288 1.39069 14.5287L0.804682 13.9427C-0.268242 12.8698 -0.268242 11.1303 0.80465 10.0573C0.80465 10.0573 0.80465 10.0573 0.804682 10.0573L9.15482 1.70717C9.81983 1.03909 10.7242 0.664431 11.6669 0.666493Z" )
+             | Original textbooks
+         p.text-dat September 30,2020
+         div.userchat
+          a(class="photo" href="#") #[img(src="assets/images/profile-1.png" alt="")]
+          div.padcht
+           div.text
+            p Lessoon Hasn't Started Yet Lessoon Hasn't Started Yet Lessoon Hasn't Started Yet
+            div.actions
+             span.time 3:16 PM
+             div(class="dropdown")
+              a(href="#" class="dropdown-toggle fas fa-ellipsis-h" data-toggle="dropdown")
+              div(class="dropdown-menu")
+               a(class="dropdown-item" href="#") #[i.fas.fa-pen] edit
+               a(class="dropdown-item" href="#") #[i.fas.fa-exclamation-circle] Report a Message
+               a(class="dropdown-item" href="#delete-message"  data-toggle="modal") #[i.far.fa-times-circle] delete
+ 
+           div.attach
+            p 
+             svg(width="14" height="14" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg")
+              path(d="M0.804705 13.9427L1.39068 14.5287C2.46361 15.6017 4.20314 15.6017 5.27606 14.5288C5.27606 14.5288 5.27606 14.5288 5.2761 14.5287L12.7642 7.04061C13.5229 6.28194 13.5229 5.05188 12.7642 4.29321L12.3736 3.90255C11.6008 3.17869 10.3989 3.17869 9.62617 3.90255L4.09742 9.4313C3.96501 9.55921 3.96135 9.77022 4.08923 9.90266C4.21714 10.0351 4.42814 10.0387 4.56058 9.91084C4.56336 9.90816 4.56608 9.90544 4.56877 9.90266L10.0975 4.3739C10.6053 3.8988 11.3945 3.8988 11.9022 4.3739L12.2929 4.76456C12.7912 5.26285 12.7913 6.07078 12.293 6.56913C12.293 6.56916 12.2929 6.56922 12.2929 6.56925L4.80478 14.0574C3.98082 14.8422 2.68599 14.8422 1.86207 14.0574L1.27606 13.4714C0.463761 12.6587 0.463761 11.3414 1.27606 10.5287L9.6262 2.17855C10.7532 1.05197 12.5799 1.05197 13.7069 2.17855L14.4883 2.95922C15.6149 4.08621 15.6149 5.91296 14.4883 7.03995L8.09749 13.4307C7.96508 13.5586 7.96139 13.7696 8.0893 13.9021C8.21721 14.0345 8.42821 14.0382 8.56065 13.9103C8.56344 13.9076 8.56615 13.9049 8.56884 13.9021L14.9596 7.51196C16.3468 6.12481 16.3468 3.87577 14.9596 2.48859C14.9596 2.48856 14.9596 2.48856 14.9596 2.48856L14.1783 1.7072C12.7911 0.320019 10.5421 0.319986 9.15488 1.70714C9.15488 1.70717 9.15485 1.70717 9.15485 1.7072L0.804705 10.0573C-0.268221 11.1302 -0.268251 12.8698 0.804705 13.9427C0.804673 13.9427 0.804673 13.9427 0.804705 13.9427Z"  )
+              path(d="M11.6669 0.666493C12.6095 0.664431 13.5139 1.03909 14.1789 1.70717L14.9596 2.48787C16.3468 3.87502 16.3468 6.12406 14.9596 7.51124L14.9596 7.51127L8.56881 13.9021C8.4409 14.0345 8.2299 14.0382 8.09746 13.9103C7.96505 13.7823 7.96136 13.5713 8.08927 13.4389C8.09196 13.4361 8.09468 13.4334 8.09746 13.4307L14.4882 7.04061C15.6148 5.91362 15.6148 4.08687 14.4882 2.95988L13.7069 2.17852C12.5799 1.05194 10.7532 1.05194 9.62617 2.17852L1.27603 10.5287C0.463738 11.3414 0.463738 12.6586 1.27603 13.4714L1.86204 14.0574C2.68599 14.8421 3.98083 14.8421 4.80475 14.0574L12.2929 6.56928C12.7913 6.07099 12.7913 5.26307 12.293 4.76472C12.293 4.76469 12.2929 4.76463 12.2929 4.7646L11.9022 4.37393C11.3945 3.89883 10.6053 3.89883 10.0976 4.37393L4.56881 9.90269C4.4409 10.0351 4.22989 10.0388 4.09745 9.91087C3.96505 9.78297 3.96139 9.57196 4.08927 9.43952C4.09195 9.43674 4.09467 9.43402 4.09745 9.43133L9.62617 3.90255C10.3989 3.17869 11.6008 3.17869 12.3736 3.90255L12.7642 4.29321C13.5229 5.05188 13.5229 6.28194 12.7642 7.04061L5.2761 14.5287C4.20317 15.6017 2.46365 15.6017 1.39072 14.5288C1.39072 14.5288 1.39072 14.5288 1.39069 14.5287L0.804682 13.9427C-0.268242 12.8698 -0.268242 11.1303 0.80465 10.0573C0.80465 10.0573 0.80465 10.0573 0.804682 10.0573L9.15482 1.70717C9.81983 1.03909 10.7242 0.664431 11.6669 0.666493Z" )
+             | Original textbooks
+         div.userchat.tow
+          a(class="photo" href="#") #[img(src="assets/images/profile-1.png" alt="")]
+          div.padcht
+           div.text
+            p Lessoon Hasn't Started Yet Lessoon Hasn't Started Yet Lessoon Hasn't Started Yet
+            div.actions
+             span.time 3:16 PM
+             //i(class="fas fa-check it-che")
+             i(class="fas fa-check-double it-che active")
+           div.attach
+            p 
+             svg(width="14" height="14" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg")
+              path(d="M0.804705 13.9427L1.39068 14.5287C2.46361 15.6017 4.20314 15.6017 5.27606 14.5288C5.27606 14.5288 5.27606 14.5288 5.2761 14.5287L12.7642 7.04061C13.5229 6.28194 13.5229 5.05188 12.7642 4.29321L12.3736 3.90255C11.6008 3.17869 10.3989 3.17869 9.62617 3.90255L4.09742 9.4313C3.96501 9.55921 3.96135 9.77022 4.08923 9.90266C4.21714 10.0351 4.42814 10.0387 4.56058 9.91084C4.56336 9.90816 4.56608 9.90544 4.56877 9.90266L10.0975 4.3739C10.6053 3.8988 11.3945 3.8988 11.9022 4.3739L12.2929 4.76456C12.7912 5.26285 12.7913 6.07078 12.293 6.56913C12.293 6.56916 12.2929 6.56922 12.2929 6.56925L4.80478 14.0574C3.98082 14.8422 2.68599 14.8422 1.86207 14.0574L1.27606 13.4714C0.463761 12.6587 0.463761 11.3414 1.27606 10.5287L9.6262 2.17855C10.7532 1.05197 12.5799 1.05197 13.7069 2.17855L14.4883 2.95922C15.6149 4.08621 15.6149 5.91296 14.4883 7.03995L8.09749 13.4307C7.96508 13.5586 7.96139 13.7696 8.0893 13.9021C8.21721 14.0345 8.42821 14.0382 8.56065 13.9103C8.56344 13.9076 8.56615 13.9049 8.56884 13.9021L14.9596 7.51196C16.3468 6.12481 16.3468 3.87577 14.9596 2.48859C14.9596 2.48856 14.9596 2.48856 14.9596 2.48856L14.1783 1.7072C12.7911 0.320019 10.5421 0.319986 9.15488 1.70714C9.15488 1.70717 9.15485 1.70717 9.15485 1.7072L0.804705 10.0573C-0.268221 11.1302 -0.268251 12.8698 0.804705 13.9427C0.804673 13.9427 0.804673 13.9427 0.804705 13.9427Z"  )
+              path(d="M11.6669 0.666493C12.6095 0.664431 13.5139 1.03909 14.1789 1.70717L14.9596 2.48787C16.3468 3.87502 16.3468 6.12406 14.9596 7.51124L14.9596 7.51127L8.56881 13.9021C8.4409 14.0345 8.2299 14.0382 8.09746 13.9103C7.96505 13.7823 7.96136 13.5713 8.08927 13.4389C8.09196 13.4361 8.09468 13.4334 8.09746 13.4307L14.4882 7.04061C15.6148 5.91362 15.6148 4.08687 14.4882 2.95988L13.7069 2.17852C12.5799 1.05194 10.7532 1.05194 9.62617 2.17852L1.27603 10.5287C0.463738 11.3414 0.463738 12.6586 1.27603 13.4714L1.86204 14.0574C2.68599 14.8421 3.98083 14.8421 4.80475 14.0574L12.2929 6.56928C12.7913 6.07099 12.7913 5.26307 12.293 4.76472C12.293 4.76469 12.2929 4.76463 12.2929 4.7646L11.9022 4.37393C11.3945 3.89883 10.6053 3.89883 10.0976 4.37393L4.56881 9.90269C4.4409 10.0351 4.22989 10.0388 4.09745 9.91087C3.96505 9.78297 3.96139 9.57196 4.08927 9.43952C4.09195 9.43674 4.09467 9.43402 4.09745 9.43133L9.62617 3.90255C10.3989 3.17869 11.6008 3.17869 12.3736 3.90255L12.7642 4.29321C13.5229 5.05188 13.5229 6.28194 12.7642 7.04061L5.2761 14.5287C4.20317 15.6017 2.46365 15.6017 1.39072 14.5288C1.39072 14.5288 1.39072 14.5288 1.39069 14.5287L0.804682 13.9427C-0.268242 12.8698 -0.268242 11.1303 0.80465 10.0573C0.80465 10.0573 0.80465 10.0573 0.804682 10.0573L9.15482 1.70717C9.81983 1.03909 10.7242 0.664431 11.6669 0.666493Z" )
+             | Original textbooks
+         p.text-dat September 30,2020
+         div.userchat
+          a(class="photo" href="#") #[img(src="assets/images/profile-1.png" alt="")]
+          div.padcht
+           div.text
+            p Lessoon Hasn't Started Yet Lessoon Hasn't Started Yet Lessoon Hasn't Started Yet
+            div.actions
+             span.time 3:16 PM
+             div(class="dropdown")
+              a(href="#" class="dropdown-toggle fas fa-ellipsis-h" data-toggle="dropdown")
+              div(class="dropdown-menu")
+               a(class="dropdown-item" href="#") #[i.fas.fa-pen] edit
+               a(class="dropdown-item" href="#") #[i.fas.fa-exclamation-circle] Report a Message
+               a(class="dropdown-item" href="#delete-message"  data-toggle="modal") #[i.far.fa-times-circle] delete
+ 
+           div.attach
+            p 
+             svg(width="14" height="14" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg")
+              path(d="M0.804705 13.9427L1.39068 14.5287C2.46361 15.6017 4.20314 15.6017 5.27606 14.5288C5.27606 14.5288 5.27606 14.5288 5.2761 14.5287L12.7642 7.04061C13.5229 6.28194 13.5229 5.05188 12.7642 4.29321L12.3736 3.90255C11.6008 3.17869 10.3989 3.17869 9.62617 3.90255L4.09742 9.4313C3.96501 9.55921 3.96135 9.77022 4.08923 9.90266C4.21714 10.0351 4.42814 10.0387 4.56058 9.91084C4.56336 9.90816 4.56608 9.90544 4.56877 9.90266L10.0975 4.3739C10.6053 3.8988 11.3945 3.8988 11.9022 4.3739L12.2929 4.76456C12.7912 5.26285 12.7913 6.07078 12.293 6.56913C12.293 6.56916 12.2929 6.56922 12.2929 6.56925L4.80478 14.0574C3.98082 14.8422 2.68599 14.8422 1.86207 14.0574L1.27606 13.4714C0.463761 12.6587 0.463761 11.3414 1.27606 10.5287L9.6262 2.17855C10.7532 1.05197 12.5799 1.05197 13.7069 2.17855L14.4883 2.95922C15.6149 4.08621 15.6149 5.91296 14.4883 7.03995L8.09749 13.4307C7.96508 13.5586 7.96139 13.7696 8.0893 13.9021C8.21721 14.0345 8.42821 14.0382 8.56065 13.9103C8.56344 13.9076 8.56615 13.9049 8.56884 13.9021L14.9596 7.51196C16.3468 6.12481 16.3468 3.87577 14.9596 2.48859C14.9596 2.48856 14.9596 2.48856 14.9596 2.48856L14.1783 1.7072C12.7911 0.320019 10.5421 0.319986 9.15488 1.70714C9.15488 1.70717 9.15485 1.70717 9.15485 1.7072L0.804705 10.0573C-0.268221 11.1302 -0.268251 12.8698 0.804705 13.9427C0.804673 13.9427 0.804673 13.9427 0.804705 13.9427Z"  )
+              path(d="M11.6669 0.666493C12.6095 0.664431 13.5139 1.03909 14.1789 1.70717L14.9596 2.48787C16.3468 3.87502 16.3468 6.12406 14.9596 7.51124L14.9596 7.51127L8.56881 13.9021C8.4409 14.0345 8.2299 14.0382 8.09746 13.9103C7.96505 13.7823 7.96136 13.5713 8.08927 13.4389C8.09196 13.4361 8.09468 13.4334 8.09746 13.4307L14.4882 7.04061C15.6148 5.91362 15.6148 4.08687 14.4882 2.95988L13.7069 2.17852C12.5799 1.05194 10.7532 1.05194 9.62617 2.17852L1.27603 10.5287C0.463738 11.3414 0.463738 12.6586 1.27603 13.4714L1.86204 14.0574C2.68599 14.8421 3.98083 14.8421 4.80475 14.0574L12.2929 6.56928C12.7913 6.07099 12.7913 5.26307 12.293 4.76472C12.293 4.76469 12.2929 4.76463 12.2929 4.7646L11.9022 4.37393C11.3945 3.89883 10.6053 3.89883 10.0976 4.37393L4.56881 9.90269C4.4409 10.0351 4.22989 10.0388 4.09745 9.91087C3.96505 9.78297 3.96139 9.57196 4.08927 9.43952C4.09195 9.43674 4.09467 9.43402 4.09745 9.43133L9.62617 3.90255C10.3989 3.17869 11.6008 3.17869 12.3736 3.90255L12.7642 4.29321C13.5229 5.05188 13.5229 6.28194 12.7642 7.04061L5.2761 14.5287C4.20317 15.6017 2.46365 15.6017 1.39072 14.5288C1.39072 14.5288 1.39072 14.5288 1.39069 14.5287L0.804682 13.9427C-0.268242 12.8698 -0.268242 11.1303 0.80465 10.0573C0.80465 10.0573 0.80465 10.0573 0.804682 10.0573L9.15482 1.70717C9.81983 1.03909 10.7242 0.664431 11.6669 0.666493Z" )
+             | Original textbooks
+         div.userchat.tow
+          a(class="photo" href="#") #[img(src="assets/images/profile-1.png" alt="")]
+          div.padcht
+           div.text
+            p Lessoon Hasn't Started Yet Lessoon Hasn't Started Yet Lessoon Hasn't Started Yet
+            div.actions
+             span.time 3:16 PM
+             //i(class="fas fa-check it-che")
+             i(class="fas fa-check-double it-che active")
+           div.attach
+            p 
+             svg(width="14" height="14" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg")
+              path(d="M0.804705 13.9427L1.39068 14.5287C2.46361 15.6017 4.20314 15.6017 5.27606 14.5288C5.27606 14.5288 5.27606 14.5288 5.2761 14.5287L12.7642 7.04061C13.5229 6.28194 13.5229 5.05188 12.7642 4.29321L12.3736 3.90255C11.6008 3.17869 10.3989 3.17869 9.62617 3.90255L4.09742 9.4313C3.96501 9.55921 3.96135 9.77022 4.08923 9.90266C4.21714 10.0351 4.42814 10.0387 4.56058 9.91084C4.56336 9.90816 4.56608 9.90544 4.56877 9.90266L10.0975 4.3739C10.6053 3.8988 11.3945 3.8988 11.9022 4.3739L12.2929 4.76456C12.7912 5.26285 12.7913 6.07078 12.293 6.56913C12.293 6.56916 12.2929 6.56922 12.2929 6.56925L4.80478 14.0574C3.98082 14.8422 2.68599 14.8422 1.86207 14.0574L1.27606 13.4714C0.463761 12.6587 0.463761 11.3414 1.27606 10.5287L9.6262 2.17855C10.7532 1.05197 12.5799 1.05197 13.7069 2.17855L14.4883 2.95922C15.6149 4.08621 15.6149 5.91296 14.4883 7.03995L8.09749 13.4307C7.96508 13.5586 7.96139 13.7696 8.0893 13.9021C8.21721 14.0345 8.42821 14.0382 8.56065 13.9103C8.56344 13.9076 8.56615 13.9049 8.56884 13.9021L14.9596 7.51196C16.3468 6.12481 16.3468 3.87577 14.9596 2.48859C14.9596 2.48856 14.9596 2.48856 14.9596 2.48856L14.1783 1.7072C12.7911 0.320019 10.5421 0.319986 9.15488 1.70714C9.15488 1.70717 9.15485 1.70717 9.15485 1.7072L0.804705 10.0573C-0.268221 11.1302 -0.268251 12.8698 0.804705 13.9427C0.804673 13.9427 0.804673 13.9427 0.804705 13.9427Z"  )
+              path(d="M11.6669 0.666493C12.6095 0.664431 13.5139 1.03909 14.1789 1.70717L14.9596 2.48787C16.3468 3.87502 16.3468 6.12406 14.9596 7.51124L14.9596 7.51127L8.56881 13.9021C8.4409 14.0345 8.2299 14.0382 8.09746 13.9103C7.96505 13.7823 7.96136 13.5713 8.08927 13.4389C8.09196 13.4361 8.09468 13.4334 8.09746 13.4307L14.4882 7.04061C15.6148 5.91362 15.6148 4.08687 14.4882 2.95988L13.7069 2.17852C12.5799 1.05194 10.7532 1.05194 9.62617 2.17852L1.27603 10.5287C0.463738 11.3414 0.463738 12.6586 1.27603 13.4714L1.86204 14.0574C2.68599 14.8421 3.98083 14.8421 4.80475 14.0574L12.2929 6.56928C12.7913 6.07099 12.7913 5.26307 12.293 4.76472C12.293 4.76469 12.2929 4.76463 12.2929 4.7646L11.9022 4.37393C11.3945 3.89883 10.6053 3.89883 10.0976 4.37393L4.56881 9.90269C4.4409 10.0351 4.22989 10.0388 4.09745 9.91087C3.96505 9.78297 3.96139 9.57196 4.08927 9.43952C4.09195 9.43674 4.09467 9.43402 4.09745 9.43133L9.62617 3.90255C10.3989 3.17869 11.6008 3.17869 12.3736 3.90255L12.7642 4.29321C13.5229 5.05188 13.5229 6.28194 12.7642 7.04061L5.2761 14.5287C4.20317 15.6017 2.46365 15.6017 1.39072 14.5288C1.39072 14.5288 1.39072 14.5288 1.39069 14.5287L0.804682 13.9427C-0.268242 12.8698 -0.268242 11.1303 0.80465 10.0573C0.80465 10.0573 0.80465 10.0573 0.804682 10.0573L9.15482 1.70717C9.81983 1.03909 10.7242 0.664431 11.6669 0.666493Z" )
+             | Original textbooks
+       
+        form(class="formchat" action="#" method="post")
+         a(href="#" class="goback") #[i.fas.fa-plus]
+         div.input-text
+          textarea(type="text" placeholder="Write your message...")
+          i.far.fa-smile  
+         button(class="send" type="submit") #[i.fas.fa-paper-plane]
+      div(class="tab-pane" id="notes"  role="tabpanel" aria-labelledby="notes-tab") 
+       div.files 
+         div.imgage
+          a(href="#" class="fas fa-angle-left") 
+          img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+          div.text-da
+           h4.title mohamed
+           span.time September 30,2020
+         div.ex-files
+          a(href="#" class="files-bot") #[i.fas.fa-folder-open] files
+          a(href="#" class="close")
+           svg(width="10" height="10" viewBox="0 0 12 12" f  xmlns="http://www.w3.org/2000/svg")
+            path(d="M6.66271 6.00002L11.8625 0.800231C12.0455 0.617161 12.0455 0.320349 11.8625 0.137303C11.6794 -0.0457441 11.3826 -0.0457675 11.1995 0.137303L5.99975 5.33709L0.799987 0.137303C0.616917 -0.0457675 0.320105 -0.0457675 0.137058 0.137303C-0.0459882 0.320373 -0.0460117 0.617185 0.137058 0.800231L5.33682 6L0.137058 11.1998C-0.0460117 11.3829 -0.0460117 11.6797 0.137058 11.8627C0.228582 11.9542 0.348558 12 0.468535 12C0.588511 12 0.708464 11.9542 0.800011 11.8627L5.99975 6.66295L11.1995 11.8627C11.291 11.9542 11.411 12 11.531 12C11.651 12 11.7709 11.9542 11.8625 11.8627C12.0455 11.6796 12.0455 11.3828 11.8625 11.1998L6.66271 6.00002Z" fill="#000")
+      
+      
+       //form(action="#" method="post" class="formnotes")
+        div.row
+         div.col-sm-12.fild
+          input(type="text" class="form-control" placeholder="filled by tutor" name="lessons"  autocomplete="off" autofocus required )
+          label.floating-label lessons objective
+         div.col-sm-12.fild
+          input(type="text" class="form-control" placeholder="filled by tutor" name="vocabulary"  autocomplete="off" autofocus required )
+          label.floating-label new vocabulary
+         div.col-sm-12.fild
+          input(type="text" class="form-control" placeholder="filled by tutor" name="correction"  autocomplete="off" autofocus required )
+          label.floating-label error correction
+         div.col-sm-12.fild
+          input(type="text" class="form-control" placeholder="filled by tutor" name="objective"  autocomplete="off" autofocus required )
+          label.floating-label text lesson objective
+         div.col-sm-12.fild
+          input(type="text" class="form-control" placeholder="filled by tutor" name="homework"  autocomplete="off" autofocus required )
+          label.floating-label home work
+         div.col-sm-12.fild
+          input(type="text" class="form-control" placeholder="filled by tutor" name="material"  autocomplete="off" autofocus required )
+          label.floating-label material
+      
+       div.item-fridy
+        form(action="#" method="post" class="formnotes mt-3")
+         div.row
+          div.col-sm-6.fild
+           i(class="fas fa-chevron-down iconsel")
+           select(class="form-control" name="hour" autocomplete="off" required)
+            option 
+            option date
+            option date
+            option date
+           label.floating-label date 
+          div.col-sm-6.fild
+           i(class="fas fa-chevron-down iconsel")
+           select(class="form-control" name="hour" autocomplete="off" required)
+            option 
+            option tutor
+            option tutor
+            option tutor
+           label.floating-label tutor 
+        nav.items-box
+         a(href="#")
+          img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+          div.text-da
+           h4.title mohamed
+           span.time September 30,2020
+          i(class="fas fa-angle-right") 
+         a(href="#")
+          img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+          div.text-da
+           h4.title mohamed
+           span.time September 30,2020
+          i(class="fas fa-angle-right")  
+         a(href="#")
+          img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+          div.text-da
+           h4.title mohamed
+           span.time September 30,2020
+          i(class="fas fa-angle-right") 
+         a(href="#")
+          img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+          div.text-da
+           h4.title mohamed
+           span.time September 30,2020
+          i(class="fas fa-angle-right") 
+         a(href="#")
+          img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+          div.text-da
+           h4.title mohamed
+           span.time September 30,2020
+          i(class="fas fa-angle-right") 
+         a(href="#")
+          img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+          div.text-da
+           h4.title mohamed
+           span.time September 30,2020
+          i(class="fas fa-angle-right") 
+ 
+ 
+ 
+ 
+ 
+ div(id="delete-message" class="modal fade" role="dialog")
+  div(class="modal-dialog")
+   div(class="modal-content deleting")
+    div.pop-det
+     button(type="button" class="close" data-dismiss="modal") 
+      svg(width="16" height="16" viewBox="0 0 12 12" f  xmlns="http://www.w3.org/2000/svg")
+       path(d="M6.66271 6.00002L11.8625 0.800231C12.0455 0.617161 12.0455 0.320349 11.8625 0.137303C11.6794 -0.0457441 11.3826 -0.0457675 11.1995 0.137303L5.99975 5.33709L0.799987 0.137303C0.616917 -0.0457675 0.320105 -0.0457675 0.137058 0.137303C-0.0459882 0.320373 -0.0460117 0.617185 0.137058 0.800231L5.33682 6L0.137058 11.1998C-0.0460117 11.3829 -0.0460117 11.6797 0.137058 11.8627C0.228582 11.9542 0.348558 12 0.468535 12C0.588511 12 0.708464 11.9542 0.800011 11.8627L5.99975 6.66295L11.1995 11.8627C11.291 11.9542 11.411 12 11.531 12C11.651 12 11.7709 11.9542 11.8625 11.8627C12.0455 11.6796 12.0455 11.3828 11.8625 11.1998L6.66271 6.00002Z" fill="#000")
+     div.textpopup
+      h3.title Remove the message
+      p.text Are you sure you want to Remove this message ?
+    
+     div.fild.bot-de.bot-card
+        button(class="bottom" type="submit") Yes sure
+        a(href="#" class="bottom" data-dismiss="modal") Cancel
+ 
+  
+ include ../pugjs/footer.pug
+ 

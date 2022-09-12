@@ -1,0 +1,350 @@
+extend index
+
+block pageindex 
+ section.step-sign
+  div.container
+   form(id="contact" action="#")
+    div
+     h3 #[i(class="fas fa-check")]  1 | About 
+     section
+      div.row
+       div.col-sm-8.itemform
+        div.row
+         div.col-sm-6.fild
+          input(type="text" class="form-control" placeholder="Enter your First name" name="FirstName"  autocomplete="off" autofocus required )
+          label.floating-label First Name
+         div.col-sm-6.fild
+          input(type="text" class="form-control" placeholder="Enter your Last name" name="LasttName" autocomplete="off" autofocus required)
+          label.floating-label Last Name
+         div.col-sm-12.fild
+           i(class="fas fa-chevron-down iconsel")
+           select(class="form-control required" name="Country" autocomplete="off" autofocus required)
+            option 
+            option Greece
+            option Greece
+            option Greece
+           label.floating-label Country of origin     
+         div.col-sm-12.add-fild
+          div.row
+           div.col-sm-6.fild
+            i(class="fas fa-chevron-down iconsel")
+            select(class="form-control required" name="Language" autocomplete="off" autofocus required)
+             option 
+             option Arabic
+             option Arabic 
+             option Arabic
+            label.floating-label Language
+           div.col-sm-6.fild
+            i(class="fas fa-chevron-down iconsel")
+            select(class="form-control required" name="Level" autocomplete="off" autofocus required)
+             option 
+             option level one
+             option level one 
+             option level one
+            label.floating-label Level   
+          p.textsacand #[i(class="fas fa-info-circle")]  You must add Arabic language   
+          span(class="bottom style-add add") #[i(class="fas fa-plus")]
+         div.optionBox.w-100
+          div.col-sm-12.add-fild
+         div.col-sm-12.fild
+          span.ealamuh $
+          input(type="text" class="form-control" placeholder="$" name="HourRate"  autocomplete="off" autofocus required )
+          label.floating-label Hour Rate      
+         div.col-sm-12.fild
+          input(type="text" class="form-control mobile-number" placeholder="Phone number (optional)" name="Phonenumber"  autocomplete="off" autofocus required )
+     //- section 1
+    
+     h3 #[i(class="fas fa-check")]  2 | Photo
+     section
+       h4.title Profile Photo
+       div.row
+        div.col-sm-6.itemform 
+         span.great Make a great first impression
+         p.textsacand #[i(class="fas fa-info-circle")]  Tutors who look friendly and professional get the most students  
+         input(type="file" accept=".xlsx,.xls,image/*,.doc,audio/*,.docx,video/*,.ppt,.pptx,.txt,.pdf" name="photo"  required multiple)
+    
+        
+        
+        div.col-sm-6.itemform
+         h5.title.siza Tips for an amazing photo
+         ul.list-photo
+          li #[img(src='assets/images/profile-1.png' alt="" title="")]
+          li #[img(src='assets/images/profile-2.png' alt="" title="")] 
+          li #[img(src='assets/images/profile-3.png' alt="" title="")] 
+        
+         ul.list-item
+          - for (var x = 0; x < 7; x++)
+             li 
+              svg(xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 21.013 20.726")
+               g(id="Icon_feather-check-circle" data-name="Icon feather-check-circle" transform="translate(-2.248 -2.229)")
+                path(id="Path_31914" data-name="Path 31914" d="M22.2,11.714V12.6a9.6,9.6,0,1,1-5.693-8.775" transform="translate(0 0)" fill="none" stroke="#ba9a74" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5")
+                path(id="Path_31915" data-name="Path 31915" d="M25.98,6l-9.6,9.61L13.5,12.73" transform="translate(-3.78 -1.083)" fill="none" stroke="#ba9a74" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5")
+              | Your face and eyes are fully visible (except for religious reasons)
+     //- section 2
+    
+     h3 #[i(class="fas fa-check")]  3 | Description
+     section
+      h4.title Profile description
+      p.textsacand.mt #[i(class="fas fa-info-circle")]  Tutors who look friendly and professional get the most students  
+      h5.title.siza Description for students
+      div.row
+       div.col-sm-3.itemform.img-user
+         img(src='assets/images/profile-4.jpg' alt="" title="")
+       div.col-sm-8.itemform.textuser
+         div.fild
+          input(type="text" class="form-control" placeholder="Write your headline in English" name="Name" autocomplete="off" autofocus required)
+          label.floating-label Ahmed Mohamed
+          p.textsacand #[i(class="fas fa-info-circle")]  Good example: “Certified tutor with 5 years of experience”
+
+         div.fild
+          textarea(class="form-control" name="description" placeholder="Write your description in English" autocomplete="off" autofocus required)
+          label.floating-label About the tutor
+          p.textsacand #[i(class="fas fa-info-circle")]  #[span(id="remain") 250 ]    characters minimum . 0 characters currently.
+     //- section 3
+     
+     h3 #[i(class="fas fa-check")]  4 | Video
+     section
+      h4.title Video introduction
+      div.row
+       div.col-sm-7.itemform
+        div.item-us
+         span.great Paste a link to your video
+         p.textsacand #[i(class="fas fa-info-circle")]  Learn how to upload videos to #[a(href="#") Youtube ] or #[a(href="#") Vimeo ]  
+         div.fild
+          input(type="text" class="form-control" placeholder="www.youtube.com/watch?v=l5aZJBLAu1E" name="url" autocomplete="off" autofocus required)
+          label.floating-label Paste Link
+        div.item-us
+         span.great Or record your video
+         p.textsacand #[i(class="fas fa-info-circle")]   Show students your teaching style and personality
+         div.iframe
+          iframe(src="https://www.youtube.com/embed/VctaUNJpT6U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+         nav.bot-action
+          a(href='#' class="bottom") Start Recording
+          a(href='#' class="bottom") Test Camera
+         p.textsacand #[i(class="fas fa-info-circle")] You'll be able to watch and re-record before you submit
+       div.col-sm-4.itemform.offset-sm-1
+        h5.title.siza Tips for an amazing video
+        ul.list-item
+          li.great #[i(class="fas fa-circle")] Or record your video
+          - for (var x = 0; x < 7; x++)
+             li 
+              svg(xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 21.013 20.726")
+               g(id="Icon_feather-check-circle" data-name="Icon feather-check-circle" transform="translate(-2.248 -2.229)")
+                path(id="Path_31914" data-name="Path 31914" d="M22.2,11.714V12.6a9.6,9.6,0,1,1-5.693-8.775" transform="translate(0 0)" fill="none" stroke="#ba9a74" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5")
+                path(id="Path_31915" data-name="Path 31915" d="M25.98,6l-9.6,9.61L13.5,12.73" transform="translate(-3.78 -1.083)" fill="none" stroke="#ba9a74" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5")
+              | Your face and eyes are fully visible  
+        ul.list-item
+          li.great #[i(class="fas fa-circle")] Content
+          - for (var x = 0; x < 4; x++)
+             li 
+              svg(xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 21.013 20.726")
+               g(id="Icon_feather-check-circle" data-name="Icon feather-check-circle" transform="translate(-2.248 -2.229)")
+                path(id="Path_31914" data-name="Path 31914" d="M22.2,11.714V12.6a9.6,9.6,0,1,1-5.693-8.775" transform="translate(0 0)" fill="none" stroke="#ba9a74" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5")
+                path(id="Path_31915" data-name="Path 31915" d="M25.98,6l-9.6,9.61L13.5,12.73" transform="translate(-3.78 -1.083)" fill="none" stroke="#ba9a74" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5")
+              | Your face and eyes are fully visible  
+
+     //- section
+     h3 #[i(class="fas fa-check")]  5 | Availability 
+     section
+      h4.title Choose your timezone
+      div.row
+        div.col-sm-8.itemform
+         div.item-us
+          div.fild.r-icon
+           i(class="fas fa-chevron-down iconsel")
+           select(class="form-control required" name="zone" autocomplete="off" autofocus required)
+            option 
+            option 11:40 (GMT+3) - Africa, Asmara
+            option zone
+            option zone
+           label.floating-label Time zone
+          p.textsacand #[i(class="fas fa-info-circle")]  A correct timezone is essential to coordinate lessons with international students
+         div.item-us.mb
+          h5.title.siza Availability Time
+          p.textsacand #[i(class="fas fa-info-circle")]  Availability shows your potential working hours. Students can book lessons at these times
+         div.file-add
+          div.fild
+           label.che-box
+            input(type="checkbox" name="checkbox")
+            span.label-text Sunday
+          div.add-fild1
+           div.row
+            div.col-sm-6.fild
+             i(class="fas fa-chevron-down iconsel")
+             select(class="form-control required" name="time"  required)
+              option 09:00
+              option 09:00
+              option 09:00
+              option 09:00
+            div.text-to To
+            div.col-sm-6.fild
+             i(class="fas fa-chevron-down iconsel")
+             select(class="form-control required" name="time"  required)
+              option 09:00
+              option 09:00
+              option 09:00
+              option 09:00   
+          span(class="bottom style-add add1") #[i(class="fas fa-plus")]
+          div.optionBox1.w-100
+           div.add-fild1
+         div.file-add
+          div.fild
+           label.che-box
+            input(type="checkbox" name="checkbox")
+            span.label-text Sunday
+          div.add-fild2
+           div.row
+            div.col-sm-6.fild
+             i(class="fas fa-chevron-down iconsel")
+             select(class="form-control required" name="time"  required)
+              option 09:00
+              option 09:00
+              option 09:00
+              option 09:00
+            div.text-to To
+            div.col-sm-6.fild
+             i(class="fas fa-chevron-down iconsel")
+             select(class="form-control required" name="time"  required)
+              option 09:00
+              option 09:00
+              option 09:00
+              option 09:00   
+          span(class="bottom style-add add2") #[i(class="fas fa-plus")]
+          div.optionBox2.w-100
+           div.add-fild2
+         div.file-add
+          div.fild
+           label.che-box
+            input(type="checkbox" name="checkbox")
+            span.label-text Sunday
+          div.add-fild3
+           div.row
+            div.col-sm-6.fild
+             i(class="fas fa-chevron-down iconsel")
+             select(class="form-control required" name="time"  required)
+              option 09:00
+              option 09:00
+              option 09:00
+              option 09:00
+            div.text-to To
+            div.col-sm-6.fild
+             i(class="fas fa-chevron-down iconsel")
+             select(class="form-control required" name="time"  required)
+              option 09:00
+              option 09:00
+              option 09:00
+              option 09:00   
+          span(class="bottom style-add add3") #[i(class="fas fa-plus")]
+          div.optionBox3.w-100
+           div.add-fild3   
+         div.file-add
+          div.fild
+           label.che-box
+            input(type="checkbox" name="checkbox")
+            span.label-text Sunday
+          div.add-fild4
+           div.row
+            div.col-sm-6.fild
+             i(class="fas fa-chevron-down iconsel")
+             select(class="form-control required" name="time"  required)
+              option 09:00
+              option 09:00
+              option 09:00
+              option 09:00
+            div.text-to To
+            div.col-sm-6.fild
+             i(class="fas fa-chevron-down iconsel")
+             select(class="form-control required" name="time"  required)
+              option 09:00
+              option 09:00
+              option 09:00
+              option 09:00   
+          span(class="bottom style-add add4") #[i(class="fas fa-plus")]
+          div.optionBox4.w-100
+           div.add-fild4
+         div.file-add
+          div.fild
+           label.che-box
+            input(type="checkbox" name="checkbox")
+            span.label-text Sunday
+          div.add-fild5
+           div.row
+            div.col-sm-6.fild
+             i(class="fas fa-chevron-down iconsel")
+             select(class="form-control required" name="time"  required)
+              option 09:00
+              option 09:00
+              option 09:00
+              option 09:00
+            div.text-to To
+            div.col-sm-6.fild
+             i(class="fas fa-chevron-down iconsel")
+             select(class="form-control required" name="time"  required)
+              option 09:00
+              option 09:00
+              option 09:00
+              option 09:00   
+          span(class="bottom style-add add5") #[i(class="fas fa-plus")]
+          div.optionBox5.w-100
+           div.add-fild5
+         div.file-add
+          div.fild
+           label.che-box
+            input(type="checkbox" name="checkbox")
+            span.label-text Sunday
+          div.add-fild6
+           div.row
+            div.col-sm-6.fild
+             i(class="fas fa-chevron-down iconsel")
+             select(class="form-control required" name="time"  required)
+              option 09:00
+              option 09:00
+              option 09:00
+              option 09:00
+            div.text-to To
+            div.col-sm-6.fild
+             i(class="fas fa-chevron-down iconsel")
+             select(class="form-control required" name="time"  required)
+              option 09:00
+              option 09:00
+              option 09:00
+              option 09:00   
+          span(class="bottom style-add add6") #[i(class="fas fa-plus")]
+          div.optionBox6.w-100
+           div.add-fild6  
+     
+     //- section
+     h3 #[i(class="fas fa-check")]  6 | Verification
+     section
+       h4.title Profile verification
+       span.great Confirm Identity
+       div.col-sm-9.itemform 
+        div.row
+         div.textmap
+          i(class="fas fa-check") 
+          p Become a verified tutor  
+          span Please upload a photo of you holding your passport. Make sure your passport's photo page is open, with your name and face clearly visible. 
+         div.custom-file
+          input(type="file" class="custom-file-input" id="customFile" name="file"  required)
+          label(class="custom-file-label" for="customFile") no file 
+         div.textmap
+          i(class="fas fa-unlock-alt") 
+          p Safe 
+          span We do not store your documents on our servers after verification is complete
+ 
+ 
+ 
+ 
+ div(id="check" class="modal fade" role="dialog")
+  div(class="modal-dialog")
+   div(class="modal-content")
+    button(type="button" class="close" data-dismiss="modal") 
+     svg(width="16" height="16" viewBox="0 0 12 12" f  xmlns="http://www.w3.org/2000/svg")
+       path(d="M6.66271 6.00002L11.8625 0.800231C12.0455 0.617161 12.0455 0.320349 11.8625 0.137303C11.6794 -0.0457441 11.3826 -0.0457675 11.1995 0.137303L5.99975 5.33709L0.799987 0.137303C0.616917 -0.0457675 0.320105 -0.0457675 0.137058 0.137303C-0.0459882 0.320373 -0.0460117 0.617185 0.137058 0.800231L5.33682 6L0.137058 11.1998C-0.0460117 11.3829 -0.0460117 11.6797 0.137058 11.8627C0.228582 11.9542 0.348558 12 0.468535 12C0.588511 12 0.708464 11.9542 0.800011 11.8627L5.99975 6.66295L11.1995 11.8627C11.291 11.9542 11.411 12 11.531 12C11.651 12 11.7709 11.9542 11.8625 11.8627C12.0455 11.6796 12.0455 11.3828 11.8625 11.1998L6.66271 6.00002Z" fill="#000")
+    div.done-check
+     i(class="fas fa-check-circle")
+     h3.title Successfully Submitted
+     p Within 5 business days, you will receive an email with your application status update . 
+     a(href="#" class="bottom ") Okay, I understand
+ script(src="assets/js/staps.js")
+  

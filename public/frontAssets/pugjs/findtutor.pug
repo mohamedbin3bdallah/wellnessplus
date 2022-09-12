@@ -1,0 +1,909 @@
+extend index
+
+block pageindex
+ 
+ section.findtutor 
+  div.container
+    div.headtitle
+     h1.title Browse and book an online Arabic tutor for a personalized Arabic lesson online now
+     span.num-to 11045 tutors
+    div.headtext
+     p.textline #[i(class="fas fa-info-circle")] Every Person Trying To Learn English Has A Vision Of What Success Looks Like When Communicating In A Professional Environment, For
+     div.onclick
+      span.more + Read more
+      span.cancel X hide
+     p.divhidslid   Every person trying to learn English has a vision of what success looks like when communicating in a professional environment, for academic success or with friends and family. Achieve amazing results with one of the top English teachers rated 4.8 points out of 5 from all over the world it’s really easy to find one to match your learning preferences and fit your busy schedule. Nobody understands students better than a personal tutor and it’s not that expensive to find a tutor online. Why choose the 1-on-1 English class format? At your first class prepare to have a conversation about what you are using English for and about the goals you are hoping to achieve. The teacher will listen to the way you speak to note what you are doing well, to find the problem areas and create a customized learning plan. Select a teacher who’s dedicated to helping each student individually. Just pick a teacher whose teaching style you might like and schedule a trial class for a stimulating conversation in English now!
+    div.prin-item
+      h2.title Filter by
+      form(action="#" class="filter-item")
+         div.row
+          div.col-sm-2.sel-filt
+            select(data-placeholder="Specialties" multiple class="chosen-select"  tabindex="18" id="multiple-label-example")
+              option Arabic  
+              option Arabic  
+              option Arabic  
+              option Business  
+              option  Arabic
+              option Egyptian  
+              option General  
+          div.col-sm-2.sel-filt 
+             div.pr-input
+               input(type="text" id="amount-min" readonly)
+               input(type="text" id="amount-max" readonly)
+             div#slider-range
+          div.col-sm-2.sel-filt 
+            select(data-placeholder="Country of origin" multiple class="chosen-select"  tabindex="18" id="multiple-label-example")
+                 option( value="Afganistan") Afghanistan 
+                 option( value="Albania") Albania 
+                 option( value="Algeria") Algeria 
+                 option( value="American Samoa") American  
+                 option( value="Andorra") Andorra 
+                 option( value="Angola") Angola 
+                 option( value="Anguilla") Anguilla 
+                 option( value="Antigua & Barbuda") Antigua  
+                 option( value="Argentina") Argentina 
+                 option( value="Armenia") Armenia 
+                 option( value="Aruba") Aruba 
+                 option( value="Australia") Australia 
+                 option( value="Austria") Austria 
+                  
+          div.col-sm-2.sel-filt 
+           div.availability Availability
+            div.inner-ava
+             div.times-day
+              h3.title Times of the day
+              div.row
+                 div.col-sm-3.ch-item
+                  label.chebox-time
+                   input(type="checkbox" name="checkbox")
+                   div.label-text 
+                    img(src='assets/images/sunrise.png' alt="Arabia" title="Arabia") 
+                    small 6-9 
+                    p Morning
+                 div.col-sm-3.ch-item
+                  label.chebox-time
+                   input(type="checkbox" name="checkbox")
+                   div.label-text 
+                    img(src='assets/images/sunrise2.png' alt="Arabia" title="Arabia") 
+                    small 9-12 
+                    p Late morning
+                 div.col-sm-3.ch-item
+                  label.chebox-time
+                   input(type="checkbox" name="checkbox")
+                   div.label-text 
+                    img(src='assets/images/sun.png' alt="Arabia" title="Arabia") 
+                    small 12-15 
+                    p Afternoon
+                 div.col-sm-3.ch-item
+                  label.chebox-time
+                   input(type="checkbox" name="checkbox")
+                   div.label-text 
+                    img(src='assets/images/sun.png' alt="Arabia" title="Arabia") 
+                    small 15-18  
+                    p Late Afternoon 
+                 div.col-sm-3.ch-item
+                  label.chebox-time
+                   input(type="checkbox" name="checkbox")
+                   div.label-text 
+                    img(src='assets/images/sunrise3.png' alt="Arabia" title="Arabia") 
+                    small 18-21 
+                    p Evening
+                 div.col-sm-3.ch-item
+                  label.chebox-time
+                   input(type="checkbox" name="checkbox")
+                   div.label-text 
+                    img(src='assets/images/half-moon.png' alt="Arabia" title="Arabia") 
+                    small 21-24 
+                    p Late evening
+                 div.col-sm-3.ch-item
+                  label.chebox-time
+                   input(type="checkbox" name="checkbox")
+                   div.label-text 
+                    img(src='assets/images/moon.png' alt="Arabia" title="Arabia") 
+                    small 0-3 
+                    p Night
+                 div.col-sm-3.ch-item
+                  label.chebox-time
+                   input(type="checkbox" name="checkbox")
+                   div.label-text 
+                    img(src='assets/images/sleep.png' alt="Arabia" title="Arabia") 
+                    small 3-6
+                    p Late night
+             
+             div.times-day.week
+              h3.title Days of the week
+              div.row
+                 div.col-sm-2.ch-item
+                  label.chebox-time
+                   input(type="checkbox" name="checkbox")
+                   div.label-text 
+                    p Sat
+                 div.col-sm-2.ch-item
+                  label.chebox-time
+                   input(type="checkbox" name="checkbox")
+                   div.label-text 
+                    p Sun
+                 div.col-sm-2.ch-item
+                  label.chebox-time
+                   input(type="checkbox" name="checkbox")
+                   div.label-text 
+                    p Mon
+                 div.col-sm-2.ch-item
+                  label.chebox-time
+                   input(type="checkbox" name="checkbox")
+                   div.label-text 
+                    p Tue
+                 div.col-sm-2.ch-item
+                  label.chebox-time
+                   input(type="checkbox" name="checkbox")
+                   div.label-text 
+                    p Wed
+                 div.col-sm-2.ch-item
+                  label.chebox-time
+                   input(type="checkbox" name="checkbox")
+                   div.label-text  
+                    p Thu
+                 div.col-sm-2.ch-item
+                  label.chebox-time
+                   input(type="checkbox" name="checkbox")
+                   div.label-text 
+                    p Fri
+          div.col-sm-2.sel-filt 
+           select(data-placeholder="Also Speaks" multiple class="chosen-select"  tabindex="18" id="multiple-label-example")
+              option  English
+              option  English
+              option  English
+              option  English
+              option  English
+              option  English
+              option  English
+          div.col-sm-2.sel-filt.check-item
+           label.che-box
+            input(type="checkbox" name="checkbox")
+            span.label-text Native Speaker
+    div.content-all
+     div.filter-text
+      h3.title Find your Tutor
+      div.fil-search
+        div.select-short
+         p Sort by
+         select(data-placeholder="Popularity" class="chosen-select" tabindex="5")
+          option(value="")
+          option(value="Popularity") Popularity
+          option(value="Price: highest first") Price: highest first
+          option(value="Price: lowest first") Price: lowest first
+          option(value="Reviews") Reviews
+          option(value="Ratings") Ratings
+        form(action="#" method="" class='formsearch')
+         input(class="form-control" type="text" placeholder="Search By Name ")
+     - for (var x = 0; x < 3; x++)
+        div.tu-hover
+         div.row
+          div.col-sm-8.contenuser.hoverbox
+           div.itemtutor
+            div.flex-box
+             div.tu-photo
+              div.img
+               span.featured Featured
+               a(href="#" class="fas fa-heart")
+               span.online
+               img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia") 
+              div.price EGP 315.03
+              div.price-to EGP/H
+              div.fild.bot-de.bot-card
+               a(href="#l" class="bottom book-trial") Book Free Trial
+               a(href="#sendmessage" data-toggle="modal" class="bottom") Send Message
+             div.tu-content
+              div.minhead
+               h3.title Gary E.
+               div.flag
+                img(src='assets/images/fleg.png' alt="Arabia" title="Arabia")
+               div.safy
+                svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16.436" height="19.301" viewBox="0 0 16.436 19.301")
+                 defs 
+                  linearGradient(id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox")
+                   stop(offset="0" stop-color="#ba9a74")
+                   stop(offset="1" stop-color="#877456")
+                 g(id="surface1" transform="translate(0 0.001)")
+                  path(id="Path_28769" data-name="Path 28769" d="M124.119,158.457a3.677,3.677,0,1,0,3.677,3.677A3.682,3.682,0,0,0,124.119,158.457Zm2.183,2.985-2.635,2.635a.566.566,0,0,1-.8,0l-1.007-1.007a.566.566,0,1,1,.8-.8l.606.606,2.234-2.234a.566.566,0,0,1,.8.8Zm0,0" transform="translate(-115.901 -152.485)" fill="url(#linear-gradient)")
+                  path(id="Path_28770" data-name="Path 28770" d="M16.417,5.236V5.221c-.008-.185-.014-.382-.017-.6a2.046,2.046,0,0,0-1.926-2A7.938,7.938,0,0,1,9.07.34L9.058.328a1.235,1.235,0,0,0-1.679,0L7.366.34a7.939,7.939,0,0,1-5.4,2.277,2.045,2.045,0,0,0-1.926,2c0,.217-.009.413-.017.6v.035a20.918,20.918,0,0,0,.845,7.635A9.72,9.72,0,0,0,3.2,16.523a12.2,12.2,0,0,0,4.563,2.7,1.413,1.413,0,0,0,.187.051,1.381,1.381,0,0,0,.543,0,1.418,1.418,0,0,0,.188-.051,12.206,12.206,0,0,0,4.558-2.7,9.733,9.733,0,0,0,2.332-3.633A20.949,20.949,0,0,0,16.417,5.236Zm-8.2,9.224a4.81,4.81,0,1,1,4.81-4.81A4.815,4.815,0,0,1,8.218,14.46Zm0,0" transform="translate(0)" fill="url(#linear-gradient)")
+              ul.rating
+               li(class="fas fa-star active")
+               li(class="fas fa-star active")
+               li(class="fas fa-star active")
+               li(class="fas fa-star active")
+              div.minhead.towhead
+               div.speaks
+                p speaks :
+                span Arabic
+                strong Native    
+               div.speaks
+                p speaks :
+                span Spanish  
+                strong B1           
+              div.row
+               div.col-sm-4.itemactiv
+                div.mactiv
+                 img(src='assets/images/mactiv1.png' alt="Arabia" title="Arabia")
+                 div.con-item
+                  h4.title Active students
+                  span 36 
+               div.col-sm-4.itemactiv
+                div.mactiv
+                 img(src='assets/images/clock.png' alt="Arabia" title="Arabia")
+                 div.con-item
+                  h4.title Lessons
+                  span 286 
+               div.col-sm-4.itemactiv
+                div.mactiv
+                 img(src='assets/images/review.png' alt="Arabia" title="Arabia")
+                 div.con-item
+                  h4.title Reviews
+                  span 10 
+              div.headtext
+               p.textline  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet
+               div.onclick
+                span.more + Read more
+                span.cancel X hide
+               p.divhidslid   Every person trying to learn English has a vision of what success looks like when communicating in a professional environment, for academic success or with friends and family. Achieve amazing results with one of the top English teachers rated 4.8 points out of 5 from all over the world it’s really easy to find one to match your learning preferences and fit your busy schedule. Nobody understands students better than a personal tutor and it’s not that expensive to find a tutor online. Why choose the 1-on-1 English class format? At your first class prepare to have a conversation about what you are using English for and about the goals you are hoping to achieve. The teacher will listen to the way you speak to note what you are doing well, to find the problem areas and create a customized learning plan. Select a teacher who’s dedicated to helping each student individually. Just pick a teacher whose teaching style you might like and schedule a trial class for a stimulating conversation in English now!
+             div.showitem
+           div.col-sm-4.contenuser.showbox
+            div.hover-box
+             i(class="fas fa-caret-left arwoleft")
+             div.iframe
+              iframe(src="https://www.youtube.com/embed/VctaUNJpT6U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+             p.timezone #[i(class="fas fa-globe-americas")] Times are shown in your local timezone    
+             div.calandar-wek
+              ul(class="nav nav-tabs" id="myTab" role="tablist")
+               li.nav-item
+                a(class="nav-link active" id="item-1-tab" data-toggle="tab" href="#item-1"  role="tab" aria-controls="item-1" aria-selected="true") Sat #[span 10]
+               li.nav-item
+                a(class="nav-link"  id="item-2-tab" data-toggle="tab" href="#item-2" role="tab" aria-controls="item-2"  aria-selected="false") Sun  #[span 11]
+               li.nav-item
+                a(class="nav-link"  id="item-3-tab" data-toggle="tab" href="#item-3" role="tab" aria-controls="item-3"  aria-selected="false") Mon  #[span 12]
+               li.nav-item
+                a(class="nav-link"  id="item-4-tab" data-toggle="tab" href="#item-4" role="tab" aria-controls="item-4"  aria-selected="false") Tue #[span 13]
+               li.nav-item
+                a(class="nav-link"  id="item-5-tab" data-toggle="tab" href="#item-5" role="tab" aria-controls="item-5"  aria-selected="false") Wed #[span 14]
+               li.nav-item
+                a(class="nav-link"  id="item-6-tab" data-toggle="tab" href="#item-6" role="tab" aria-controls="item-6"  aria-selected="false") Thu #[span 15]
+               li.nav-item
+                a(class="nav-link"  id="item-7-tab" data-toggle="tab" href="#item-7" role="tab" aria-controls="item-7"  aria-selected="false") Fri #[span 16]
+              div(class="tab-content" id="myTabContent")
+               div(class="tab-pane fade show active" id="item-1"  role="tabpanel" aria-labelledby="item-1-tab") 
+                  div.times-day
+                    h3.title Morning
+                    div.row
+                     div.col-sm-2.ch-item
+                       label.chebox-time
+                        input(type="checkbox" name="checkbox")
+                        div.label-text 
+                         p 6:00
+                     div.col-sm-2.ch-item
+                       label.chebox-time
+                        input(type="checkbox" name="checkbox")
+                        div.label-text 
+                         p 8:00
+                     div.col-sm-2.ch-item
+                      label.chebox-time
+                        input(type="checkbox" name="checkbox")
+                        div.label-text 
+                         p 9:30
+                     div.col-sm-2.ch-item
+                        label.chebox-time
+                         input(type="checkbox" name="checkbox")
+                         div.label-text 
+                          p 12:00
+                  div.times-day
+                   h3.title Afternoon
+                   div.row
+                     div.col-sm-2.ch-item
+                      label.chebox-time
+                        input(type="checkbox" name="checkbox")
+                        div.label-text 
+                         p 6:00
+                     div.col-sm-2.ch-item
+                      label.chebox-time
+                        input(type="checkbox" name="checkbox")
+                        div.label-text 
+                         p 8:00
+                     div.col-sm-2.ch-item
+                      label.chebox-time
+                        input(type="checkbox" name="checkbox")
+                        div.label-text 
+                         p 9:30
+                     div.col-sm-2.ch-item
+                       label.chebox-time
+                        input(type="checkbox" name="checkbox")
+                        div.label-text 
+                         p 12:00
+                     div.col-sm-2.ch-item
+                      label.chebox-time
+                        input(type="checkbox" name="checkbox")
+                        div.label-text 
+                         p 12:00  
+                     div.col-sm-2.ch-item
+                      label.chebox-time
+                        input(type="checkbox" name="checkbox")
+                        div.label-text 
+                         p 6:00
+                     div.col-sm-2.ch-item
+                      label.chebox-time
+                        input(type="checkbox" name="checkbox")
+                        div.label-text 
+                         p 8:00
+                     div.col-sm-2.ch-item
+                      label.chebox-time
+                        input(type="checkbox" name="checkbox")
+                        div.label-text 
+                         p 9:30
+                     div.col-sm-2.ch-item
+                      label.chebox-time
+                        input(type="checkbox" name="checkbox")
+                        div.label-text 
+                         p 12:00
+                     div.col-sm-2.ch-item
+                      label.chebox-time
+                        input(type="checkbox" name="checkbox")
+                        div.label-text 
+                         p 12:00  
+                  div.times-day
+                     h3.title Evening
+                     div.row
+                        div.col-sm-2.ch-item
+                         label.chebox-time
+                           input(type="checkbox" name="checkbox")
+                           div.label-text 
+                            p 6:00
+                        div.col-sm-2.ch-item
+                         label.chebox-time
+                           input(type="checkbox" name="checkbox")
+                           div.label-text 
+                            p 8:00
+                        div.col-sm-2.ch-item
+                         label.chebox-time
+                           input(type="checkbox" name="checkbox")
+                           div.label-text 
+                            p 9:30
+                        div.col-sm-2.ch-item
+                         label.chebox-time
+                           input(type="checkbox" name="checkbox")
+                           div.label-text 
+                            p 12:00
+                        div.col-sm-2.ch-item
+                         label.chebox-time
+                           input(type="checkbox" name="checkbox")
+                           div.label-text 
+                            p 12:00  
+                        div.col-sm-2.ch-item
+                         label.chebox-time
+                           input(type="checkbox" name="checkbox")
+                           div.label-text 
+                            p 6:00
+                        div.col-sm-2.ch-item
+                         label.chebox-time
+                           input(type="checkbox" name="checkbox")
+                           div.label-text 
+                            p 8:00
+                        div.col-sm-2.ch-item
+                         label.chebox-time
+                           input(type="checkbox" name="checkbox")
+                           div.label-text 
+                            p 9:30
+                        div.col-sm-2.ch-item
+                         label.chebox-time
+                           input(type="checkbox" name="checkbox")
+                           div.label-text 
+                            p 12:00
+                        div.col-sm-2.ch-item
+                         label.chebox-time
+                           input(type="checkbox" name="checkbox")
+                           div.label-text 
+                            p 12:00  
+                  div.text-center
+                    a(href="#" class="bottom") View Full Scedule
+               div(class="tab-pane fade" id="item-2"  role="tabpanel" aria-labelledby="item-2-tab")
+                  div.times-day
+                    h3.title Morning
+                    div.row
+                     div.col-sm-2.ch-item
+                       label.chebox-time
+                        input(type="checkbox" name="checkbox")
+                        div.label-text 
+                         p 6:00
+                     div.col-sm-2.ch-item
+                       label.chebox-time
+                        input(type="checkbox" name="checkbox")
+                        div.label-text 
+                         p 8:00
+                     div.col-sm-2.ch-item
+                      label.chebox-time
+                        input(type="checkbox" name="checkbox")
+                        div.label-text 
+                         p 9:30
+                     div.col-sm-2.ch-item
+                        label.chebox-time
+                         input(type="checkbox" name="checkbox")
+                         div.label-text 
+                          p 12:00
+                  div.times-day
+                   h3.title Afternoon
+                   div.row
+                     div.col-sm-2.ch-item
+                      label.chebox-time
+                        input(type="checkbox" name="checkbox")
+                        div.label-text 
+                         p 6:00
+                     div.col-sm-2.ch-item
+                      label.chebox-time
+                        input(type="checkbox" name="checkbox")
+                        div.label-text 
+                         p 8:00
+                     div.col-sm-2.ch-item
+                      label.chebox-time
+                        input(type="checkbox" name="checkbox")
+                        div.label-text 
+                         p 9:30
+                     div.col-sm-2.ch-item
+                       label.chebox-time
+                        input(type="checkbox" name="checkbox")
+                        div.label-text 
+                         p 12:00
+                     div.col-sm-2.ch-item
+                      label.chebox-time
+                        input(type="checkbox" name="checkbox")
+                        div.label-text 
+                         p 12:00  
+                     div.col-sm-2.ch-item
+                      label.chebox-time
+                        input(type="checkbox" name="checkbox")
+                        div.label-text 
+                         p 6:00
+                     div.col-sm-2.ch-item
+                      label.chebox-time
+                        input(type="checkbox" name="checkbox")
+                        div.label-text 
+                         p 8:00
+                     div.col-sm-2.ch-item
+                      label.chebox-time
+                        input(type="checkbox" name="checkbox")
+                        div.label-text 
+                         p 9:30
+                     div.col-sm-2.ch-item
+                      label.chebox-time
+                        input(type="checkbox" name="checkbox")
+                        div.label-text 
+                         p 12:00
+                     div.col-sm-2.ch-item
+                      label.chebox-time
+                        input(type="checkbox" name="checkbox")
+                        div.label-text 
+                         p 12:00  
+                  div.times-day
+                     h3.title Evening
+                     div.row
+                        div.col-sm-2.ch-item
+                         label.chebox-time
+                           input(type="checkbox" name="checkbox")
+                           div.label-text 
+                            p 6:00
+                        div.col-sm-2.ch-item
+                         label.chebox-time
+                           input(type="checkbox" name="checkbox")
+                           div.label-text 
+                            p 8:00
+                        div.col-sm-2.ch-item
+                         label.chebox-time
+                           input(type="checkbox" name="checkbox")
+                           div.label-text 
+                            p 9:30
+                        div.col-sm-2.ch-item
+                         label.chebox-time
+                           input(type="checkbox" name="checkbox")
+                           div.label-text 
+                            p 12:00
+                        div.col-sm-2.ch-item
+                         label.chebox-time
+                           input(type="checkbox" name="checkbox")
+                           div.label-text 
+                            p 12:00  
+                        div.col-sm-2.ch-item
+                         label.chebox-time
+                           input(type="checkbox" name="checkbox")
+                           div.label-text 
+                            p 6:00
+                        div.col-sm-2.ch-item
+                         label.chebox-time
+                           input(type="checkbox" name="checkbox")
+                           div.label-text 
+                            p 8:00
+                        div.col-sm-2.ch-item
+                         label.chebox-time
+                           input(type="checkbox" name="checkbox")
+                           div.label-text 
+                            p 9:30
+                        div.col-sm-2.ch-item
+                         label.chebox-time
+                           input(type="checkbox" name="checkbox")
+                           div.label-text 
+                            p 12:00
+                        div.col-sm-2.ch-item
+                         label.chebox-time
+                           input(type="checkbox" name="checkbox")
+                           div.label-text 
+                            p 12:00  
+                  div.text-center
+                    a(href="#" class="bottom") View Full Scedule
+               div(class="tab-pane fade" id="item-3"  role="tabpanel" aria-labelledby="item-3-tab") 333
+               div(class="tab-pane fade" id="item-4"  role="tabpanel" aria-labelledby="item-4-tab") 444
+               div(class="tab-pane fade" id="item-5"  role="tabpanel" aria-labelledby="item-5-tab") 555
+               div(class="tab-pane fade" id="item-6"  role="tabpanel" aria-labelledby="item-6-tab") 666
+               div(class="tab-pane fade" id="item-7"  role="tabpanel" aria-labelledby="item-7-tab") 777
+     
+     
+     
+     
+     
+     ul(class="pagination")
+         li(class="page-item")
+          a(class="page-link" href="#") #[i(class="fas fa-angle-left")] 
+         li(class="page-item")
+          a(class="page-link active" href="#") 1 
+         li(class="page-item")
+          a(class="page-link" href="#") 2
+         li(class="page-item")
+          a(class="page-link" href="#") 3
+         li(class="page-item")
+          a(class="page-link" href="#") #[i(class="fas fa-angle-right")]  
+      
+ div(id="sendmessage" class="modal fade" role="dialog" )
+  div(class="modal-dialog popreview" style="margin-top: 100px;")
+   div(class="modal-content")
+     button(type="button" class="close" data-dismiss="modal") 
+      svg(width="16" height="16" viewBox="0 0 12 12" f  xmlns="http://www.w3.org/2000/svg")
+       path(d="M6.66271 6.00002L11.8625 0.800231C12.0455 0.617161 12.0455 0.320349 11.8625 0.137303C11.6794 -0.0457441 11.3826 -0.0457675 11.1995 0.137303L5.99975 5.33709L0.799987 0.137303C0.616917 -0.0457675 0.320105 -0.0457675 0.137058 0.137303C-0.0459882 0.320373 -0.0460117 0.617185 0.137058 0.800231L5.33682 6L0.137058 11.1998C-0.0460117 11.3829 -0.0460117 11.6797 0.137058 11.8627C0.228582 11.9542 0.348558 12 0.468535 12C0.588511 12 0.708464 11.9542 0.800011 11.8627L5.99975 6.66295L11.1995 11.8627C11.291 11.9542 11.411 12 11.531 12C11.651 12 11.7709 11.9542 11.8625 11.8627C12.0455 11.6796 12.0455 11.3828 11.8625 11.1998L6.66271 6.00002Z" fill="#000")
+     div.photo 
+      img(src="assets/images/profile-1.png" alt="" title="")
+     div.text-center.mt-4
+      h3.title Contact Gary E.
+      p.mt-2 Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam
+     form(action="#")
+      div.row
+       div.col-sm-6.fild
+        input(type="text" class="form-control" placeholder="Enter your First name" name="Firstname"  autocomplete="off" autofocus required )
+        label.floating-label First Name
+       div.col-sm-6.fild
+        input(type="text" class="form-control" placeholder="Enter your Last  name" name="Lastname"  autocomplete="off" autofocus required )
+        label.floating-label Last  Name
+       div.col-sm-12.fild
+        input(type="email" class="form-control" placeholder="Enter your Email" name="Email"  autocomplete="off" autofocus required )
+        label.floating-label Email
+       div.col-sm-12.fild
+        textarea(class="form-control" name="description" placeholder="Write your message here …" autocomplete="off" autofocus="" required="" )
+        label.floating-label Message
+      div.fild.bot-de.bot-card
+        button(class="bottom" type="submit") Send
+        a(href="#" class="bottom" data-dismiss="modal") Cancel 
+ 
+ div(class="box-book-trial")
+   div(class="modal-content")
+     button(type="button" class="close clo-item") 
+      svg(width="16" height="16" viewBox="0 0 12 12" f  xmlns="http://www.w3.org/2000/svg")
+       path(d="M6.66271 6.00002L11.8625 0.800231C12.0455 0.617161 12.0455 0.320349 11.8625 0.137303C11.6794 -0.0457441 11.3826 -0.0457675 11.1995 0.137303L5.99975 5.33709L0.799987 0.137303C0.616917 -0.0457675 0.320105 -0.0457675 0.137058 0.137303C-0.0459882 0.320373 -0.0460117 0.617185 0.137058 0.800231L5.33682 6L0.137058 11.1998C-0.0460117 11.3829 -0.0460117 11.6797 0.137058 11.8627C0.228582 11.9542 0.348558 12 0.468535 12C0.588511 12 0.708464 11.9542 0.800011 11.8627L5.99975 6.66295L11.1995 11.8627C11.291 11.9542 11.411 12 11.531 12C11.651 12 11.7709 11.9542 11.8625 11.8627C12.0455 11.6796 12.0455 11.3828 11.8625 11.1998L6.66271 6.00002Z" fill="#000")
+     div.photo 
+      img(src="assets/images/profile-1.png" alt="" title="")
+     div.text-center.mt-4
+      h3.title Instant Booking
+      p.mt-2  Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy
+     div.responsive
+            div
+             div.between
+              p.day-ma September 14, 2020 - September 21, 2020
+              p.timezone #[i(class="fas fa-globe-americas")] Times are shown in your local timezone
+              p.textsacand #[i(class="fas fa-info-circle")]  At least 2 days notice between the schedule and your first lesson
+           
+             div.num-book 
+              div.row
+               div.col.innerbook
+                div.innernum.active 
+                 p.sat.active Sat
+                 div.numb.active  10
+                 nav.listnum 
+                  a(href="#" class="active")  03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+               div.col.innerbook
+                div.innernum.active 
+                 p.sat Sun
+                 div.numb  11
+                 nav.listnum 
+                  a(href="#" class="active") 03:00
+                  a(href="#" class="active") 03:00
+                  a(href="#" class="active") 03:00
+                  a(href="#" class="active") 03:00
+                  a(href="#" class="active") 03:00
+                  a(href="#" class="active") 03:00
+                  a(href="#" class="active") 03:00
+                  a(href="#" class="active") 03:00
+               div.col.innerbook
+                div.innernum.active 
+                 p.sat Mon
+                 div.numb  12
+                 nav.listnum 
+                  a(href="#" class="active")  03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+               div.col.innerbook
+                div.innernum 
+                 p.sat Tue
+                 div.numb  13
+                 nav.listnum 
+                  a(href="#" class="active") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+               div.col.innerbook
+                div.innernum.active  
+                 p.sat Wed
+                 div.numb  14
+                 nav.listnum 
+                  a(href="#" class="active")  03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+               div.col.innerbook
+                div.innernum 
+                 p.sat Thu
+                 div.numb  15
+                 nav.listnum 
+                  a(href="#" class="active")  03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+               div.col.innerbook
+                div.innernum.active  
+                 p.sat Fri
+                 div.numb  16
+                 nav.listnum 
+                  a(href="#" class="active")  03:00
+                  a(href="#") 03:00
+                  a(href="#") Booked
+                  a(href="#") Booked
+                  a(href="#") Booked
+                  a(href="#") Booked
+                  a(href="#") Booked
+                  a(href="#") Booked
+            div 
+             div.between
+              p.day-ma September 14, 2020 - September 21, 2020
+              p.timezone #[i(class="fas fa-globe-americas")] Times are shown in your local timezone
+              p.textsacand #[i(class="fas fa-info-circle")]  At least 2 days notice between the schedule and your first lesson
+             div.num-book 
+              div.row
+               div.col.innerbook
+                div.innernum.active 
+                 p.sat.active Sat
+                 div.numb.active  10
+                 nav.listnum 
+                  a(href="#" class="active")  03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+               div.col.innerbook
+                div.innernum.active 
+                 p.sat Sun
+                 div.numb  11
+                 nav.listnum 
+                  a(href="#" class="active") 03:00
+                  a(href="#" class="active") 03:00
+                  a(href="#" class="active") 03:00
+                  a(href="#" class="active") 03:00
+                  a(href="#" class="active") 03:00
+                  a(href="#" class="active") 03:00
+                  a(href="#" class="active") 03:00
+                  a(href="#" class="active") 03:00
+               div.col.innerbook
+                div.innernum.active 
+                 p.sat Mon
+                 div.numb  12
+                 nav.listnum 
+                  a(href="#" class="active")  03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+               div.col.innerbook
+                div.innernum 
+                 p.sat Tue
+                 div.numb  13
+                 nav.listnum 
+                  a(href="#" class="active") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+               div.col.innerbook
+                div.innernum.active  
+                 p.sat Wed
+                 div.numb  14
+                 nav.listnum 
+                  a(href="#" class="active")  03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+               div.col.innerbook
+                div.innernum 
+                 p.sat Thu
+                 div.numb  15
+                 nav.listnum 
+                  a(href="#" class="active")  03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+               div.col.innerbook
+                div.innernum.active  
+                 p.sat Fri
+                 div.numb  16
+                 nav.listnum 
+                  a(href="#" class="active")  03:00
+                  a(href="#") 03:00
+                  a(href="#") Booked
+                  a(href="#") Booked
+                  a(href="#") Booked
+                  a(href="#") Booked
+                  a(href="#") Booked
+                  a(href="#") Booked
+            div 
+             div.between
+              p.day-ma September 14, 2020 - September 21, 2020
+              p.timezone #[i(class="fas fa-globe-americas")] Times are shown in your local timezone
+              p.textsacand #[i(class="fas fa-info-circle")]  At least 2 days notice between the schedule and your first lesson
+             div.num-book 
+              div.row
+               div.col.innerbook
+                div.innernum.active 
+                 p.sat.active Sat
+                 div.numb.active  10
+                 nav.listnum 
+                  a(href="#" class="active")  03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+               div.col.innerbook
+                div.innernum.active 
+                 p.sat Sun
+                 div.numb  11
+                 nav.listnum 
+                  a(href="#" class="active") 03:00
+                  a(href="#" class="active") 03:00
+                  a(href="#" class="active") 03:00
+                  a(href="#" class="active") 03:00
+                  a(href="#" class="active") 03:00
+                  a(href="#" class="active") 03:00
+                  a(href="#" class="active") 03:00
+                  a(href="#" class="active") 03:00
+               div.col.innerbook
+                div.innernum.active 
+                 p.sat Mon
+                 div.numb  12
+                 nav.listnum 
+                  a(href="#" class="active")  03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+               div.col.innerbook
+                div.innernum 
+                 p.sat Tue
+                 div.numb  13
+                 nav.listnum 
+                  a(href="#" class="active") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+               div.col.innerbook
+                div.innernum.active  
+                 p.sat Wed
+                 div.numb  14
+                 nav.listnum 
+                  a(href="#" class="active")  03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+               div.col.innerbook
+                div.innernum 
+                 p.sat Thu
+                 div.numb  15
+                 nav.listnum 
+                  a(href="#" class="active")  03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+                  a(href="#") 03:00
+               div.col.innerbook
+                div.innernum.active  
+                 p.sat Fri
+                 div.numb  16
+                 nav.listnum 
+                  a(href="#" class="active")  03:00
+                  a(href="#") 03:00
+                  a(href="#") Booked
+                  a(href="#") Booked
+                  a(href="#") Booked
+                  a(href="#") Booked
+                  a(href="#") Booked
+                  a(href="#") Booked
+             
+     div.bot-de.bot-card 
+        button(class="bottom" type="submit") Next
+        span(class="bottom clo-item") Cancel 
+ div.loading
+  div(class="sk-cube-grid")
+    div(class="sk-cube sk-cube1")
+    div(class="sk-cube sk-cube2")
+    div(class="sk-cube sk-cube3")
+    div(class="sk-cube sk-cube4")
+    div(class="sk-cube sk-cube5")
+    div(class="sk-cube sk-cube6")
+    div(class="sk-cube sk-cube7")
+    div(class="sk-cube sk-cube8")
+    div(class="sk-cube sk-cube9")
+ 

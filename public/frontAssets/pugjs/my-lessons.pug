@@ -1,0 +1,184 @@
+extend index
+
+block pageindex
+ 
+ div.menubab
+  div.container
+   nav(class="setting-menu")
+    a(href="mssages.html") Messages
+    a(href="my-lessons.html" class="active") My lessons
+    a(href="calendar.html") Calendar
+    a(href="my-teachers.html") My Teachers
+    a(href="learning-plan.html") Learning Plan
+    a(href="my-profile.html") My profile
+    a(href="settings.html") Settings
+ section.lessons
+  div.container
+    h2.title Lessons
+    div.row
+     div.col-sm-8.less-item
+      form(action="#")
+       div.row
+        div.col-sm-6.fild
+         i(class="fas fa-chevron-down iconsel")
+         select(class="form-control" name="Upcoming" autocomplete="off" required)
+          option 
+          option Upcoming
+          option Upcoming
+          option Upcoming
+         label.floating-label Upcoming   
+        div.col-sm-6.fild
+         div.formsearch
+          input(class="form-control" type="text" placeholder="Search By Name ")
+      - for (var x = 0; x < 4; x++)
+          div.item-les
+            div.sec-les
+             div.img
+              img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+             h4.name mohamed
+             a(href="view-profile.html" class="view-profile") View Profile
+            div.sec-les
+             h4.title Scheduled
+             ul.rating
+               li(class="fas fa-star active")
+               li(class="fas fa-star active")
+               li(class="fas fa-star active")
+               li(class="fas fa-star active")  
+             span.text-date Th, 08 Oct, 12:00
+             p.textsacand #[i.fas.fa-info-circle]  The lesson was cancelled because of 
+            div.sec-les
+             h4.title Details
+             span.text-date 30 Minutes - Trial Lesson
+             span.text-price 5 EGP
+            div.sec-les 
+              div(class="dropdown")
+               a(href="#" class="dropdown-toggle" data-toggle="dropdown") Actions
+                span
+                 svg(xmlns="http://www.w3.org/2000/svg" width="9" height="5.751" viewBox="0 0 11.808 6.751")
+                  path(id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M12.094,15.963l4.465-4.468a.84.84,0,0,1,1.192,0,.851.851,0,0,1,0,1.2l-5.059,5.062a.842.842,0,0,1-1.164.025L6.434,12.693a.844.844,0,1,1,1.192-1.2Z" transform="translate(-6.188 -11.246)" fill="#fff")
+               div(class="dropdown-menu")
+                  a(class="dropdown-item" href="#") #[i.far.fa-calendar-alt] Reschedule
+                  a(class="dropdown-item" href="#confirm-lesson"  data-toggle="modal") #[i.fas.fa-star] Confirm Lesson
+                  a(class="dropdown-item" href="#report-issue"  data-toggle="modal") #[i.fas.fa-exclamation-circle] Report Issue
+                  a(class="dropdown-item" href="#cancel-lesson"  data-toggle="modal") #[i.far.fa-times-circle] Cancel
+     div.col-sm-4.less-item      
+      div.item-datals 
+       div.lesson-user
+        p.text-les Next lesson : #[span  Thursday, 8 October at 12:00 with]
+        div.img
+         img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+         p Maria D. 
+       div.text-center
+        a(href="#" class="view-Profile") Enter Classroom
+      div.item-datals 
+        h4.title Lessons Overview
+        ul.last-overview
+         li #[span 0] Scheduled
+         li #[span 0] Need Scheduling
+         li #[span 0] Past 
+      div.item-datals 
+        h4.title Calendar
+        div.myCalendar
+        div.prsonal
+         i.fas.fa-dot-circle
+         div.inner-prso
+          p.text Saturday, February 8, 2020 at 9:15 p.m.
+          div.img-text
+           span Lesson scheduled with
+           div.img
+            img(src='assets/images/profile-1.png' alt="Arabia" title="Arabia")
+            p Maria D. 
+
+ 
+ script(src="assets/js/jquery-pseudo-ripple.js")
+ script(src="assets/js/jquery-nao-calendar.js")
+
+
+ div(id="cancel-lesson" class="modal fade" role="dialog")
+  div(class="modal-dialog")
+   div(class="modal-content deleting")
+    div.pop-det
+     button(type="button" class="close" data-dismiss="modal") 
+      svg(width="16" height="16" viewBox="0 0 12 12" f  xmlns="http://www.w3.org/2000/svg")
+       path(d="M6.66271 6.00002L11.8625 0.800231C12.0455 0.617161 12.0455 0.320349 11.8625 0.137303C11.6794 -0.0457441 11.3826 -0.0457675 11.1995 0.137303L5.99975 5.33709L0.799987 0.137303C0.616917 -0.0457675 0.320105 -0.0457675 0.137058 0.137303C-0.0459882 0.320373 -0.0460117 0.617185 0.137058 0.800231L5.33682 6L0.137058 11.1998C-0.0460117 11.3829 -0.0460117 11.6797 0.137058 11.8627C0.228582 11.9542 0.348558 12 0.468535 12C0.588511 12 0.708464 11.9542 0.800011 11.8627L5.99975 6.66295L11.1995 11.8627C11.291 11.9542 11.411 12 11.531 12C11.651 12 11.7709 11.9542 11.8625 11.8627C12.0455 11.6796 12.0455 11.3828 11.8625 11.1998L6.66271 6.00002Z" fill="#000")
+     div.textpopup
+      h3.title Cancel the lesson
+      p.text Are you sure you want to cancel this lesson ?
+    
+     div.fild.bot-de.bot-card
+        button(class="bottom" type="submit") Reschedule
+        a(href="#" class="bottom" data-dismiss="modal") Cancel
+ 
+  
+ div(id="report-issue" class="modal fade" role="dialog")
+  div(class="modal-dialog popreview")
+   div(class="modal-content")
+    div.pop-det
+     button(type="button" class="close" data-dismiss="modal") 
+      svg(width="16" height="16" viewBox="0 0 12 12" f  xmlns="http://www.w3.org/2000/svg")
+       path(d="M6.66271 6.00002L11.8625 0.800231C12.0455 0.617161 12.0455 0.320349 11.8625 0.137303C11.6794 -0.0457441 11.3826 -0.0457675 11.1995 0.137303L5.99975 5.33709L0.799987 0.137303C0.616917 -0.0457675 0.320105 -0.0457675 0.137058 0.137303C-0.0459882 0.320373 -0.0460117 0.617185 0.137058 0.800231L5.33682 6L0.137058 11.1998C-0.0460117 11.3829 -0.0460117 11.6797 0.137058 11.8627C0.228582 11.9542 0.348558 12 0.468535 12C0.588511 12 0.708464 11.9542 0.800011 11.8627L5.99975 6.66295L11.1995 11.8627C11.291 11.9542 11.411 12 11.531 12C11.651 12 11.7709 11.9542 11.8625 11.8627C12.0455 11.6796 12.0455 11.3828 11.8625 11.1998L6.66271 6.00002Z" fill="#000")
+     h3.title Report Issue to Teacher
+     small This issue report is sent to your teacher. Your teacher must resolve it within 48 hours.
+     form(action="#")
+      p.occurred Select one or more issues that occurred
+      div.row
+       div.col-sm-12.fild
+        label.che-box
+         input(type="checkbox" name="checkbox")
+         span.label-text Student was late
+       div.col-sm-12.fild
+        label.che-box
+         input(type="checkbox" name="checkbox")
+         span.label-text Student was late
+       div.col-sm-12.fild
+        label.che-box
+         input(type="checkbox" name="checkbox")
+         span.label-text Student was late
+       div.col-sm-12.fild
+        label.che-box
+         input(type="checkbox" name="checkbox")
+         span.label-text Student was late
+       div.col-sm-12.fild
+        label.che-box
+         input(type="checkbox" name="checkbox")
+         span.label-text Student was late
+       div.col-sm-12.fild
+        label.che-box
+         input(type="checkbox" name="checkbox")
+         span.label-text Student was late 
+       div.col-sm-12.fild
+        label.che-box
+         input(type="checkbox" name="checkbox")
+         span.label-text Student was late  
+       
+       div.col-sm-12.fild
+        textarea(class="form-control" name="description" placeholder="Write Comment here…" autocomplete="off" autofocus="" required="" )
+        label.floating-label Issue comment 
+      div.fild.bot-de.bot-card
+        button(class="bottom" type="submit") Report
+        a(href="#" class="bottom" data-dismiss="modal") Cancel
+ 
+ div(id="confirm-lesson" class="modal fade" role="dialog")
+  div(class="modal-dialog popreview" style="margin-top: 100px;")
+   div(class="modal-content")
+     button(type="button" class="close" data-dismiss="modal") 
+      svg(width="16" height="16" viewBox="0 0 12 12" f  xmlns="http://www.w3.org/2000/svg")
+       path(d="M6.66271 6.00002L11.8625 0.800231C12.0455 0.617161 12.0455 0.320349 11.8625 0.137303C11.6794 -0.0457441 11.3826 -0.0457675 11.1995 0.137303L5.99975 5.33709L0.799987 0.137303C0.616917 -0.0457675 0.320105 -0.0457675 0.137058 0.137303C-0.0459882 0.320373 -0.0460117 0.617185 0.137058 0.800231L5.33682 6L0.137058 11.1998C-0.0460117 11.3829 -0.0460117 11.6797 0.137058 11.8627C0.228582 11.9542 0.348558 12 0.468535 12C0.588511 12 0.708464 11.9542 0.800011 11.8627L5.99975 6.66295L11.1995 11.8627C11.291 11.9542 11.411 12 11.531 12C11.651 12 11.7709 11.9542 11.8625 11.8627C12.0455 11.6796 12.0455 11.3828 11.8625 11.1998L6.66271 6.00002Z" fill="#000")
+     div.photo 
+      img(src="assets/images/profile-1.png" alt="" title="")
+     div.text-center.mt-4
+      h3.title Lesson Review
+      p.mt-2  How was your lesson experience?
+     form(action="#")
+       div.rev-item.lessonprve
+         ul.stars
+          li(class='star' title='' data-value='1') #[i(class="far fa-star")]
+          li(class='star' title='' data-value='2') #[i(class="far fa-star")]
+          li(class='star' title='' data-value='3') #[i(class="far fa-star")]
+          li(class='star' title='' data-value='4') #[i(class="far fa-star")]
+          li(class='star' title='' data-value='5') #[i(class="far fa-star")]
+       div.fild.bot-de.bot-card
+        button(class="bottom" type="submit") Post Review
+        a(href="#" class="bottom" data-dismiss="modal") Cancel 
+ 
+  
